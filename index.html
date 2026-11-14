@@ -131,7 +131,192 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
   .stats {grid-template-columns:1fr}
   .nav-links a {font-size:11px}
 }
+  
+/* PROFESSIONAL EXPERIENCE SECTION */
+
+.experience-section {
+  padding: 90px 0;
+  background: linear-gradient(180deg, #080f20, #0b1428);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-tag {
+  color: #00c8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.section-heading .section-title span {
+  color: #00c8ff;
+}
+
+.section-heading p {
+  color: #aabbd1;
+  max-width: 650px;
+  margin: 12px auto;
+  line-height: 1.8;
+}
+
+.experience-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+  background: linear-gradient(145deg, #14233b, #0d182c);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.experience-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.company-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0077ff, #00c8ff);
+  border-radius: 16px;
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.experience-info h3 {
+  color: #fff;
+  font-size: 23px;
+  margin: 0 0 6px;
+}
+
+.experience-info h4 {
+  color: #00c8ff;
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.experience-info span {
+  color: #9fb2ca;
+  font-size: 13px;
+}
+
+.experience-status {
+  color: #00e0a4;
+  border: 1px solid rgba(0, 224, 164, 0.4);
+  background: rgba(0, 224, 164, 0.08);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.experience-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 30px 0;
+}
+
+.exp-subtitle {
+  color: #00c8ff;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin: 28px 0 15px;
+}
+
+.exp-description {
+  color: #c2d0e2;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.exp-responsibilities {
+  display: grid;
+  gap: 15px;
+}
+
+.exp-point {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.035);
+  transition: 0.3s;
+}
+
+.exp-point:hover {
+  background: rgba(0, 200, 255, 0.08);
+  transform: translateX(4px);
+}
+
+.exp-point span {
+  color: #00c8ff;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.exp-point p {
+  color: #c2d0e2;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-tags span {
+  padding: 9px 14px;
+  border: 1px solid rgba(0, 200, 255, 0.25);
+  border-radius: 20px;
+  background: rgba(0, 200, 255, 0.07);
+  color: #c7eaff;
+  font-size: 12px;
+}
+
+@media(max-width:600px) {
+  .experience-section {
+    padding: 65px 15px;
+  }
+
+  .experience-card {
+    padding: 22px 17px;
+  }
+
+  .experience-top {
+    gap: 13px;
+  }
+
+  .experience-info h3 {
+    font-size: 19px;
+  }
+
+  .experience-status {
+    margin-top: 5px;
+  }
+
+  .exp-point {
+    padding: 12px 9px;
+  }
+}
+  
 </style>
+  
   
 /* PREMIUM PROFESSIONAL FOOTER */
 
@@ -373,32 +558,118 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
   </div>
 </section>
 
-<section id="experience">
+
+<section class="experience-section" id="experience">
   <div class="container">
-    <h2 class="section-title">Professional Experience</h2>
-    <div class="line"></div>
-    <div class="timeline">
-      <div class="card">
-        <div class="date">APRIL 2022 – PRESENT</div>
-        <h3>NOC Engineer</h3>
-        <h4>Tata Consultancy Services (TCS) · Chennai, India</h4>
-        <br>
-        <ul>
-          <li>Monitor 1,000+ network devices and enterprise infrastructure.</li>
-          <li>Monitor Windows, Linux and Unix servers and applications.</li>
-          <li>Work with ITOM alerts and ServiceNow incident workflows.</li>
-          <li>Investigate network connectivity, availability and performance alerts.</li>
-          <li>Use Dynatrace and other monitoring platforms for alert investigation.</li>
-          <li>Support Cisco SD-WAN monitoring through vManage.</li>
-          <li>Participate in P1/P2 incident bridges and coordinate with support teams.</li>
-          <li>Coordinate with ISP and external vendors for connectivity issues.</li>
-          <li>Handle operational DNS/DHCP requests and related activities.</li>
-          <li>Maintain incident updates, work notes and escalation communication.</li>
-        </ul>
+
+    <div class="section-heading">
+      <span class="section-tag">MY CAREER JOURNEY</span>
+      <h2 class="section-title">Professional <span>Experience</span></h2>
+      <p>Building reliable IT infrastructure through proactive monitoring,
+      incident management and technical support.</p>
+    </div>
+
+    <div class="experience-card">
+
+      <div class="experience-top">
+        <div class="company-icon">TCS</div>
+        <div class="experience-info">
+          <h3>NOC Engineer</h3>
+          <h4>Tata Consultancy Services (TCS)</h4>
+          <span>Chennai, India | Feb 2022 – Present</span>
+        </div>
+        <div class="experience-status">Current Role</div>
       </div>
+
+      <div class="experience-divider"></div>
+
+      <h4 class="exp-subtitle">ROLE OVERVIEW</h4>
+      <p class="exp-description">
+        Working in Distributed Production Support, responsible for
+        monitoring enterprise network infrastructure, servers and
+        applications, analyzing alerts, coordinating incident resolution
+        and maintaining service availability.
+      </p>
+
+      <h4 class="exp-subtitle">KEY RESPONSIBILITIES</h4>
+
+      <div class="exp-responsibilities">
+
+        <div class="exp-point">
+          <span>01</span>
+          <p>Monitor 1,000+ network devices, Windows/Linux/Unix servers
+          and business-critical applications to identify infrastructure
+          alerts and potential service disruptions.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>02</span>
+          <p>Analyze network connectivity, bandwidth, packet loss,
+          latency, device availability and WAN link-related issues.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>03</span>
+          <p>Work on Cisco SD-WAN monitoring using vManage and support
+          troubleshooting of branch connectivity and WAN-related alerts.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>04</span>
+          <p>Handle P1/P2 incidents, participate in bridge calls,
+          coordinate with incident managers and support teams, and
+          provide timely updates.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>05</span>
+          <p>Perform DNS and DHCP-related support activities, including
+          hostname and IP verification, troubleshooting and coordination
+          for required changes.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>06</span>
+          <p>Coordinate with ISP and third-party vendors for network
+          outages, circuit issues, link instability and service restoration.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>07</span>
+          <p>Analyze monitoring alerts using ServiceNow ITOM, Dynatrace,
+          ScienceLogic, Moogsoft and other infrastructure monitoring tools.</p>
+        </div>
+
+        <div class="exp-point">
+          <span>08</span>
+          <p>Document incident updates, troubleshooting steps, actions
+          taken and follow-up activities to support effective incident
+          resolution and operational continuity.</p>
+        </div>
+
+      </div>
+
+      <h4 class="exp-subtitle">TOOLS & TECHNOLOGIES</h4>
+
+      <div class="experience-tags">
+        <span>ServiceNow ITOM</span>
+        <span>Dynatrace</span>
+        <span>Cisco SD-WAN</span>
+        <span>vManage</span>
+        <span>ScienceLogic</span>
+        <span>Moogsoft</span>
+        <span>ELK</span>
+        <span>VMware</span>
+        <span>Windows</span>
+        <span>Linux</span>
+        <span>DNS</span>
+        <span>DHCP</span>
+      </div>
+
     </div>
   </div>
 </section>
+  
 
 <section id="skills">
   <div class="container">
