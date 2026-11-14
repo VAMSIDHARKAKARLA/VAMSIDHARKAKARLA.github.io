@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080e1c">
+<meta name="description" content="Vamsidharreddy Kakarla - NOC Engineer with 4.6+ years of experience in network operations, IT infrastructure and production support.">
+<title>Vamsidharreddy Kakarla | NOC Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#080e1c;
+  --panel:#101b30;
+  --blue:#58a6ff;
+  --cyan:#48d7e8;
+  --text:#edf4ff;
+  --muted:#9eacc2;
+  --border:#253650;
+}
+* {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body {
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.7;
+}
+a {color:inherit;text-decoration:none}
+.container {width:min(1100px,90%);margin:auto}
+nav {
+  position:sticky;top:0;z-index:10;
+  background:rgba(8,14,28,.94);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner {
+  min-height:70px;display:flex;justify-content:space-between;
+  align-items:center;gap:15px;
+}
+.logo {font-weight:800;font-size:19px;color:var(--blue)}
+.nav-links {display:flex;gap:22px;flex-wrap:wrap}
+.nav-links a {font-size:12px;color:var(--muted)}
+.nav-links a:hover {color:var(--cyan)}
+.hero {
+  min-height:610px;display:flex;align-items:center;
+  padding:90px 0;
+  background:radial-gradient(ellipse at 80% 30%,#17345c 0%,transparent 50%);
+}
+.hero-grid {
+  display:grid;grid-template-columns:1.5fr 1fr;
+  align-items:center;gap:55px;
+}
+.eyebrow {
+  color:var(--cyan);font-size:13px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+}
+h1 {font-size:clamp(36px,6vw,61px);line-height:1.15;margin:20px 0}
+h1 span {color:var(--blue)}
+.hero p {color:var(--muted);max-width:620px}
+.actions {display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn {
+  display:inline-block;padding:12px 21px;border-radius:8px;
+  font-weight:700;font-size:13px;border:1px solid var(--blue);
+}
+.primary {background:var(--blue);color:#07101e}
+.secondary {color:var(--blue)}
+.photo-wrap {
+  width:min(280px,100%);aspect-ratio:1;
+  margin:auto;border-radius:50%;padding:8px;
+  border:2px solid var(--blue);
+  background:linear-gradient(135deg,#173f70,#0c172b);
+  box-shadow:0 0 55px #2875c444;
+}
+.photo-wrap img {
+  width:100%;height:100%;object-fit:cover;
+  border-radius:50%;
+}
+.photo-placeholder {
+  display:grid;place-items:center;width:100%;height:100%;
+  border-radius:50%;color:var(--blue);font-size:75px;
+  font-weight:800;
+}
+section {padding:85px 0}
+.section-title {font-size:30px;margin-bottom:12px}
+.section-sub {color:var(--muted);margin-bottom:35px}
+.line {width:55px;height:3px;background:var(--cyan);margin:14px 0 25px}
+.card {
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:13px;padding:25px;
+}
+.about-grid,.experience-grid {display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card h3 {margin-bottom:12px;color:var(--blue)}
+.card p,.card li {font-size:14px;color:var(--muted)}
+ul {padding-left:20px}
+.skill-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.tags {display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.tag {
+  font-size:12px;color:#b8dcff;background:#183253;
+  border:1px solid #2d527c;border-radius:6px;padding:7px 10px;
+}
+.timeline {border-left:2px solid var(--blue);padding-left:25px}
+.timeline .card {margin-bottom:20px}
+.date {color:var(--cyan);font-size:12px;font-weight:700}
+.project-grid {display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.stats {display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.stat {background:#132440;padding:18px;border-radius:10px;text-align:center}
+.stat strong {display:block;color:var(--cyan);font-size:25px}
+.stat span {font-size:12px;color:var(--muted)}
+.contact {text-align:center;background:linear-gradient(135deg,#10213c,#0b1527)}
+.contact p {color:var(--muted);margin:12px 0 25px}
+footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
+@media(max-width:750px) {
+  .nav-inner {padding:14px 0;align-items:flex-start;flex-direction:column}
+  .nav-links {gap:13px}
+  .hero-grid,.about-grid,.experience-grid {grid-template-columns:1fr}
+  .hero {padding:65px 0}
+  .photo-wrap {width:210px;grid-row:1}
+  .skill-grid {grid-template-columns:1fr 1fr}
+  .project-grid {grid-template-columns:1fr}
+  section {padding:65px 0}
+}
+@media(max-width:420px) {
+  .skill-grid {grid-template-columns:1fr}
+  .stats {grid-template-columns:1fr}
+  .nav-links a {font-size:11px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">VK. PORTFOLIO</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">IT Operations & Network Infrastructure</div>
+      <h1>Hi, I'm<br><span>Vamsidharreddy Kakarla</span></h1>
+      <h3>NOC Engineer | Network Operations | IT Infrastructure</h3>
+      <p>
+        IT operations professional with 4.6+ years of experience
+        in distributed production support, network monitoring,
+        infrastructure operations and incident management.
+        Focused on maintaining service availability and supporting
+        reliable enterprise IT environments.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#experience">Explore My Experience</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <img src="profile.jpg" alt="Vamsidharreddy Kakarla"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <div class="photo-placeholder" style="display:none">VK</div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="line"></div>
+    <div class="about-grid">
+      <div class="card">
+        <h3>Professional Summary</h3>
+        <p>
+          I am an IT NOC Engineer working in Distributed Production
+          Support at Tata Consultancy Services, Chennai. My experience
+          includes monitoring enterprise network devices, servers
+          and applications, investigating infrastructure alerts,
+          coordinating incident resolution and supporting production
+          environments.
+        </p>
+        <br>
+        <p>
+          I work with monitoring platforms, ITSM processes,
+          network operations teams and external service providers
+          to support operational stability and timely incident handling.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Professional Snapshot</h3>
+        <ul>
+          <li>4.6+ years of IT/NOC experience</li>
+          <li>Distributed production support</li>
+          <li>Monitoring of 1,000+ network devices</li>
+          <li>P1/P2 incident coordination</li>
+          <li>Network and server monitoring</li>
+          <li>DNS and DHCP operational support</li>
+          <li>Vendor and cross-team coordination</li>
+          <li>Based in Chennai, India</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="line"></div>
+    <div class="timeline">
+      <div class="card">
+        <div class="date">APRIL 2022 – PRESENT</div>
+        <h3>NOC Engineer</h3>
+        <h4>Tata Consultancy Services (TCS) · Chennai, India</h4>
+        <br>
+        <ul>
+          <li>Monitor 1,000+ network devices and enterprise infrastructure.</li>
+          <li>Monitor Windows, Linux and Unix servers and applications.</li>
+          <li>Work with ITOM alerts and ServiceNow incident workflows.</li>
+          <li>Investigate network connectivity, availability and performance alerts.</li>
+          <li>Use Dynatrace and other monitoring platforms for alert investigation.</li>
+          <li>Support Cisco SD-WAN monitoring through vManage.</li>
+          <li>Participate in P1/P2 incident bridges and coordinate with support teams.</li>
+          <li>Coordinate with ISP and external vendors for connectivity issues.</li>
+          <li>Handle operational DNS/DHCP requests and related activities.</li>
+          <li>Maintain incident updates, work notes and escalation communication.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="line"></div>
+    <p class="section-sub">Technologies and operational knowledge used in IT infrastructure support.</p>
+    <div class="skill-grid">
+      <div class="card">
+        <h3>Networking</h3>
+        <div class="tags">
+          <span class="tag">TCP/IP</span>
+          <span class="tag">LAN / WAN</span>
+          <span class="tag">VLAN</span>
+          <span class="tag">DNS</span>
+          <span class="tag">DHCP</span>
+          <span class="tag">Subnetting</span>
+          <span class="tag">OSPF – Basic</span>
+          <span class="tag">BGP – Basic</span>
+          <span class="tag">SNMP – Basic</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Monitoring & ITSM</h3>
+        <div class="tags">
+          <span class="tag">ServiceNow</span>
+          <span class="tag">ITOM</span>
+          <span class="tag">Dynatrace</span>
+          <span class="tag">ScienceLogic</span>
+          <span class="tag">Moogsoft</span>
+          <span class="tag">ELK – Basic</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Infrastructure</h3>
+        <div class="tags">
+          <span class="tag">Windows</span>
+          <span class="tag">Linux – Basic</span>
+          <span class="tag">Unix</span>
+          <span class="tag">VMware</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">SSH</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Network Technologies</h3>
+        <div class="tags">
+          <span class="tag">Cisco SD-WAN</span>
+          <span class="tag">vManage</span>
+          <span class="tag">Cisco CLI – Basic</span>
+          <span class="tag">MPLS</span>
+          <span class="tag">DIA</span>
+          <span class="tag">ISP Coordination</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Incident Management</h3>
+        <div class="tags">
+          <span class="tag">P1 / P2 Incidents</span>
+          <span class="tag">Troubleshooting</span>
+          <span class="tag">Escalations</span>
+          <span class="tag">Vendor Management</span>
+          <span class="tag">Production Support</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Additional Tools</h3>
+        <div class="tags">
+          <span class="tag">Jenkins</span>
+          <span class="tag">Oracle – Operations</span>
+          <span class="tag">SQL – Basics</span>
+          <span class="tag">Mainframe – Exposure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects & Practical Experience</h2>
+    <div class="line"></div>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Enterprise Network Monitoring</h3>
+        <p>Operational monitoring of network devices, connectivity and infrastructure alerts in a distributed production environment.</p>
+      </div>
+      <div class="card">
+        <h3>Incident Investigation & Coordination</h3>
+        <p>Incident triage, impact assessment, bridge participation and coordination with internal teams and external vendors.</p>
+      </div>
+      <div class="card">
+        <h3>Cisco SD-WAN Operations</h3>
+        <p>Exposure to Cisco SD-WAN and vManage monitoring, including WAN link availability and performance investigations.</p>
+      </div>
+      <div class="card">
+        <h3>DNS & DHCP Operations</h3>
+        <p>Operational support for DNS and DHCP requests, hostname and IP verification, and related change activities.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>1,000+</strong><span>Network devices monitored</span></div>
+      <div class="stat"><strong>4.6+</strong><span>Years of experience</span></div>
+      <div class="stat"><strong>P1/P2</strong><span>Incident coordination</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education & Learning</h2>
+    <div class="line"></div>
+    <div class="about-grid">
+      <div class="card">
+        <h3>Bachelor of Technology – ECE</h3>
+        <p>JNN Institution of Engineering</p>
+        <p>Anna University</p>
+        <p>2017 – 2021</p>
+        <p>CGPA: 7.43 / 10</p>
+      </div>
+      <div class="card">
+        <h3>Professional Development</h3>
+        <ul>
+          <li>CCNA networking course – currently learning</li>
+          <li>Network troubleshooting and fundamentals</li>
+          <li>Linux and infrastructure operations</li>
+          <li>Continuous improvement in enterprise networking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p>Open to opportunities in Network Engineering, NOC, IT Operations and Infrastructure Support.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn primary" href="https://www.linkedin.com/in/vamsidharreddy-kakarla-625036199/" target="_blank" rel="noopener">LinkedIn Profile</a>
+      <a class="btn secondary" href="https://github.com/VAMSIDHARKAKARLA" target="_blank" rel="noopener">GitHub Profile</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Vamsidharreddy Kakarla. All rights reserved.
+  <br>Designed for professional portfolio presentation.
+</footer>
+
+</body>
+  </html>
+  
