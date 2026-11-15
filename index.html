@@ -596,6 +596,209 @@ footer {
     transition: .2s ease;
   }
 }
+  
+/* ===== PREMIUM EDUCATION SECTION ===== */
+
+#education {
+  background: #071426;
+  padding: 90px 0;
+}
+
+.education-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.education-card {
+  background: #0c1d34;
+  border: 1px solid rgba(100, 160, 230, 0.18);
+  border-radius: 16px;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: #3988e8;
+  transform: translateY(-4px);
+}
+
+.education-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.education-label {
+  color: #65a9f5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.education-year {
+  color: #a8bad0;
+  font-size: 12px;
+}
+
+.education-card h3 {
+  color: #f2f6fc;
+  font-size: 23px;
+  margin: 0 0 10px;
+}
+
+.education-field {
+  color: #b3c3d8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.education-divider {
+  height: 1px;
+  background: rgba(150, 180, 220, 0.15);
+  margin: 24px 0;
+}
+
+.education-institute {
+  color: #edf4ff;
+  font-weight: 600;
+}
+
+.education-university {
+  color: #a8bad0;
+  font-size: 14px;
+}
+
+.education-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 16px;
+  border-radius: 10px;
+  background: rgba(50, 120, 210, 0.12);
+  color: #c4d5e9;
+  font-size: 13px;
+}
+
+.education-score strong {
+  color: #75b5ff;
+  font-size: 20px;
+}
+
+.education-score small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.learning-list {
+  padding-left: 18px;
+  color: #c0cee0;
+  line-height: 2.2;
+  font-size: 14px;
+}
+
+.learning-list li::marker {
+  color: #65a9f5;
+}
+
+/* ===== PREMIUM CONTACT SECTION ===== */
+
+.contact {
+  background: #091a30;
+  padding: 90px 0;
+}
+
+.contact-panel {
+  max-width: 760px;
+  margin: 35px auto 0;
+  padding: 35px;
+  text-align: center;
+  background: #0d2039;
+  border: 1px solid rgba(100, 160, 230, 0.2);
+  border-radius: 16px;
+}
+
+.contact-panel > p {
+  color: #bdcce0;
+  line-height: 1.8;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+/* ===== PREMIUM FOOTER ===== */
+
+.footer {
+  background: #050f1e;
+  border-top: 1px solid rgba(120, 160, 210, 0.15);
+  padding: 25px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer strong {
+  color: #e8f1fc;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.footer p {
+  color: #91a5bd;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+.copyright {
+  text-align: right;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 700px) {
+  #education,
+  .contact {
+    padding: 65px 0;
+  }
+
+  .education-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    padding: 23px;
+  }
+
+  .contact-panel {
+    padding: 25px 18px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+}
+
 </style>
 </head>
 
@@ -1020,6 +1223,116 @@ footer {
       <h2>
         <span>Education</span> & Development 
       </h2>
+      
+      <p class="section-subtitle">
+        My academic foundation and commitment to continuous professional growth.
+      </p>
+    </div>
+
+    <div class="education-layout">
+
+      <div class="education-card">
+        <div class="education-top">
+          <span class="education-label">ACADEMIC QUALIFICATION</span>
+          <span class="education-year">2017 — 2021</span>
+        </div>
+
+        <h3>Bachelor of Technology</h3>
+        <p class="education-field">
+          Electronics and Communication Engineering
+        </p>
+
+        <div class="education-divider"></div>
+
+        <p class="education-institute">
+          JNN Institution of Engineering
+        </p>
+        <p class="education-university">Anna University</p>
+
+        <div class="education-score">
+          <span>Academic Performance</span>
+          <strong>7.43 <small>/ 10 CGPA</small></strong>
+        </div>
+      </div>
+
+      <div class="education-card development-card">
+        <div class="education-top">
+          <span class="education-label">CONTINUOUS LEARNING</span>
+          <span class="education-year">ONGOING</span>
+        </div>
+
+        <h3>Professional Development</h3>
+        <p class="education-field">
+          Building knowledge in networking and infrastructure technologies.
+        </p>
+
+        <div class="education-divider"></div>
+
+        <ul class="learning-list">
+          <li>CCNA – Currently Learning</li>
+          <li>Routing, Switching and VLAN Fundamentals</li>
+          <li>Windows and Linux Server Operations</li>
+          <li>Network Monitoring and Troubleshooting</li>
+          <li>IT Infrastructure and Incident Management</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">LET'S CONNECT</div>
+      <h2>Building Connections. <span>Creating Impact.</span></h2>
+      <p class="section-subtitle">
+        Open to opportunities in Network Engineering, NOC,
+        IT Operations and Infrastructure Support.
+      </p>
+    </div>
+
+    <div class="contact-panel">
+      <p>
+        Interested in discussing professional opportunities
+        or connecting about networking and infrastructure?
+      </p>
+
+      <div class="contact-actions">
+        <a class="btn primary"
+           href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
+           target="_blank" rel="noopener noreferrer">
+          Connect on LinkedIn
+        </a>
+
+        <a class="btn"
+           href="https://github.com/VAMSIDHARKAKARLA"
+           target="_blank" rel="noopener noreferrer">
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer class="footer">
+  <div class="wrap footer-content">
+    <div>
+      <strong>VAMSIDHARREDDY KAKARLA</strong>
+      <p>Network | Infrastructure | IT Operations</p>
+    </div>
+
+    <p class="copyright">
+      © 2026 All Rights Reserved.
+    </p>
+  </div>
+</footer>
+  
       
       <p class="section-subtitle">
         My academic foundation and continuous learning journey in Network Engineering and IT Infrastructure.
