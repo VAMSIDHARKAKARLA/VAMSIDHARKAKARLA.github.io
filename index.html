@@ -3,1426 +3,771 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080e1c">
-<meta name="description" content="Vamsidharreddy Kakarla - NOC Engineer with 4.6+ years of experience in network operations, IT infrastructure and production support.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071321">
+<meta name="description" content="Professional portfolio of Vamsidharreddy Kakarla - NOC Engineer, Network Operations and IT Infrastructure Support.">
 <title>Vamsidharreddy Kakarla | NOC Engineer</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg:#080e1c;
-  --panel:#101b30;
-  --blue:#58a6ff;
-  --cyan:#48d7e8;
-  --text:#edf4ff;
-  --muted:#9eacc2;
-  --border:#253650;
+  --bg: #071321;
+  --panel: #102238;
+  --panel2: #142b45;
+  --text: #eef5ff;
+  --muted: #a9bbcf;
+  --blue: #55a6ff;
+  --cyan: #5ce1e6;
+  --line: rgba(255,255,255,.11);
+  --max: 1120px;
 }
-* {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
 body {
-  background:var(--bg);
-  color:var(--text);
-  font-family:Inter,Arial,sans-serif;
-  line-height:1.7;
-}
-a {color:inherit;text-decoration:none}
-.container {width:min(1100px,90%);margin:auto}
-nav {
-  position:sticky;top:0;z-index:10;
-  background:rgba(8,14,28,.94);
-  backdrop-filter:blur(15px);
-  border-bottom:1px solid var(--border);
-}
-.nav-inner {
-  min-height:70px;display:flex;justify-content:space-between;
-  align-items:center;gap:15px;
-}
-.logo {font-weight:800;font-size:19px;color:var(--blue)}
-.nav-links {display:flex;gap:22px;flex-wrap:wrap}
-.nav-links a {font-size:12px;color:var(--muted)}
-.nav-links a:hover {color:var(--cyan)}
-.hero {
-  min-height:610px;display:flex;align-items:center;
-  padding:90px 0;
-  background:radial-gradient(ellipse at 80% 30%,#17345c 0%,transparent 50%);
-}
-.hero-grid {
-  display:grid;grid-template-columns:1.5fr 1fr;
-  align-items:center;gap:55px;
-}
-.eyebrow {
-  color:var(--cyan);font-size:13px;font-weight:700;
-  letter-spacing:2px;text-transform:uppercase;
-}
-h1 {font-size:clamp(36px,6vw,61px);line-height:1.15;margin:20px 0}
-h1 span {color:var(--blue)}
-.hero p {color:var(--muted);max-width:620px}
-.actions {display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-.btn {
-  display:inline-block;padding:12px 21px;border-radius:8px;
-  font-weight:700;font-size:13px;border:1px solid var(--blue);
-}
-.primary {background:var(--blue);color:#07101e}
-.secondary {color:var(--blue)}
-.photo-wrap {
-  width:min(280px,100%);aspect-ratio:1;
-  margin:auto;border-radius:50%;padding:8px;
-  border:2px solid var(--blue);
-  background:linear-gradient(135deg,#173f70,#0c172b);
-  box-shadow:0 0 55px #2875c444;
-}
-.photo-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 46%;
-    border-radius: 50%;
-    display: block;
-}
-.photo-placeholder {
-  display:grid;place-items:center;width:100%;height:100%;
-  border-radius:50%;color:var(--blue);font-size:75px;
-  font-weight:800;
-}
-section {padding:85px 0}
-.section-title {font-size:30px;margin-bottom:12px}
-.section-sub {color:var(--muted);margin-bottom:35px}
-.line {width:55px;height:3px;background:var(--cyan);margin:14px 0 25px}
-.card {
-  background:var(--panel);border:1px solid var(--border);
-  border-radius:13px;padding:25px;
-}
-.about-grid,.experience-grid {display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card h3 {margin-bottom:12px;color:var(--blue)}
-.card p,.card li {font-size:14px;color:var(--muted)}
-ul {padding-left:20px}
-.skill-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.tags {display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
-.tag {
-  font-size:12px;color:#b8dcff;background:#183253;
-  border:1px solid #2d527c;border-radius:6px;padding:7px 10px;
-}
-.timeline {border-left:2px solid var(--blue);padding-left:25px}
-.timeline .card {margin-bottom:20px}
-.date {color:var(--cyan);font-size:12px;font-weight:700}
-.project-grid {display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.stats {display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
-.stat {background:#132440;padding:18px;border-radius:10px;text-align:center}
-.stat strong {display:block;color:var(--cyan);font-size:25px}
-.stat span {font-size:12px;color:var(--muted)}
-.contact {text-align:center;background:linear-gradient(135deg,#10213c,#0b1527)}
-.contact p {color:var(--muted);margin:12px 0 25px}
-footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
-@media(max-width:750px) {
-  .nav-inner {padding:14px 0;align-items:flex-start;flex-direction:column}
-  .nav-links {gap:13px}
-  .hero-grid,.about-grid,.experience-grid {grid-template-columns:1fr}
-  .hero {padding:65px 0}
-  .photo-wrap {width:210px;grid-row:1}
-  .skill-grid {grid-template-columns:1fr 1fr}
-  .project-grid {grid-template-columns:1fr}
-  section {padding:65px 0}
-}
-@media(max-width:420px) {
-  .skill-grid {grid-template-columns:1fr}
-  .stats {grid-template-columns:1fr}
-  .nav-links a {font-size:11px}
-}
-  
-/* PROFESSIONAL EXPERIENCE SECTION */
-
-.experience-section {
-  padding: 90px 0;
-  background: linear-gradient(180deg, #080f20, #0b1428);
+  background:
+    radial-gradient(circle at 80% 8%, #12365a 0, transparent 30%),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.section-heading {
-  text-align: center;
-  margin-bottom: 45px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.section-tag {
-  color: #00c8ff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.section-heading .section-title span {
-  color: #00c8ff;
-}
-
-.section-heading p {
-  color: #aabbd1;
-  max-width: 650px;
-  margin: 12px auto;
-  line-height: 1.8;
-}
-
-.experience-card {
-  max-width: 900px;
+.wrap {
+  width: 92%;
+  max-width: var(--max);
   margin: auto;
-  padding: 35px;
-  background: linear-gradient(145deg, #14233b, #0d182c);
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  border-radius: 20px;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
 }
 
-.experience-top {
+section {
+  padding: 75px 0;
+  scroll-margin-top: 80px;
+}
+
+.eyebrow {
+  color: var(--cyan);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-head {
+  margin-bottom: 30px;
+}
+
+.section-head h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.3;
+  margin: 10px 0;
+}
+
+.section-head h2 span {
+  color: var(--cyan);
+}
+
+.section-head p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.panel,
+.card {
+  background: linear-gradient(145deg, var(--panel2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+/* NAVIGATION */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7,19,33,.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+nav {
+  min-height: 72px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 850;
+  color: var(--cyan);
+  letter-spacing: 1px;
+}
+
+.brand span {
+  color: white;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navlinks a {
+  color: var(--muted);
+  font-size: 13px;
+  transition: .2s;
+}
+
+.navlinks a:hover {
+  color: var(--cyan);
+}
+
+.menu {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid var(--line);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* HOME */
+
+.hero {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  align-items: center;
+  gap: 45px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 62px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: var(--cyan);
+}
+
+.role {
+  font-size: clamp(17px, 2.5vw, 23px);
+  color: #d1e3f7;
+  margin-bottom: 17px;
+}
+
+.lead {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 27px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-.company-icon {
-  width: 65px;
-  height: 65px;
-  display: flex;
+.btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0077ff, #00c8ff);
-  border-radius: 16px;
-  color: white;
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.experience-info {
-  flex: 1;
-}
-
-.experience-info h3 {
-  color: #fff;
-  font-size: 23px;
-  margin: 0 0 6px;
-}
-
-.experience-info h4 {
-  color: #00c8ff;
-  margin: 0 0 6px;
-  font-size: 16px;
-}
-
-.experience-info span {
-  color: #9fb2ca;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: linear-gradient(120deg, #3188e8, #2368bd);
+  border: 1px solid transparent;
   font-size: 13px;
+  font-weight: 750;
+  transition: .25s;
+  cursor: pointer;
 }
 
-.experience-status {
-  color: #00e0a4;
-  border: 1px solid rgba(0, 224, 164, 0.4);
-  background: rgba(0, 224, 164, 0.08);
-  padding: 8px 14px;
-  border-radius: 20px;
+.btn.secondary {
+  background: transparent;
+  border-color: #4c9ce9;
+  color: #b9ddff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(38,147,255,.18);
+}
+
+/* PROFILE PHOTO */
+
+.portrait-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  border: 2px solid var(--cyan);
+  padding: 8px;
+  background: linear-gradient(145deg, #1a456c, #0d2035);
+  box-shadow: 0 20px 70px rgba(0,0,0,.4);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  background: #102238;
+}
+
+.photo-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/* ABOUT */
+
+.about p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.stat {
+  padding: 17px;
+  border: 1px solid var(--line);
+  background: rgba(5,17,31,.45);
+  border-radius: 11px;
+}
+
+.stat strong {
+  display: block;
+  color: var(--cyan);
+  font-size: 25px;
+}
+
+.stat span {
+  color: var(--muted);
   font-size: 12px;
 }
 
-.experience-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.12);
-  margin: 30px 0;
+/* SKILLS */
+
+.skill-group {
+  margin-bottom: 24px;
 }
 
-.exp-subtitle {
-  color: #00c8ff;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  margin: 28px 0 15px;
+.skill-group h3 {
+  font-size: 17px;
+  color: #d9edff;
+  margin-bottom: 13px;
 }
 
-.exp-description {
-  color: #c2d0e2;
-  line-height: 1.9;
-  font-size: 14px;
-}
-
-.exp-responsibilities {
-  display: grid;
-  gap: 15px;
-}
-
-.exp-point {
-  display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  padding: 14px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.035);
-  transition: 0.3s;
-}
-
-.exp-point:hover {
-  background: rgba(0, 200, 255, 0.08);
-  transform: translateX(4px);
-}
-
-.exp-point span {
-  color: #00c8ff;
-  font-weight: 800;
-  font-size: 14px;
-}
-
-.exp-point p {
-  color: #c2d0e2;
-  font-size: 14px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.experience-tags {
+.chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.experience-tags span {
-  padding: 9px 14px;
-  border: 1px solid rgba(0, 200, 255, 0.25);
-  border-radius: 20px;
-  background: rgba(0, 200, 255, 0.07);
-  color: #c7eaff;
-  font-size: 12px;
-}
-
-@media(max-width:600px) {
-  .experience-section {
-    padding: 65px 15px;
-  }
-
-  .experience-card {
-    padding: 22px 17px;
-  }
-
-  .experience-top {
-    gap: 13px;
-  }
-
-  .experience-info h3 {
-    font-size: 19px;
-  }
-
-  .experience-status {
-    margin-top: 5px;
-  }
-
-  .exp-point {
-    padding: 12px 9px;
-  }
-}
-  
-/* PREMIUM PROFESSIONAL FOOTER */
-
-.main-footer {
-  background: linear-gradient(
-    135deg,
-    #080f20,
-    #101d35,
-    #080f20
-  );
-  border-top: 1px solid rgba(0, 200, 255, 0.25);
-  padding: 55px 20px 25px;
-  margin-top: 60px;
-}
-
-.footer-container {
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
-}
-
-.footer-brand h2 {
-  font-size: 25px;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.footer-brand h2 span {
-  color: #00c8ff;
-}
-
-.footer-brand p {
-  color: #aabbd1;
-  line-height: 1.8;
-  font-size: 14px;
-  max-width: 650px;
-  margin: auto;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 22px;
-  margin: 30px 0;
-}
-
-.footer-links a,
-.footer-social a {
-  color: #c5d5e8;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #00c8ff;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin: 25px 0;
-}
-
-.footer-social a {
-  border: 1px solid rgba(0, 200, 255, 0.4);
-  padding: 10px 20px;
-  border-radius: 25px;
-}
-
-.footer-social a:hover {
-  background: rgba(0, 200, 255, 0.12);
-  border-color: #00c8ff;
-  transform: translateY(-3px);
-}
-
-.footer-line {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.12);
-  margin: 30px 0 20px;
-}
-
-.footer-bottom {
-  color: #899bb3;
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-.back-to-top {
-  display: inline-block;
-  margin-top: 20px;
-  color: #00c8ff;
-  text-decoration: none;
-  font-size: 13px;
-  transition: 0.3s;
-}
-
-.back-to-top:hover {
-  transform: translateY(-3px);
-}
-
-/* MOBILE RESPONSIVENESS */
-
-@media (max-width: 600px) {
-  .main-footer {
-    padding: 40px 15px 20px;
-  }
-
-  .footer-brand h2 {
-    font-size: 21px;
-  }
-
-  .footer-links {
-    gap: 15px;
-  }
-
-  .footer-social {
-    gap: 12px;
-  }
-
-  .footer-bottom {
-    font-size: 11px;
-  }
-  }
-
-  
-/* REAL-TIME NOC PROJECTS */
-
-.noc-projects {
-  padding: 85px 0;
-  background: #080f20;
-}
-
-.noc-heading {
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-.noc-label {
-  color: #00c8ff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.noc-heading p {
-  color: #aabbd1;
-  max-width: 650px;
-  margin: 15px auto;
-  line-height: 1.8;
-}
-
-.noc-heading .section-title span {
-  color: #00c8ff;
-}
-
-.noc-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.noc-card {
-  position: relative;
-  padding: 28px;
-  background: linear-gradient(145deg, #14233b, #0d182c);
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  border-radius: 18px;
-  transition: 0.3s ease;
-  overflow: hidden;
-}
-
-.noc-card:hover {
-  transform: translateY(-7px);
-  border-color: #00c8ff;
-  box-shadow: 0 15px 35px rgba(0, 200, 255, 0.1);
-}
-
-.noc-number {
-  position: absolute;
-  right: 22px;
-  top: 18px;
-  color: rgba(0, 200, 255, 0.25);
-  font-size: 35px;
-  font-weight: 800;
-}
-
-.noc-icon {
-  font-size: 32px;
-  margin-bottom: 18px;
-}
-
-.noc-category {
-  color: #00c8ff;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
-.noc-card h3 {
-  color: #fff;
-  font-size: 21px;
-  margin: 12px 0;
-}
-
-.noc-card > p {
-  color: #aebed2;
-  font-size: 13px;
-  line-height: 1.8;
-  min-height: 70px;
-}
-
-.noc-details {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.noc-details h4 {
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.noc-details ul {
-  padding-left: 19px;
-  margin: 0;
-}
-
-.noc-details li {
-  color: #b8c8dc;
-  font-size: 12px;
-  line-height: 1.9;
-  margin-bottom: 5px;
-}
-
-.noc-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 22px;
-}
-
-.noc-tools span {
-  color: #bfeaff;
-  background: rgba(0, 200, 255, 0.08);
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  border-radius: 20px;
-  padding: 7px 11px;
-  font-size: 11px;
-}
-
-@media(max-width: 700px) {
-  .noc-projects {
-    padding: 65px 15px;
-  }
-
-  .noc-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .noc-card {
-    padding: 23px 19px;
-  }
-
-  .noc-card > p {
-    min-height: auto;
-  }
-}
-
-  
-/* SERVER & APPLICATION OPERATIONS */
-
-.server-operations {
-  padding: 85px 0;
-  background: linear-gradient(180deg, #0b1428, #080f20);
-}
-
-.server-heading {
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-.server-label {
-  color: #00c8ff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-}
-
-.server-heading p {
-  color: #aabbd1;
-  max-width: 680px;
-  margin: 15px auto;
-  line-height: 1.8;
-}
-
-.server-heading .section-title span {
-  color: #00c8ff;
-}
-
-.server-grid {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.server-card {
-  background: linear-gradient(145deg, #14233b, #0d182c);
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  border-radius: 18px;
-  padding: 28px;
-  transition: 0.3s ease;
-}
-
-.server-card:hover {
-  transform: translateY(-6px);
-  border-color: #00c8ff;
-  box-shadow: 0 15px 35px rgba(0, 200, 255, 0.1);
-}
-
-.server-icon {
-  font-size: 34px;
-  margin-bottom: 18px;
-}
-
-.server-category {
-  color: #00c8ff;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
-.server-card h3 {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 12px 0;
-}
-
-.server-card > p {
-  color: #aebed2;
-  font-size: 13px;
-  line-height: 1.8;
-  min-height: 90px;
-}
-
-.server-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.12);
-  margin: 22px 0;
-}
-
-.server-card h4 {
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.server-card ul {
-  padding-left: 19px;
-  margin-bottom: 22px;
-}
-
-.server-card li {
-  color: #b8c8dc;
-  font-size: 13px;
-  line-height: 1.9;
-  margin-bottom: 6px;
-}
-
-.server-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.server-tags span {
-  color: #bfeaff;
-  background: rgba(0, 200, 255, 0.08);
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  border-radius: 20px;
-  padding: 7px 11px;
-  font-size: 11px;
-}
-
-@media(max-width: 700px) {
-  .server-operations {
-    padding: 65px 15px;
-  }
-
-  .server-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .server-card {
-    padding: 23px 19px;
-  }
-
-  .server-card > p {
-    min-height: auto;
-  }
-}
-
-/* PROFESSIONAL OPERATIONS SECTION */
-.operations-section {
-  padding: 80px 0;
-}
-
-.operations-heading {
-  text-align: center;
-  max-width: 750px;
-  margin: 0 auto 38px;
-}
-
-.operations-heading p {
-  color: #aabbd0;
-  line-height: 1.7;
-  margin-top: 12px;
-}
-
-.operations-list {
-  max-width: 1000px;
-  margin: auto;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.operation-item {
-  display: grid;
-  grid-template-columns: 55px 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 23px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-  transition: 0.3s ease;
-}
-
-.operation-item:hover {
-  background: rgba(0,200,255,0.06);
-  border-bottom-color: #00c8ff;
-  transform: translateX(5px);
-}
-
-.operation-number {
-  color: #00c8ff;
-  font-size: 19px;
-  font-weight: 800;
-}
-
-.operation-item h3 {
-  color: #ffffff;
-  font-size: 17px;
-  margin: 0 0 7px;
-}
-
-.operation-item p {
-  color: #aabbd0;
-  font-size: 13px;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.operation-tag {
-  color: #00c8ff;
-  border: 1px solid rgba(0,200,255,0.3);
-  padding: 6px 10px;
-  border-radius: 20px;
-  font-size: 10px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-@media (max-width: 650px) {
-  .operation-item {
-    grid-template-columns: 35px 1fr;
-    gap: 12px;
-    padding: 19px 8px;
-  }
-
-  .operation-tag {
-    grid-column: 2;
-    justify-self: start;
-  }
-
-  .operation-item h3 {
-    font-size: 15px;
-  }
-  }
-  
-  
-</style>
-  
-</head>
-  
-<body>
-
-<style>
-/* ===== PORTFOLIO BODY STYLES ===== */
-
-.portfolio-body {
-  width: 100%;
-  overflow: hidden;
-}
-
-.portfolio-body * {
-  box-sizing: border-box;
-}
-
-.portfolio-body .container {
-  width: 90%;
-  max-width: 1120px;
-  margin: auto;
-}
-
-.portfolio-body section {
-  padding: 75px 0;
-  scroll-margin-top: 85px;
-}
-
-.portfolio-body .section-title {
-  font-size: 30px;
-  text-align: center;
-  margin: 0 0 12px;
-}
-
-.portfolio-body .section-subtitle {
-  text-align: center;
-  font-size: 14px;
-  opacity: .7;
-  margin-bottom: 38px;
-  line-height: 1.7;
-}
-
-.portfolio-body .accent {
-  color: #2693ff;
-}
-
-.portfolio-body .card {
-  background: var(--card, #111827);
-  border: 1px solid rgba(128,128,128,.22);
-  border-radius: 13px;
-  padding: 25px;
-}
-
-.portfolio-body p,
-.portfolio-body li {
-  line-height: 1.8;
-}
-
-/* NAVIGATION */
-
-.portfolio-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--bg, #0b1120);
-  border-bottom: 1px solid rgba(128,128,128,.2);
-}
-
-.portfolio-nav .nav-container {
-  max-width: 1120px;
-  width: 90%;
-  margin: auto;
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.portfolio-nav .logo {
-  font-size: 20px;
-  font-weight: 800;
-  text-decoration: none;
-  color: inherit;
-}
-
-.portfolio-nav .logo span {
-  color: #2693ff;
-}
-
-.portfolio-nav .nav-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 21px;
-}
-
-.portfolio-nav .nav-links a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
-  transition: .2s;
-}
-
-.portfolio-nav .nav-links a:hover {
-  color: #2693ff;
-}
-
-/* HOME */
-
-.hero-section {
-  min-height: 530px;
-  display: flex;
-  align-items: center;
-  background:
-    radial-gradient(circle at 85% 30%,
-    rgba(38,147,255,.12), transparent 35%);
-}
-
-.hero-content {
-  max-width: 850px;
-  padding: 70px 0;
-}
-
-.hero-content .welcome {
-  color: #2693ff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.hero-content h1 {
-  font-size: clamp(34px, 6vw, 55px);
-  line-height: 1.2;
-  margin: 18px 0;
-}
-
-.hero-content h1 span {
-  color: #2693ff;
-}
-
-.hero-content h2 {
-  font-size: clamp(18px, 3vw, 23px);
-  font-weight: 500;
-  margin-bottom: 17px;
-}
-
-.hero-content p {
-  max-width: 700px;
-  font-size: 15px;
-  opacity: .8;
-  margin-bottom: 27px;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-}
-
-.hero-btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px 22px;
+.chip {
+  padding: 7px 13px;
   border-radius: 7px;
-  font-size: 14px;
-  font-weight: 600;
-  border: 1px solid #2693ff;
-  color: inherit;
-  transition: .2s;
-}
-
-.hero-btn.primary {
-  background: #2693ff;
-  color: white;
-}
-
-.hero-btn:hover {
-  transform: translateY(-3px);
-}
-
-/* ABOUT */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.about-grid p {
-  font-size: 15px;
-  opacity: .85;
-  margin-bottom: 13px;
-}
-
-.about-highlights {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 15px;
-  margin-top: 22px;
-}
-
-.highlight-card {
-  padding: 18px;
-  border: 1px solid rgba(128,128,128,.22);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.highlight-card h3 {
-  font-size: 23px;
-  color: #2693ff;
-  margin: 0 0 5px;
-}
-
-.highlight-card p {
-  font-size: 12px;
-  margin: 0;
-}
-
-/* SKILLS */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 17px;
-}
-
-.skill-card h3 {
-  font-size: 17px;
-  margin: 0 0 14px;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-}
-
-.skill-tags span {
-  padding: 7px 11px;
-  border-radius: 6px;
-  border: 1px solid rgba(128,128,128,.25);
-  font-size: 12px;
+  background: #102b47;
+  border: 1px solid #285078;
+  color: #d9eaff;
+  font-size: 13px;
 }
 
 /* EXPERIENCE */
 
-.experience-company {
+.company-card {
   padding: 25px;
-  border-radius: 12px;
-  border: 1px solid rgba(128,128,128,.22);
-  border-left: 4px solid #2693ff;
-  margin-bottom: 23px;
-  background: var(--card, #111827);
+  background: linear-gradient(145deg, var(--panel2), var(--panel));
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 13px;
+  margin-bottom: 22px;
 }
 
-.experience-company h3 {
-  font-size: 22px;
-  margin: 0 0 9px;
+.company-card h3 {
+  font-size: 23px;
+  margin-bottom: 5px;
 }
 
-.experience-company p {
+.company-card p {
+  color: #d1e3f7;
   font-size: 14px;
-  font-weight: 600;
-  margin: 0 0 8px;
+  font-weight: 650;
 }
 
-.experience-company span {
+.company-card .meta {
+  color: var(--muted);
   font-size: 13px;
-  opacity: .7;
+  margin-top: 8px;
 }
 
-.operations-list {
+.experience-grid {
   display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 17px;
 }
 
-.operation-card {
-  padding: 22px;
-  border: 1px solid rgba(128,128,128,.22);
-  border-radius: 12px;
-  background: var(--card, #111827);
+.experience-card {
+  background: linear-gradient(145deg, var(--panel2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 23px;
   transition: .25s;
 }
 
-.operation-card:hover {
+.experience-card:hover {
   transform: translateY(-4px);
-  border-color: #2693ff;
+  border-color: var(--blue);
 }
 
-.operation-card h3 {
-  font-size: 16px;
-  margin: 0 0 13px;
+.experience-card h3 {
+  font-size: 17px;
+  color: #d9edff;
+  margin-bottom: 13px;
 }
 
-.operation-card ul {
+.experience-card ul {
   padding-left: 19px;
-  margin: 0;
+  color: var(--muted);
 }
 
-.operation-card li {
+.experience-card li {
   font-size: 13px;
+  line-height: 1.8;
   margin-bottom: 8px;
 }
 
 /* EDUCATION */
 
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 17px;
+}
+
 .education-card h3 {
-  font-size: 18px;
-  margin: 0 0 9px;
+  font-size: 17px;
+  margin-bottom: 12px;
 }
 
 .education-card p {
+  color: var(--muted);
   font-size: 14px;
-  margin: 5px 0;
-  opacity: .8;
+  margin: 6px 0;
 }
 
-/* CERTIFICATIONS */
+/* RESUME */
 
-.learning-card h3 {
-  font-size: 17px;
-  margin: 0 0 10px;
+.resume-panel {
+  text-align: center;
+  padding: 35px 25px;
+  background: linear-gradient(135deg, #12385b, #102238);
+  border: 1px solid var(--line);
+  border-radius: 15px;
 }
 
-.learning-card p {
+.resume-panel h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.resume-panel p {
+  color: var(--muted);
   font-size: 14px;
-  margin: 0;
+  margin-bottom: 22px;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 /* CONTACT */
 
-.contact-content {
+.contact {
   text-align: center;
-  max-width: 700px;
-  margin: auto;
+  padding: 40px 25px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #12385b, #102238);
+  border: 1px solid var(--line);
 }
 
-.contact-content p {
-  font-size: 15px;
-  opacity: .8;
-  margin-bottom: 25px;
+.contact h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  margin: 10px 0;
 }
 
-.contact-actions {
+.contact h2 span {
+  color: var(--cyan);
+}
+
+.contact p {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 12px auto 23px;
+  font-size: 14px;
+}
+
+.contact-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 12px;
 }
 
 /* FOOTER */
 
-.main-footer {
-  padding: 45px 0 20px;
-  border-top: 1px solid rgba(128,128,128,.22);
-  background: var(--card, #111827);
+footer {
+  border-top: 1px solid var(--line);
+  padding: 35px 0 20px;
+  background: rgba(5,15,27,.6);
 }
 
 .footer-container {
-  max-width: 1120px;
-  width: 90%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
-.footer-brand h2 {
-  font-size: 23px;
-  margin: 0 0 10px;
+.footer-brand h3 {
+  font-size: 21px;
+  margin-bottom: 7px;
 }
 
-.footer-brand h2 span {
-  color: #2693ff;
+.footer-brand h3 span {
+  color: var(--cyan);
 }
 
 .footer-brand p {
-  font-size: 13px;
-  opacity: .75;
-  max-width: 430px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 17px;
 }
 
 .footer-links a {
-  font-size: 13px;
-  text-decoration: none;
-  color: inherit;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .footer-links a:hover {
-  color: #2693ff;
+  color: var(--cyan);
 }
 
 .footer-bottom {
-  max-width: 1120px;
-  width: 90%;
-  margin: 30px auto 0;
+  border-top: 1px solid var(--line);
+  margin-top: 25px;
   padding-top: 18px;
-  border-top: 1px solid rgba(128,128,128,.2);
   text-align: center;
-}
-
-.footer-bottom p {
+  color: var(--muted);
   font-size: 12px;
-  opacity: .65;
 }
 
-/* MOBILE RESPONSIVENESS */
+/* MOBILE */
 
-@media(max-width:750px) {
-  .portfolio-nav .nav-container {
-    padding: 14px 0;
+@media(max-width:760px) {
+
+  .menu {
+    display: block;
+  }
+
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #0c1d30;
+    padding: 20px 5%;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid var(--line);
   }
 
-  .portfolio-nav .nav-links {
-    justify-content: center;
-    gap: 14px;
+  .navlinks.open {
+    display: flex;
   }
 
-  .portfolio-nav .nav-links a {
-    font-size: 12px;
-  }
-
-  .skills-grid,
-  .operations-list {
+  .hero {
     grid-template-columns: 1fr;
-  }
-
-  .about-highlights {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-section {
-    min-height: auto;
+    text-align: center;
+    padding-top: 45px;
+    gap: 28px;
   }
 
   .hero-content {
-    padding: 65px 0;
+    order: 2;
   }
 
-  .portfolio-body section {
+  .hero-photo {
+    order: 1;
+  }
+
+  .hero .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .portrait {
+    width: 210px;
+    height: 210px;
+  }
+
+  .experience-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  section {
     padding: 55px 0;
-  }
-
-  .portfolio-body .section-title {
-    font-size: 26px;
   }
 
   .footer-container {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company-card {
+    padding: 20px;
+  }
+}
+
+@media(prefers-reduced-motion:no-preference) {
+  .card,
+  .experience-card {
+    transition: .2s ease;
   }
 }
 </style>
+</head>
 
-<div class="portfolio-body">
+<body>
 
 <!-- ===== NAVIGATION ===== -->
 
-<nav class="portfolio-nav">
-  <div class="nav-container">
+<header>
+  <div class="wrap">
+    <nav>
 
-    <a href="#home" class="logo">
-      KKR<span>.</span>
-    </a>
+      <a class="brand" href="#home">VK<span>.</span></a>
 
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Learning</a>
-      <a href="#contact">Contact</a>
-    </div>
+      <button class="menu" id="menu"
+        aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
 
-  </div>
-</nav>
-
-
-<!-- ===== HOME ===== -->
-
-<header class="hero-section" id="home">
-  <div class="container">
-
-    <div class="hero-content">
-
-      <div class="welcome">
-        NETWORK & IT INFRASTRUCTURE PROFESSIONAL
+      <div class="navlinks" id="navlinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <h1>
-        Hi, I'm <span>Vamsidharreddy Kakarla</span>
-      </h1>
-
-      <h2>
-        NOC Engineer | Network Operations |
-        IT Infrastructure Support
-      </h2>
-
-      <p>
-        Experienced IT Operations professional with hands-on
-        experience in network monitoring, infrastructure support,
-        incident management, server operations and production
-        environment monitoring at Tata Consultancy Services.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#experience" class="hero-btn primary">
-          Explore My Experience
-        </a>
-
-        <a href="#contact" class="hero-btn">
-          Contact Me
-        </a>
-
-        <a
-          href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-btn">
-          LinkedIn Profile
-        </a>
-
-      </div>
-
-    </div>
-
+    </nav>
   </div>
 </header>
 
 
-<!-- ===== ABOUT / PROFESSIONAL SUMMARY ===== -->
+<main>
+
+<!-- ===== HOME ===== -->
+
+<section class="wrap hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      IT OPERATIONS • NETWORK MONITORING • PRODUCTION SUPPORT
+    </div>
+
+    <h1>
+      Vamsidharreddy <span>Kakarla</span>
+    </h1>
+
+    <div class="role">
+      NOC Engineer | Network Operations | IT Infrastructure
+    </div>
+
+    <p class="lead">
+      IT Operations professional with 4+ years of experience
+      in Network Operations Center and Distributed Production
+      Support at Tata Consultancy Services. Experienced in
+      enterprise monitoring, incident coordination, network
+      operations and infrastructure support.
+    </p>
+
+    <div class="actions">
+
+      <a class="btn" href="#experience">
+        Explore My Experience
+      </a>
+
+      <a class="btn secondary" href="#contact">
+        Contact Me
+      </a>
+
+      <a class="btn secondary"
+        href="Vamsidhar_Kakarla_Resume.pdf.pdf"
+        target="_blank">
+        View Resume
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-photo">
+
+    <div class="portrait-wrap">
+      <div class="portrait">
+
+        <img
+          src="profile.jpg"
+          alt="Vamsidharreddy Kakarla"
+          onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
+
+        <div id="photoFallback"
+          style="display:none;width:100%;height:100%;place-items:center;font-size:65px;color:#5ce1e6;font-weight:800;">
+          VK
+        </div>
+
+      </div>
+    </div>
+
+    <div class="photo-note">
+      Network & IT Infrastructure Professional
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== PROFESSIONAL SUMMARY ===== -->
 
 <section id="about">
 
-  <div class="container">
+  <div class="wrap">
 
-    <h2 class="section-title">About <span class="accent">Me</span></h2>
+    <div class="section-head">
 
-    <p class="section-subtitle">
-      Professional Summary
-    </p>
+      <div class="eyebrow">ABOUT ME</div>
 
-    <div class="about-grid">
+      <h2>
+        Professional <span>Summary</span>
+      </h2>
 
-      <div class="card">
+    </div>
 
-        <p>
-          I am an IT Operations and NOC Engineer with 4+ years
-          of experience at Tata Consultancy Services, working
-          in Distributed Production Support.
-        </p>
+    <div class="panel about">
 
-        <p>
-          My experience includes monitoring network devices,
-          Windows, Linux and Unix servers, application availability
-          and enterprise infrastructure using monitoring and
-          observability platforms.
-        </p>
+      <p>
+        I am an IT Operations and NOC Engineer with 4+ years
+        of experience at Tata Consultancy Services, working
+        in Distributed Production Support.
+      </p>
 
-        <p>
-          I work on infrastructure alerts, P1/P2 incident
-          coordination, network connectivity troubleshooting,
-          DNS and DHCP requests, server operational activities,
-          vendor escalations and production support.
-        </p>
+      <p>
+        My experience includes monitoring enterprise network
+        devices, Windows, Linux and Unix servers, application
+        availability and infrastructure health through
+        monitoring and observability platforms.
+      </p>
 
-        <p>
-          I have hands-on exposure to ServiceNow ITOM,
-          Dynatrace, Cisco SD-WAN vManage, ScienceLogic,
-          Moogsoft, ELK and VMware.
-        </p>
+      <p>
+        I handle infrastructure alerts, P1/P2 incident
+        coordination, network connectivity troubleshooting,
+        DNS and DHCP operational requests, server support
+        activities and vendor escalations.
+      </p>
 
-        <p>
-          I am continuously improving my networking knowledge,
-          including TCP/IP, VLAN, routing fundamentals,
-          OSPF and BGP, with the goal of growing into
-          Network Engineering and IT Infrastructure roles.
-        </p>
+      <p>
+        I have hands-on exposure to ServiceNow ITOM,
+        Dynatrace, Cisco SD-WAN vManage, ScienceLogic,
+        Moogsoft, ELK, VMware and other enterprise tools.
+      </p>
 
-      </div>
+      <p>
+        I am continuously developing my networking knowledge,
+        including TCP/IP, VLAN, routing fundamentals,
+        OSPF and BGP, through ongoing CCNA learning.
+      </p>
 
-      <div class="about-highlights">
+      <div class="stats">
 
-        <div class="highlight-card">
-          <h3>4+</h3>
-          <p>Years of Experience</p>
+        <div class="stat">
+          <strong>4+</strong>
+          <span>Years of Experience</span>
         </div>
 
-        <div class="highlight-card">
-          <h3>NOC</h3>
-          <p>Production Operations</p>
+        <div class="stat">
+          <strong>1000+</strong>
+          <span>Network Devices Monitored</span>
         </div>
 
-        <div class="highlight-card">
-          <h3>IT</h3>
-          <p>Infrastructure Support</p>
+        <div class="stat">
+          <strong>TCS</strong>
+          <span>Current Organization</span>
         </div>
 
       </div>
@@ -1438,82 +783,90 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 
 <section id="skills">
 
-  <div class="container">
+  <div class="wrap">
 
-    <h2 class="section-title">
-      Technical <span class="accent">Skills</span>
-    </h2>
+    <div class="section-head">
 
-    <p class="section-subtitle">
-      Technologies, tools and operational capabilities
-    </p>
+      <div class="eyebrow">TECHNICAL TOOLKIT</div>
 
-    <div class="skills-grid">
+      <h2>
+        Skills & <span>Technologies</span>
+      </h2>
 
-      <div class="card skill-card">
-        <h3>Networking</h3>
-        <div class="skill-tags">
-          <span>TCP/IP</span>
-          <span>LAN / WAN</span>
-          <span>VLAN</span>
-          <span>DNS</span>
-          <span>DHCP</span>
-          <span>NSLookup</span>
-          <span>OSI Model</span>
-          <span>OSPF - Basic</span>
-          <span>BGP - Basic</span>
-          <span>Cisco SD-WAN</span>
-        </div>
+      <p>
+        Technical knowledge and tools used in enterprise
+        network and infrastructure operations.
+      </p>
+
+    </div>
+
+    <div class="skill-group">
+
+      <h3>Network Operations</h3>
+
+      <div class="chips">
+        <span class="chip">TCP/IP</span>
+        <span class="chip">LAN / WAN</span>
+        <span class="chip">VLAN</span>
+        <span class="chip">DNS</span>
+        <span class="chip">DHCP</span>
+        <span class="chip">IPv4</span>
+        <span class="chip">NSLookup</span>
+        <span class="chip">Cisco SD-WAN</span>
+        <span class="chip">Cisco vManage</span>
+        <span class="chip">OSPF - Basic</span>
+        <span class="chip">BGP - Basic</span>
+        <span class="chip">SNMP - Basic</span>
       </div>
 
-      <div class="card skill-card">
-        <h3>Monitoring & Observability</h3>
-        <div class="skill-tags">
-          <span>ServiceNow ITOM</span>
-          <span>Dynatrace</span>
-          <span>ScienceLogic</span>
-          <span>Moogsoft</span>
-          <span>ELK</span>
-          <span>Vynamic View</span>
-        </div>
+    </div>
+
+    <div class="skill-group">
+
+      <h3>Monitoring & Observability Tools</h3>
+
+      <div class="chips">
+        <span class="chip">ServiceNow ITOM</span>
+        <span class="chip">Dynatrace</span>
+        <span class="chip">Moogsoft</span>
+        <span class="chip">ScienceLogic</span>
+        <span class="chip">ELK / Kibana</span>
+        <span class="chip">Vynamic View</span>
+        <span class="chip">VMware</span>
+        <span class="chip">Jenkins</span>
       </div>
 
-      <div class="card skill-card">
-        <h3>Operating Systems & Infrastructure</h3>
-        <div class="skill-tags">
-          <span>Windows Server</span>
-          <span>Linux</span>
-          <span>Unix</span>
-          <span>VMware</span>
-          <span>Active Directory</span>
-          <span>SSH</span>
-          <span>Server Monitoring</span>
-        </div>
+    </div>
+
+    <div class="skill-group">
+
+      <h3>Operating Systems & Infrastructure</h3>
+
+      <div class="chips">
+        <span class="chip">Windows Server</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Unix</span>
+        <span class="chip">Active Directory</span>
+        <span class="chip">SSH</span>
+        <span class="chip">Server Monitoring</span>
+        <span class="chip">Filesystem Checks</span>
       </div>
 
-      <div class="card skill-card">
-        <h3>IT Operations & Support</h3>
-        <div class="skill-tags">
-          <span>NOC Operations</span>
-          <span>Incident Management</span>
-          <span>P1 / P2 Support</span>
-          <span>Change Management</span>
-          <span>Vendor Coordination</span>
-          <span>Production Support</span>
-          <span>IT Infrastructure</span>
-        </div>
-      </div>
+    </div>
 
-      <div class="card skill-card">
-        <h3>Tools & Technologies</h3>
-        <div class="skill-tags">
-          <span>Cisco vManage</span>
-          <span>Jenkins</span>
-          <span>SQL</span>
-          <span>Oracle</span>
-          <span>ITOM</span>
-          <span>Monitoring Dashboards</span>
-        </div>
+    <div class="skill-group">
+
+      <h3>IT Operations & Service Management</h3>
+
+      <div class="chips">
+        <span class="chip">NOC Operations</span>
+        <span class="chip">Incident Management</span>
+        <span class="chip">P1 / P2 Coordination</span>
+        <span class="chip">Change Management</span>
+        <span class="chip">Production Support</span>
+        <span class="chip">Vendor Coordination</span>
+        <span class="chip">SLA Monitoring</span>
+        <span class="chip">Troubleshooting</span>
       </div>
 
     </div>
@@ -1523,21 +876,27 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 </section>
 
 
-<!-- ===== CAREER JOURNEY / EXPERIENCE ===== -->
+<!-- ===== CAREER JOURNEY ===== -->
 
 <section id="experience">
 
-  <div class="container">
+  <div class="wrap">
 
-    <h2 class="section-title">
-      Career <span class="accent">Journey</span>
-    </h2>
+    <div class="section-head">
 
-    <p class="section-subtitle">
-      Professional Experience – NOC, Network & Infrastructure Operations
-    </p>
+      <div class="eyebrow">CAREER HISTORY</div>
 
-    <div class="experience-company">
+      <h2>
+        Career <span>Journey</span>
+      </h2>
+
+      <p>
+        Professional Experience – NOC, Network & Infrastructure Operations
+      </p>
+
+    </div>
+
+    <div class="company-card">
 
       <h3>Tata Consultancy Services (TCS)</h3>
 
@@ -1546,81 +905,99 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
         Distributed Production Support
       </p>
 
-      <span>
-        Chennai, Tamil Nadu, India | February 2022 – Present
-      </span>
+      <div class="meta">
+        Chennai, Tamil Nadu, India | April 2022 – Present
+      </div>
 
     </div>
 
-    <div class="operations-list">
+    <div class="experience-grid">
 
-      <div class="operation-card">
-        <h3>Network Monitoring & Operations</h3>
+      <div class="experience-card">
+
+        <h3>01. Network Monitoring & Operations</h3>
+
         <ul>
-          <li>Monitor enterprise network devices and infrastructure availability.</li>
-          <li>Perform monitoring and initial troubleshooting across network environments.</li>
+          <li>Monitor 1,000+ network devices and enterprise infrastructure components.</li>
           <li>Monitor Cisco SD-WAN environments using vManage.</li>
-          <li>Analyze packet loss, latency, connectivity and network alerts.</li>
-          <li>Monitor LAN, WAN, MPLS and broadband connectivity.</li>
+          <li>Analyze network alerts, packet loss, latency and connectivity issues.</li>
+          <li>Perform initial troubleshooting for LAN, WAN, MPLS and broadband connectivity.</li>
+          <li>Monitor network availability and infrastructure health.</li>
         </ul>
+
       </div>
 
-      <div class="operation-card">
-        <h3>Server & Infrastructure Support</h3>
+      <div class="experience-card">
+
+        <h3>02. Server & Infrastructure Support</h3>
+
         <ul>
           <li>Monitor Windows, Linux and Unix servers and application availability.</li>
           <li>Perform server reboot and restart activities as per approved procedures.</li>
-          <li>Perform basic filesystem checks, disk-space cleanup and troubleshooting.</li>
+          <li>Perform basic filesystem checks and disk-space cleanup.</li>
           <li>Support SSH key updates and Windows account lock/unlock activities.</li>
           <li>Coordinate monthly Windows and SQL patching activities.</li>
-          <li>Support VMware infrastructure monitoring activities.</li>
+          <li>Support VMware infrastructure monitoring.</li>
         </ul>
+
       </div>
 
-      <div class="operation-card">
-        <h3>Incident & Production Management</h3>
+      <div class="experience-card">
+
+        <h3>03. Incident & Production Management</h3>
+
         <ul>
-          <li>Monitor and manage infrastructure alerts through ServiceNow ITOM.</li>
-          <li>Handle P1/P2 incidents and participate in incident bridge calls.</li>
+          <li>Monitor infrastructure alerts through ServiceNow ITOM.</li>
+          <li>Handle P1/P2 incidents and participate in bridge calls.</li>
           <li>Perform initial impact assessment and coordinate with incident managers.</li>
-          <li>Engage respective support teams for incident investigation and resolution.</li>
-          <li>Maintain incident work notes and provide regular status updates.</li>
-          <li>Perform alert validation, escalation and follow-up until resolution.</li>
+          <li>Engage support teams for incident investigation and resolution.</li>
+          <li>Maintain incident work notes and status communications.</li>
+          <li>Perform alert validation, escalation and follow-up.</li>
         </ul>
+
       </div>
 
-      <div class="operation-card">
-        <h3>DNS, DHCP & Network Troubleshooting</h3>
+      <div class="experience-card">
+
+        <h3>04. DNS, DHCP & Network Troubleshooting</h3>
+
         <ul>
-          <li>Handle DNS and DHCP operational requests and troubleshooting.</li>
+          <li>Handle DNS and DHCP operational requests.</li>
           <li>Perform hostname and IP verification using NSLookup.</li>
           <li>Support DNS record updates and related change activities.</li>
           <li>Perform basic network connectivity checks.</li>
-          <li>Coordinate with network and application teams for resolution.</li>
+          <li>Coordinate with network and application teams.</li>
         </ul>
+
       </div>
 
-      <div class="operation-card">
-        <h3>Monitoring Tools & Technologies</h3>
+      <div class="experience-card">
+
+        <h3>05. Monitoring Tools & Technologies</h3>
+
         <ul>
           <li>Work with ServiceNow ITOM for infrastructure alert monitoring.</li>
           <li>Use Dynatrace for application and infrastructure monitoring.</li>
           <li>Work with Moogsoft and ScienceLogic for event monitoring.</li>
-          <li>Use ELK dashboards for basic log and monitoring analysis.</li>
+          <li>Use ELK dashboards for basic log analysis.</li>
           <li>Work with Cisco SD-WAN vManage and Vynamic View.</li>
           <li>Exposure to VMware, Jenkins and Active Directory tools.</li>
         </ul>
+
       </div>
 
-      <div class="operation-card">
-        <h3>Vendor Coordination & Escalation</h3>
+      <div class="experience-card">
+
+        <h3>06. Vendor Coordination & Escalation</h3>
+
         <ul>
           <li>Coordinate with ISP and third-party vendors for connectivity issues.</li>
           <li>Raise and track vendor tickets for network outages and circuit issues.</li>
-          <li>Follow up with AT&T, GTT, Lumen and Comcast service providers.</li>
+          <li>Follow up with AT&T, GTT, Lumen, Comcast and other providers.</li>
           <li>Coordinate troubleshooting, dispatch requests and restoration updates.</li>
           <li>Communicate incident updates with relevant stakeholders.</li>
         </ul>
+
       </div>
 
     </div>
@@ -1634,177 +1011,11 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 
 <section id="education">
 
-  <div class="container">
+  <div class="wrap">
 
-    <h2 class="section-title">
-      <span class="accent">Education</span>
-    </h2>
+    <div class="section-head">
 
-    <p class="section-subtitle">
-      Academic Background
-    </p>
-
-    <div class="card education-card">
-
-      <h3>Bachelor of Technology – Electronics & Communication Engineering</h3>
-
-      <p>
-        JNN Institution of Engineering
-      </p>
-
-      <p>
-        Anna University | 2017 – 2021
-      </p>
-
-      <p>
-        CGPA: 7.43 / 10
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===== CERTIFICATIONS & LEARNING ===== -->
-
-<section id="certifications">
-
-  <div class="container">
-
-    <h2 class="section-title">
-      Certifications & <span class="accent">Learning</span>
-    </h2>
-
-    <p class="section-subtitle">
-      Continuous learning and technical development
-    </p>
-
-    <div class="card learning-card">
-
-      <h3>Cisco CCNA – Currently Learning</h3>
-
-      <p>
-        Building networking fundamentals and practical knowledge
-        covering network concepts, IP addressing, subnetting,
-        switching, routing, VLANs and network troubleshooting
-        through structured CCNA training.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===== CONTACT ===== -->
-
-<section id="contact">
-
-  <div class="container">
-
-    <div class="contact-content">
-
-      <h2 class="section-title">
-        Let's <span class="accent">Connect</span>
-      </h2>
-
-      <p>
-        Open to opportunities in Network Engineering,
-        NOC Operations, IT Operations and Infrastructure Support.
-        Let's connect and discuss professional opportunities.
-      </p>
-
-      <div class="contact-actions">
-
-        <a
-          href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-btn primary">
-          Connect on LinkedIn
-        </a>
-
-        <a
-          href="https://github.com/VAMSIDHARKAKARLA"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-btn">
-          GitHub Profile
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===== PROFESSIONAL FOOTER ===== -->
-
-<footer class="main-footer">
-
-  <div class="footer-container">
-
-    <div class="footer-brand">
+      <div class="eyebrow">ACADEMIC BACKGROUND</div>
 
       <h2>
-        Vamsidharreddy <span>Kakarla.</span>
-      </h2>
-
-      <p>
-        Network Operations Center Engineer |
-        Network Monitoring |
-        IT Infrastructure |
-        Incident Management
-      </p>
-
-    </div>
-
-    <div class="footer-links">
-
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-
-      <a
-        href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
-        target="_blank"
-        rel="noopener noreferrer">
-        LinkedIn
-      </a>
-
-      <a
-        href="https://github.com/VAMSIDHARKAKARLA"
-        target="_blank"
-        rel="noopener noreferrer">
-        GitHub
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-
-    <p>
-      © 2026 Vamsidharreddy Kakarla. All Rights Reserved.
-    </p>
-
-  </div>
-
-</footer>
-
-</div>
-
-</body>
-        
-  </html>
-  
+        <span>Education</span> 
