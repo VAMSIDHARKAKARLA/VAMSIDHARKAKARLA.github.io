@@ -589,6 +589,143 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     min-height: auto;
   }
 }
+
+  
+/* SERVER & APPLICATION OPERATIONS */
+
+.server-operations {
+  padding: 85px 0;
+  background: linear-gradient(180deg, #0b1428, #080f20);
+}
+
+.server-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.server-label {
+  color: #00c8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.server-heading p {
+  color: #aabbd1;
+  max-width: 680px;
+  margin: 15px auto;
+  line-height: 1.8;
+}
+
+.server-heading .section-title span {
+  color: #00c8ff;
+}
+
+.server-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.server-card {
+  background: linear-gradient(145deg, #14233b, #0d182c);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 18px;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.server-card:hover {
+  transform: translateY(-6px);
+  border-color: #00c8ff;
+  box-shadow: 0 15px 35px rgba(0, 200, 255, 0.1);
+}
+
+.server-icon {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.server-category {
+  color: #00c8ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.server-card h3 {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.server-card > p {
+  color: #aebed2;
+  font-size: 13px;
+  line-height: 1.8;
+  min-height: 90px;
+}
+
+.server-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 22px 0;
+}
+
+.server-card h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.server-card ul {
+  padding-left: 19px;
+  margin-bottom: 22px;
+}
+
+.server-card li {
+  color: #b8c8dc;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 6px;
+}
+
+.server-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.server-tags span {
+  color: #bfeaff;
+  background: rgba(0, 200, 255, 0.08);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 20px;
+  padding: 7px 11px;
+  font-size: 11px;
+}
+
+@media(max-width: 700px) {
+  .server-operations {
+    padding: 65px 15px;
+  }
+
+  .server-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .server-card {
+    padding: 23px 19px;
+  }
+
+  .server-card > p {
+    min-height: auto;
+  }
+}
   
 </style>
   
@@ -1054,6 +1191,135 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     </div>
   </div>
 </section>
+  
+<!-- SERVER & APPLICATION OPERATIONS -->
+<section class="server-operations" id="server-operations">
+
+  <div class="container">
+
+    <div class="server-heading">
+      <span class="server-label">INFRASTRUCTURE & PRODUCTION SUPPORT</span>
+      <h2 class="section-title">
+        Server & <span>Application Operations</span>
+      </h2>
+      <p>
+        Supporting enterprise server operations, routine maintenance,
+        patching activities and application incident coordination.
+      </p>
+    </div>
+
+    <div class="server-grid">
+
+      <!-- WINDOWS & LINUX SUPPORT -->
+      <div class="server-card">
+
+        <div class="server-icon">🖥️</div>
+        <span class="server-category">SERVER OPERATIONS</span>
+
+        <h3>Windows & Linux Server Support</h3>
+
+        <p>
+          Supporting day-to-day Windows and Linux server operations,
+          routine maintenance and basic troubleshooting activities
+          to maintain infrastructure availability.
+        </p>
+
+        <div class="server-divider"></div>
+
+        <h4>Key Responsibilities</h4>
+
+        <ul>
+          <li>Coordinate Windows and Linux server reboots and restarts.</li>
+          <li>Perform basic filesystem space cleanup by removing approved unnecessary files.</li>
+          <li>Support SSH key updates and related access activities.</li>
+          <li>Handle Windows account lock and unlock requests.</li>
+          <li>Monitor server availability and investigate operational alerts.</li>
+        </ul>
+
+        <div class="server-tags">
+          <span>Windows Server</span>
+          <span>Linux</span>
+          <span>SSH</span>
+          <span>Filesystem</span>
+          <span>Server Monitoring</span>
+        </div>
+
+      </div>
+
+      <!-- PATCHING SUPPORT -->
+      <div class="server-card">
+
+        <div class="server-icon">🔄</div>
+        <span class="server-category">PATCH MANAGEMENT</span>
+
+        <h3>Monthly Windows & SQL Patching</h3>
+
+        <p>
+          Supporting scheduled monthly Windows Server and SQL Server
+          patching activities in coordination with the responsible
+          infrastructure and database teams.
+        </p>
+
+        <div class="server-divider"></div>
+
+        <h4>Key Responsibilities</h4>
+
+        <ul>
+          <li>Coordinate scheduled monthly Windows and SQL patching.</li>
+          <li>Track patching activities within approved maintenance windows.</li>
+          <li>Coordinate server reboot and restart requirements.</li>
+          <li>Support post-patching availability and service checks.</li>
+          <li>Communicate issues and status updates to support teams.</li>
+        </ul>
+
+        <div class="server-tags">
+          <span>Windows Patching</span>
+          <span>SQL Server</span>
+          <span>Maintenance Window</span>
+          <span>Service Validation</span>
+        </div>
+
+      </div>
+
+      <!-- APPLICATION SUPPORT -->
+      <div class="server-card">
+
+        <div class="server-icon">⚙️</div>
+        <span class="server-category">APPLICATION SUPPORT</span>
+
+        <h3>Application Performance & Incident Coordination</h3>
+
+        <p>
+          Coordinating with application support teams to investigate
+          application-related alerts, performance degradation and
+          service-impacting issues.
+        </p>
+
+        <div class="server-divider"></div>
+
+        <h4>Key Responsibilities</h4>
+
+        <ul>
+          <li>Coordinate investigation of high application response times.</li>
+          <li>Follow up on increased application failure rates.</li>
+          <li>Track critical application and infrastructure alerts.</li>
+          <li>Engage application support teams for issue analysis.</li>
+          <li>Share incident updates and track resolution progress.</li>
+        </ul>
+
+        <div class="server-tags">
+          <span>Application Monitoring</span>
+          <span>Dynatrace</span>
+          <span>ITOM Alerts</span>
+          <span>Incident Management</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+  
   
 
 <section id="education">
