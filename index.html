@@ -426,6 +426,285 @@ section {
   }
 }
   
+/* ===== PREMIUM EXPERIENCE DESIGN ===== */
+
+.experience-section {
+  padding: 90px 0;
+  background:
+    radial-gradient(ellipse at 10% 15%, rgba(0,200,255,.045), transparent 35%),
+    #071426;
+}
+
+.noc-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 38px;
+}
+
+.noc-label {
+  display: inline-block;
+  color: #00c8ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  color: #f4f7fb;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(27px, 4vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.section-title span {
+  color: #00c8ff;
+}
+
+.noc-heading p {
+  color: #aabbd0;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px 28px;
+  background: linear-gradient(120deg,#102943,#0c1d31);
+  border: 1px solid rgba(0,200,255,.22);
+  border-radius: 13px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.career-company {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.company-mark {
+  width: 57px;
+  height: 57px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: rgba(0,200,255,.10);
+  border: 1px solid rgba(0,200,255,.3);
+  color: #00c8ff;
+  font-family: 'Manrope',sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.career-company h3 {
+  color: #fff;
+  font-family: 'Manrope',sans-serif;
+  font-size: 19px;
+}
+
+.career-employer {
+  color: #00c8ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.career-client {
+  color: #aabbd0;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.career-period {
+  text-align: right;
+}
+
+.career-period span {
+  display: block;
+  color: #00c8ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.career-period small {
+  color: #aabbd0;
+  font-size: 12px;
+}
+
+.career-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,.10);
+  margin: 48px 0;
+}
+
+.scenario-heading {
+  margin-bottom: 35px;
+}
+
+.noc-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 21px;
+}
+
+.noc-card {
+  position: relative;
+  overflow: hidden;
+  padding: 25px 23px;
+  background: linear-gradient(145deg,#10243a,#0b1b2e);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 12px;
+  transition: .3s ease;
+}
+
+.noc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00c8ff;
+  transition: .3s ease;
+}
+
+.noc-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,200,255,.4);
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.noc-card:hover::before {
+  width: 100%;
+}
+
+.noc-number {
+  color: rgba(0,200,255,.55);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.noc-icon {
+  font-size: 25px;
+  margin: 17px 0 12px;
+}
+
+.noc-category {
+  color: #00c8ff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.noc-card h3 {
+  color: #fff;
+  font-family: 'Manrope',sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 9px 0;
+}
+
+.noc-card > p {
+  color: #aabbd0;
+  font-size: 12px;
+  line-height: 1.8;
+  min-height: 66px;
+}
+
+.noc-details {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+.noc-details h4 {
+  color: #e9f2fa;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.noc-details ul {
+  padding-left: 17px;
+  color: #aabbd0;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.noc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.noc-tools span {
+  color: #bceefa;
+  background: rgba(0,200,255,.07);
+  border: 1px solid rgba(0,200,255,.17);
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.technology-strip {
+  margin-top: 35px;
+  padding: 23px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(255,255,255,.025);
+  border-radius: 10px;
+}
+
+.technology-strip .noc-tools {
+  margin-top: 12px;
+}
+
+@media(max-width:950px) {
+  .noc-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+  .experience-section {
+    padding: 65px 0;
+  }
+
+  .noc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-header {
+    padding: 20px;
+  }
+
+  .career-period {
+    text-align: left;
+    padding-left: 74px;
+  }
+
+  .career-divider {
+    margin: 35px 0;
+  }
+
+  .noc-card {
+    padding: 23px 20px;
+  }
+
+  .noc-card > p {
+    min-height: auto;
+  }
+    }
+  
 </style>
 </head>
 
@@ -558,105 +837,238 @@ section {
 
 <!-- PROFESSIONAL EXPERIENCE -->
 
-<section id="experience" style="background:#0a192c">
+<section id="experience" class="experience-section">
   <div class="container">
 
-    <div class="section-heading">
-      <div class="eyebrow">Career Journey</div>
-      <h2>Professional Experience</h2>
-      <p>Enterprise IT operations, network monitoring and infrastructure support.</p>
+    <div class="noc-heading">
+      <span class="noc-label">CAREER JOURNEY</span>
+      <h2 class="section-title">
+        Professional <span>Experience</span>
+      </h2>
+      <p>
+        Enterprise network operations, distributed production support
+        and infrastructure monitoring at TCS.
+      </p>
     </div>
 
-    <div style="background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px">
+    <div class="career-header">
 
-      <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:25px">
-
+      <div class="career-company">
+        <div class="company-mark">TCS</div>
         <div>
-          <h3 style="font-family:'Manrope';font-size:23px">NOC Engineer</h3>
-          <p style="color:var(--cyan);font-weight:700;margin-top:5px">
-            Tata Consultancy Services (TCS)
-          </p>
-          <p style="color:var(--muted);font-size:13px">
-            Client Environment: KeyBank
-          </p>
+          <h3>NOC Engineer</h3>
+          <p class="career-employer">Tata Consultancy Services</p>
+          <p class="career-client">Client Environment: KeyBank</p>
         </div>
-
-        <div style="color:var(--muted);font-size:13px">
-          February 2022 – Present
-          <br>
-          Chennai, India
-        </div>
-
       </div>
 
-      <div style="border-top:1px solid var(--line);padding-top:24px">
-
-        <h4 style="font-family:'Manrope';font-size:16px;margin-bottom:15px">
-          Core Responsibilities
-        </h4>
-
-        <ul style="padding-left:20px;color:var(--muted);font-size:14px;line-height:2.1">
-
-          <li>Monitor 1,000+ network devices, Windows/Linux/Unix servers and enterprise applications across distributed production environments.</li>
-
-          <li>Monitor infrastructure alerts and operational events using ITOM, ServiceNow, Dynatrace, ScienceLogic, Moogsoft and other monitoring platforms.</li>
-
-          <li>Perform initial investigation, impact assessment and troubleshooting of network connectivity issues, device availability, latency, packet loss and link instability.</li>
-
-          <li>Monitor Cisco SD-WAN environments through vManage and investigate WAN connectivity, bandwidth and transport-related alerts.</li>
-
-          <li>Perform basic server operational activities, including Windows and Linux/Unix server restarts, service checks and initial troubleshooting.</li>
-
-          <li>Support file-system housekeeping activities, SSH key updates and Windows account lock/unlock requests as per operational procedures.</li>
-
-          <li>Participate in scheduled monthly Windows and SQL patching activities and coordinate operational checks.</li>
-
-          <li>Handle DNS and DHCP operational requests, including investigation and resolution of assigned tasks.</li>
-
-          <li>Manage incidents and service requests through ServiceNow, ensuring accurate documentation, updates and timely escalation.</li>
-
-          <li>Coordinate P1/P2 incident bridge calls, engage incident managers and relevant support groups, and provide operational updates.</li>
-
-          <li>Work with external service providers including AT&T, GTT, Lumen, Comcast, Ventus and CompuCom for connectivity issues, troubleshooting and service restoration.</li>
-
-          <li>Perform initial investigation of monitoring alerts, validate service impact and coordinate with relevant technical teams for resolution.</li>
-
-          <li>Use ELK dashboards for basic monitoring and investigation, including synthetic monitoring and VLAN-related visibility.</li>
-
-          <li>Provide operational support during shift activities, including coordination, incident follow-ups and knowledge sharing with team members.</li>
-
-        </ul>
-
-      </div>
-
-      <div style="border-top:1px solid var(--line);margin-top:25px;padding-top:22px">
-
-        <h4 style="font-family:'Manrope';font-size:16px;margin-bottom:12px">
-          Technology Environment
-        </h4>
-
-        <div style="display:flex;flex-wrap:wrap;gap:9px">
-
-          <span class="skill-tag">ServiceNow / ITOM</span>
-          <span class="skill-tag">Dynatrace</span>
-          <span class="skill-tag">Cisco SD-WAN</span>
-          <span class="skill-tag">vManage</span>
-          <span class="skill-tag">ScienceLogic</span>
-          <span class="skill-tag">Moogsoft</span>
-          <span class="skill-tag">ELK</span>
-          <span class="skill-tag">Windows</span>
-          <span class="skill-tag">Linux / Unix</span>
-          <span class="skill-tag">VMware</span>
-          <span class="skill-tag">Jenkins</span>
-          <span class="skill-tag">DNS / DHCP</span>
-
-        </div>
-
+      <div class="career-period">
+        <span>FEB 2022 – PRESENT</span>
+        <small>Chennai, India</small>
       </div>
 
     </div>
+
+    <div class="career-divider"></div>
+
+    <div class="noc-heading scenario-heading">
+      <span class="noc-label">PRACTICAL OPERATIONS</span>
+      <h2 class="section-title">
+        Operational <span>Expertise</span>
+      </h2>
+      <p>
+        Key areas of responsibility across enterprise NOC and
+        distributed infrastructure operations.
+      </p>
+    </div>
+
+    <div class="noc-grid">
+
+      <!-- NETWORK CONNECTIVITY -->
+
+      <div class="noc-card">
+        <div class="noc-number">01</div>
+        <div class="noc-icon">🌐</div>
+        <span class="noc-category">NETWORK OPERATIONS</span>
+        <h3>Branch Connectivity Monitoring</h3>
+        <p>
+          Monitoring enterprise branch network connectivity and
+          investigating device availability, WAN link issues
+          and connectivity alerts.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Verify device reachability and monitoring alerts.</li>
+            <li>Check primary and secondary WAN connectivity.</li>
+            <li>Review interface status and connectivity symptoms.</li>
+            <li>Coordinate with network and ISP support teams.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>ServiceNow</span>
+          <span>Cisco SD-WAN</span>
+          <span>vManage</span>
+        </div>
+      </div>
+
+      <!-- WAN MONITORING -->
+
+      <div class="noc-card">
+        <div class="noc-number">02</div>
+        <div class="noc-icon">📡</div>
+        <span class="noc-category">WAN MONITORING</span>
+        <h3>WAN Link Flapping</h3>
+        <p>
+          Investigating intermittent WAN connectivity, repeated
+          link-up/link-down events and transport-related alerts.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Review link status and alert history.</li>
+            <li>Identify primary or backup link instability.</li>
+            <li>Review latency and packet-loss information.</li>
+            <li>Raise vendor tickets and track updates.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>Cisco SD-WAN</span>
+          <span>vManage</span>
+          <span>Dynatrace</span>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+
+      <div class="noc-card">
+        <div class="noc-number">03</div>
+        <div class="noc-icon">📊</div>
+        <span class="noc-category">PERFORMANCE MONITORING</span>
+        <h3>Network Performance Issues</h3>
+        <p>
+          Monitoring network degradation, packet loss and
+          latency alerts affecting enterprise connectivity.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Perform basic ping and traceroute checks.</li>
+            <li>Review packet-loss and response-time trends.</li>
+            <li>Check available interface and WAN metrics.</li>
+            <li>Escalate findings to responsible teams.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>ScienceLogic</span>
+          <span>vManage</span>
+          <span>Monitoring Tools</span>
+        </div>
+      </div>
+
+      <!-- DNS DHCP -->
+
+      <div class="noc-card">
+        <div class="noc-number">04</div>
+        <div class="noc-icon">🔎</div>
+        <span class="noc-category">DNS & DHCP SUPPORT</span>
+        <h3>Name Resolution & IP Support</h3>
+        <p>
+          Handling assigned DNS and DHCP operational requests
+          and supporting hostname resolution and IP verification.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Verify hostname and IP address mapping.</li>
+            <li>Use nslookup for DNS resolution checks.</li>
+            <li>Investigate assigned DNS/DHCP requests.</li>
+            <li>Coordinate required changes with responsible teams.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>DNS</span>
+          <span>DHCP</span>
+          <span>nslookup</span>
+          <span>ServiceNow</span>
+        </div>
+      </div>
+
+      <!-- SERVER OPERATIONS -->
+
+      <div class="noc-card">
+        <div class="noc-number">05</div>
+        <div class="noc-icon">🖥️</div>
+        <span class="noc-category">INFRASTRUCTURE SUPPORT</span>
+        <h3>Server & System Operations</h3>
+        <p>
+          Supporting routine Windows and Linux/Unix server
+          operational activities and assigned maintenance tasks.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Perform authorized server restarts and service checks.</li>
+            <li>Support basic file-system housekeeping.</li>
+            <li>Assist with SSH key updates and account unlocks.</li>
+            <li>Participate in monthly Windows and SQL patching.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>Windows</span>
+          <span>Linux / Unix</span>
+          <span>VMware</span>
+          <span>Active Directory</span>
+        </div>
+      </div>
+
+      <!-- INCIDENT MANAGEMENT -->
+
+      <div class="noc-card">
+        <div class="noc-number">06</div>
+        <div class="noc-icon">⚙️</div>
+        <span class="noc-category">INCIDENT MANAGEMENT</span>
+        <h3>Production Incident Coordination</h3>
+        <p>
+          Coordinating production incidents, support-group
+          communication and third-party service-provider follow-ups.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Investigate and document infrastructure alerts.</li>
+            <li>Participate in P1/P2 incident bridge calls.</li>
+            <li>Engage incident managers and support groups.</li>
+            <li>Coordinate with ISP vendors for service restoration.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>ServiceNow</span>
+          <span>ITOM</span>
+          <span>Moogsoft</span>
+          <span>Vendor Support</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="technology-strip">
+      <span class="noc-label">TECHNOLOGY ENVIRONMENT</span>
+      <div class="noc-tools">
+        <span>Dynatrace</span>
+        <span>ScienceLogic</span>
+        <span>ELK</span>
+        <span>Jenkins</span>
+        <span>Vynamic View</span>
+        <span>Oracle</span>
+        <span>SQL</span>
+        <span>Mainframe Monitoring</span>
+      </div>
+    </div>
+
   </div>
 </section>
+  
   
 <!-- TECHNICAL SKILLS SECTION -->
 
