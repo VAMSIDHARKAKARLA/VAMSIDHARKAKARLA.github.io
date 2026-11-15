@@ -816,178 +816,289 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 </style>
   
 </head>
-
+  
 <body>
 
-<nav>
-  <div class="container nav-inner">
-    <a class="logo" href="#home">VAMSI KAKARLA. PORTFOLIO</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">IT Operations & Network Infrastructure</div>
-      <h1>Hi, I'm<br><span>Vamsidharreddy Kakarla</span></h1>
-      <h3>NOC Engineer | Network Operations | IT Infrastructure</h3>
-      <p>
-        IT operations professional with 4.6+ years of experience
-        in distributed production support, network monitoring,
-        infrastructure operations and incident management.
-        Focused on maintaining service availability and supporting
-        reliable enterprise IT environments.
-      </p>
-      <div class="actions">
-        
-<a class="btn primary" href="#experience">Explore My Experience</a>
-<a class="btn secondary" href="#contact">Contact Me</a>
-
-<a class="btn primary"
-   href="Vamsidhar_Kakarla_Resume.pdf.pdf"
-   target="_blank"
-   rel="noopener noreferrer">
-   View Resume
-</a>
-
-<a class="btn secondary"
-   href="Vamsidhar_Kakarla_Resume.pdf.pdf"
-   download>
-   Download Resume
-</a>
-        
-      </div>
-    </div>
-    <div class="photo-wrap">
-      <img src="IMG-20260925-WA0004.jpg" alt="Vamsidharreddy Kakarla"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-      <div class="photo-placeholder" style="display:none">VK</div>
-    </div>
-  </div>
-</header>
-
-<section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="line"></div>
-    <div class="about-grid">
-      <div class="card">
-        <h3>Professional Summary</h3>
-        
-<p>
-  I am a NOC Engineer with 4+ years of experience in IT Operations
-  and Distributed Production Support at Tata Consultancy Services (TCS).
-  I have experience monitoring enterprise network devices, servers,
-  and applications while ensuring service availability and operational stability.
-</p>
-<br>
-<p>
-  My responsibilities include real-time infrastructure monitoring,
-  incident management, P1/P2 bridge coordination, network troubleshooting,
-  DNS and DHCP support, alert analysis, and coordination with ISP and
-  third-party vendors to resolve production issues.
-</p>
-<br>
-<p>
-  I have worked with tools and technologies such as ServiceNow ITOM,
-  Dynatrace, Cisco SD-WAN, vManage, ScienceLogic, Moogsoft, ELK,
-  VMware, Windows, Linux, and Active Directory.
-  I am continuously strengthening my networking knowledge,
-  including VLAN, TCP/IP, DNS, DHCP, OSPF, and BGP fundamentals.
-</p>
-<br>
-<p>
-  My career goal is to grow as a Network Engineer / Infrastructure Engineer
-  by developing strong technical troubleshooting, networking,
-  and infrastructure management skills.
-</p>
-        
-      </div>
-      <div class="card">
-        <h3>Professional Snapshot</h3>
-        <ul>
-          <li>4.6+ years of IT/NOC experience</li>
-          <li>Distributed production support</li>
-          <li>Monitoring of 2,000+ network devices</li>
-          <li>P1/P2 incident coordination</li>
-          <li>Network and server monitoring</li>
-          <li>DNS and DHCP operational support</li>
-          <li>Vendor and cross-team coordination</li>
-          <li>Based in Chennai, India</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-  
-<!-- CAREER JOURNEY - PROFESSIONAL EXPERIENCE -->
-<section class="operations-section" id="experience">
-  <div class="container">
-
-    <div class="operations-heading">
-      <span class="server-label">CAREER JOURNEY</span>
-
-      <h2 class="section-title">
-        Professional <span>Experience</span>
-      </h2>
-
-    </div>
-
-    <div class="experience-company">
-      
-      
 <style>
-/* ===== PROFESSIONAL EXPERIENCE ===== */
+/* ===== PORTFOLIO BODY STYLES ===== */
+
+.portfolio-body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-body * {
+  box-sizing: border-box;
+}
+
+.portfolio-body .container {
+  width: 90%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.portfolio-body section {
+  padding: 75px 0;
+  scroll-margin-top: 85px;
+}
+
+.portfolio-body .section-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.portfolio-body .section-subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: .7;
+  margin-bottom: 38px;
+  line-height: 1.7;
+}
+
+.portfolio-body .accent {
+  color: #2693ff;
+}
+
+.portfolio-body .card {
+  background: var(--card, #111827);
+  border: 1px solid rgba(128,128,128,.22);
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.portfolio-body p,
+.portfolio-body li {
+  line-height: 1.8;
+}
+
+/* NAVIGATION */
+
+.portfolio-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg, #0b1120);
+  border-bottom: 1px solid rgba(128,128,128,.2);
+}
+
+.portfolio-nav .nav-container {
+  max-width: 1120px;
+  width: 90%;
+  margin: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolio-nav .logo {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-nav .logo span {
+  color: #2693ff;
+}
+
+.portfolio-nav .nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.portfolio-nav .nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  transition: .2s;
+}
+
+.portfolio-nav .nav-links a:hover {
+  color: #2693ff;
+}
+
+/* HOME */
+
+.hero-section {
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 30%,
+    rgba(38,147,255,.12), transparent 35%);
+}
+
+.hero-content {
+  max-width: 850px;
+  padding: 70px 0;
+}
+
+.hero-content .welcome {
+  color: #2693ff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: clamp(34px, 6vw, 55px);
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero-content h1 span {
+  color: #2693ff;
+}
+
+.hero-content h2 {
+  font-size: clamp(18px, 3vw, 23px);
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  font-size: 15px;
+  opacity: .8;
+  margin-bottom: 27px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #2693ff;
+  color: inherit;
+  transition: .2s;
+}
+
+.hero-btn.primary {
+  background: #2693ff;
+  color: white;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.about-grid p {
+  font-size: 15px;
+  opacity: .85;
+  margin-bottom: 13px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.highlight-card {
+  padding: 18px;
+  border: 1px solid rgba(128,128,128,.22);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.highlight-card h3 {
+  font-size: 23px;
+  color: #2693ff;
+  margin: 0 0 5px;
+}
+
+.highlight-card p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* SKILLS */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 17px;
+}
+
+.skill-card h3 {
+  font-size: 17px;
+  margin: 0 0 14px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-tags span {
+  padding: 7px 11px;
+  border-radius: 6px;
+  border: 1px solid rgba(128,128,128,.25);
+  font-size: 12px;
+}
+
+/* EXPERIENCE */
 
 .experience-company {
-  margin: 30px 0 25px;
-  padding: 25px 28px;
-  background: var(--card, #111827);
-  border: 1px solid rgba(128, 128, 128, 0.22);
-  border-left: 4px solid #2693ff;
+  padding: 25px;
   border-radius: 12px;
+  border: 1px solid rgba(128,128,128,.22);
+  border-left: 4px solid #2693ff;
+  margin-bottom: 23px;
+  background: var(--card, #111827);
 }
 
 .experience-company h3 {
-  font-size: 23px;
+  font-size: 22px;
   margin: 0 0 9px;
-  font-weight: 700;
 }
 
 .experience-company p {
-  font-size: 15px;
-  line-height: 1.7;
-  margin: 0 0 8px;
+  font-size: 14px;
   font-weight: 600;
+  margin: 0 0 8px;
 }
 
 .experience-company span {
   font-size: 13px;
-  opacity: 0.75;
+  opacity: .7;
 }
 
 .operations-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin: 25px 0 35px;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 17px;
 }
 
 .operation-card {
   padding: 22px;
-  border: 1px solid rgba(128, 128, 128, 0.22);
+  border: 1px solid rgba(128,128,128,.22);
   border-radius: 12px;
   background: var(--card, #111827);
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition: .25s;
 }
 
 .operation-card:hover {
@@ -997,8 +1108,7 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 
 .operation-card h3 {
   font-size: 16px;
-  margin: 0 0 12px;
-  font-weight: 700;
+  margin: 0 0 13px;
 }
 
 .operation-card ul {
@@ -1007,60 +1117,78 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 }
 
 .operation-card li {
-  font-size: 14px;
-  line-height: 1.8;
-  margin-bottom: 7px;
-}
-
-.tech-stack {
-  margin: 30px 0 40px;
-}
-
-.tech-stack h3 {
-  font-size: 19px;
-  margin-bottom: 17px;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tech-tags span {
-  padding: 8px 14px;
   font-size: 13px;
-  border: 1px solid rgba(128, 128, 128, 0.3);
-  border-radius: 7px;
-  font-weight: 500;
+  margin-bottom: 8px;
 }
 
-/* ===== PROFESSIONAL FOOTER ===== */
+/* EDUCATION */
+
+.education-card h3 {
+  font-size: 18px;
+  margin: 0 0 9px;
+}
+
+.education-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  opacity: .8;
+}
+
+/* CERTIFICATIONS */
+
+.learning-card h3 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.learning-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* CONTACT */
+
+.contact-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-content p {
+  font-size: 15px;
+  opacity: .8;
+  margin-bottom: 25px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+/* FOOTER */
 
 .main-footer {
-  margin-top: 60px;
-  padding: 45px 20px 20px;
-  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  padding: 45px 0 20px;
+  border-top: 1px solid rgba(128,128,128,.22);
   background: var(--card, #111827);
 }
 
 .footer-container {
-  max-width: 1100px;
+  max-width: 1120px;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 35px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-.footer-brand {
-  max-width: 500px;
-}
-
 .footer-brand h2 {
-  font-size: 24px;
-  margin: 0 0 12px;
+  font-size: 23px;
+  margin: 0 0 10px;
 }
 
 .footer-brand h2 span {
@@ -1068,24 +1196,21 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 }
 
 .footer-brand p {
-  font-size: 14px;
-  line-height: 1.8;
-  opacity: 0.8;
-  margin: 0;
+  font-size: 13px;
+  opacity: .75;
+  max-width: 430px;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
+  gap: 18px;
 }
 
 .footer-links a {
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
   color: inherit;
-  transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
@@ -1093,211 +1218,560 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
 }
 
 .footer-bottom {
-  max-width: 1100px;
-  margin: 35px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  max-width: 1120px;
+  width: 90%;
+  margin: 30px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(128,128,128,.2);
   text-align: center;
 }
 
 .footer-bottom p {
   font-size: 12px;
-  opacity: 0.65;
-  margin: 0;
+  opacity: .65;
 }
 
-/* ===== MOBILE RESPONSIVENESS ===== */
+/* MOBILE RESPONSIVENESS */
 
-@media (max-width: 700px) {
+@media(max-width:750px) {
+  .portfolio-nav .nav-container {
+    padding: 14px 0;
+    flex-direction: column;
+  }
+
+  .portfolio-nav .nav-links {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .portfolio-nav .nav-links a {
+    font-size: 12px;
+  }
+
+  .skills-grid,
   .operations-list {
     grid-template-columns: 1fr;
   }
 
-  .experience-company {
-    padding: 20px;
+  .about-highlights {
+    grid-template-columns: 1fr;
   }
 
-  .experience-company h3 {
-    font-size: 20px;
+  .hero-section {
+    min-height: auto;
   }
 
-  .operation-card {
-    padding: 19px;
+  .hero-content {
+    padding: 65px 0;
+  }
+
+  .portfolio-body section {
+    padding: 55px 0;
+  }
+
+  .portfolio-body .section-title {
+    font-size: 26px;
   }
 
   .footer-container {
     flex-direction: column;
-    gap: 25px;
-  }
-
-  .footer-links {
-    gap: 16px;
-  }
-
-  .footer-brand h2 {
-    font-size: 21px;
   }
 }
 </style>
 
-<!-- PROFESSIONAL EXPERIENCE CONTENT -->
-<style>
-<div class="experience-company">
-  <h3>Tata Consultancy Services (TCS)</h3>
+<div class="portfolio-body">
 
-  <p>
-    NOC Engineer | Network & Infrastructure Operations |
-    Distributed Production Support
-  </p>
+<!-- ===== NAVIGATION ===== -->
 
-  <span>
-    Chennai, Tamil Nadu, India | February 2022 – Present
-  </span>
-</div>
+<nav class="portfolio-nav">
+  <div class="nav-container">
 
-<div class="operations-list">
+    <a href="#home" class="logo">
+      KKR<span>.</span>
+    </a>
 
-  <!-- NETWORK MONITORING -->
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Learning</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-  <div class="operation-card">
-    <h3>Network Monitoring & Operations</h3>
-    <ul>
-      <li>Monitor 1,000+ network devices, connectivity and infrastructure components.</li>
-      <li>Monitor Cisco SD-WAN environments using vManage.</li>
-      <li>Analyze network alerts, packet loss, latency and connectivity issues.</li>
-      <li>Perform initial troubleshooting for LAN, WAN, MPLS and broadband connectivity.</li>
-      <li>Monitor VLANs, network availability and infrastructure health.</li>
-    </ul>
   </div>
+</nav>
 
-  <!-- SERVER SUPPORT -->
 
-  <div class="operation-card">
-    <h3>Server & Infrastructure Support</h3>
-    <ul>
-      <li>Monitor Windows, Linux and Unix servers and application availability.</li>
-      <li>Perform server reboot and restart activities as per approved procedures.</li>
-      <li>Perform basic filesystem checks, disk-space cleanup and troubleshooting.</li>
-      <li>Support SSH key updates and Windows account lock/unlock activities.</li>
-      <li>Coordinate monthly Windows and SQL patching activities.</li>
-      <li>Monitor VMware infrastructure and support operational activities.</li>
-    </ul>
+<!-- ===== HOME ===== -->
+
+<header class="hero-section" id="home">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="welcome">
+        NETWORK & IT INFRASTRUCTURE PROFESSIONAL
+      </div>
+
+      <h1>
+        Hi, I'm <span>Vamsidharreddy Kakarla</span>
+      </h1>
+
+      <h2>
+        NOC Engineer | Network Operations |
+        IT Infrastructure Support
+      </h2>
+
+      <p>
+        Experienced IT Operations professional with hands-on
+        experience in network monitoring, infrastructure support,
+        incident management, server operations and production
+        environment monitoring at Tata Consultancy Services.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#experience" class="hero-btn primary">
+          Explore My Experience
+        </a>
+
+        <a href="#contact" class="hero-btn">
+          Contact Me
+        </a>
+
+        <a
+          href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn">
+          LinkedIn Profile
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
+</header>
 
-  <!-- INCIDENT MANAGEMENT -->
 
-  <div class="operation-card">
-    <h3>Incident & Production Management</h3>
-    <ul>
-      <li>Monitor and manage infrastructure alerts through ITOM and ServiceNow.</li>
-      <li>Handle P1/P2 incidents and participate in incident bridge calls.</li>
-      <li>Perform initial impact assessment and coordinate with incident managers.</li>
-      <li>Engage respective support teams for incident investigation and resolution.</li>
-      <li>Track incidents, update work notes and provide status communications.</li>
-      <li>Perform alert validation, escalation and follow-up until resolution.</li>
-    </ul>
+<!-- ===== ABOUT / PROFESSIONAL SUMMARY ===== -->
+
+<section id="about">
+
+  <div class="container">
+
+    <h2 class="section-title">About <span class="accent">Me</span></h2>
+
+    <p class="section-subtitle">
+      Professional Summary
+    </p>
+
+    <div class="about-grid">
+
+      <div class="card">
+
+        <p>
+          I am an IT Operations and NOC Engineer with 4+ years
+          of experience at Tata Consultancy Services, working
+          in Distributed Production Support.
+        </p>
+
+        <p>
+          My experience includes monitoring network devices,
+          Windows, Linux and Unix servers, application availability
+          and enterprise infrastructure using monitoring and
+          observability platforms.
+        </p>
+
+        <p>
+          I work on infrastructure alerts, P1/P2 incident
+          coordination, network connectivity troubleshooting,
+          DNS and DHCP requests, server operational activities,
+          vendor escalations and production support.
+        </p>
+
+        <p>
+          I have hands-on exposure to ServiceNow ITOM,
+          Dynatrace, Cisco SD-WAN vManage, ScienceLogic,
+          Moogsoft, ELK and VMware.
+        </p>
+
+        <p>
+          I am continuously improving my networking knowledge,
+          including TCP/IP, VLAN, routing fundamentals,
+          OSPF and BGP, with the goal of growing into
+          Network Engineering and IT Infrastructure roles.
+        </p>
+
+      </div>
+
+      <div class="about-highlights">
+
+        <div class="highlight-card">
+          <h3>4+</h3>
+          <p>Years of Experience</p>
+        </div>
+
+        <div class="highlight-card">
+          <h3>NOC</h3>
+          <p>Production Operations</p>
+        </div>
+
+        <div class="highlight-card">
+          <h3>IT</h3>
+          <p>Infrastructure Support</p>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
-
-  <!-- DNS DHCP -->
-
-  <div class="operation-card">
-    <h3>DNS, DHCP & Network Troubleshooting</h3>
-    <ul>
-      <li>Handle DNS and DHCP operational requests and troubleshooting activities.</li>
-      <li>Perform hostname and IP address verification using NSLookup.</li>
-      <li>Support DNS record updates, IP verification and related change activities.</li>
-      <li>Perform basic network connectivity checks and troubleshooting.</li>
-      <li>Coordinate with network and application teams for issue resolution.</li>
-    </ul>
-  </div>
-
-  <!-- TOOLS -->
-
-  <div class="operation-card">
-    <h3>Monitoring Tools & Technologies</h3>
-    <ul>
-      <li>Work with ServiceNow ITOM for infrastructure alert monitoring.</li>
-      <li>Use Dynatrace for application and infrastructure monitoring.</li>
-      <li>Work with Moogsoft and ScienceLogic for event and alert monitoring.</li>
-      <li>Use ELK dashboards for basic log and monitoring analysis.</li>
-      <li>Work with Cisco SD-WAN vManage and Vynamic View.</li>
-      <li>Exposure to VMware, Jenkins and Active Directory tools.</li>
-    </ul>
-  </div>
-
-  <!-- VENDOR COORDINATION -->
-
-  <div class="operation-card">
-    <h3>Vendor Coordination & Escalation</h3>
-    <ul>
-      <li>Coordinate with ISP and third-party vendors for connectivity issues.</li>
-      <li>Raise and track vendor tickets for network outages and circuit issues.</li>
-      <li>Follow up with AT&T, GTT, Lumen, Comcast and other service providers.</li>
-      <li>Coordinate troubleshooting, dispatch requests and restoration updates.</li>
-      <li>Maintain incident updates and communicate with relevant stakeholders.</li>
-    </ul>
-  </div>
-
-</div>
-
-<!-- TECHNICAL SKILLS -->
-
-<div class="tech-stack">
-  <h3>Technical Skills & Technologies</h3>
-
-  <div class="tech-tags">
-    <span>Network Monitoring</span>
-    <span>NOC Operations</span>
-    <span>LAN / WAN</span>
-    <span>TCP/IP</span>
-    <span>DNS</span>
-    <span>DHCP</span>
-    <span>VLAN</span>
-    <span>OSPF (Basic)</span>
-    <span>BGP (Basic)</span>
-    <span>Cisco SD-WAN</span>
-    <span>Windows Server</span>
-    <span>Linux</span>
-    <span>Unix</span>
-    <span>ServiceNow</span>
-    <span>Dynatrace</span>
-    <span>ELK</span>
-    <span>Moogsoft</span>
-    <span>ScienceLogic</span>
-    <span>VMware</span>
-    <span>Active Directory</span>
-    <span>Incident Management</span>
-    <span>IT Infrastructure</span>
-  </div>
-</div>
 
 </section>
 
-<!-- PROFESSIONAL FOOTER -->
+
+<!-- ===== TECHNICAL SKILLS ===== -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Technical <span class="accent">Skills</span>
+    </h2>
+
+    <p class="section-subtitle">
+      Technologies, tools and operational capabilities
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="card skill-card">
+        <h3>Networking</h3>
+        <div class="skill-tags">
+          <span>TCP/IP</span>
+          <span>LAN / WAN</span>
+          <span>VLAN</span>
+          <span>DNS</span>
+          <span>DHCP</span>
+          <span>NSLookup</span>
+          <span>OSI Model</span>
+          <span>OSPF - Basic</span>
+          <span>BGP - Basic</span>
+          <span>Cisco SD-WAN</span>
+        </div>
+      </div>
+
+      <div class="card skill-card">
+        <h3>Monitoring & Observability</h3>
+        <div class="skill-tags">
+          <span>ServiceNow ITOM</span>
+          <span>Dynatrace</span>
+          <span>ScienceLogic</span>
+          <span>Moogsoft</span>
+          <span>ELK</span>
+          <span>Vynamic View</span>
+        </div>
+      </div>
+
+      <div class="card skill-card">
+        <h3>Operating Systems & Infrastructure</h3>
+        <div class="skill-tags">
+          <span>Windows Server</span>
+          <span>Linux</span>
+          <span>Unix</span>
+          <span>VMware</span>
+          <span>Active Directory</span>
+          <span>SSH</span>
+          <span>Server Monitoring</span>
+        </div>
+      </div>
+
+      <div class="card skill-card">
+        <h3>IT Operations & Support</h3>
+        <div class="skill-tags">
+          <span>NOC Operations</span>
+          <span>Incident Management</span>
+          <span>P1 / P2 Support</span>
+          <span>Change Management</span>
+          <span>Vendor Coordination</span>
+          <span>Production Support</span>
+          <span>IT Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="card skill-card">
+        <h3>Tools & Technologies</h3>
+        <div class="skill-tags">
+          <span>Cisco vManage</span>
+          <span>Jenkins</span>
+          <span>SQL</span>
+          <span>Oracle</span>
+          <span>ITOM</span>
+          <span>Monitoring Dashboards</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== CAREER JOURNEY / EXPERIENCE ===== -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Career <span class="accent">Journey</span>
+    </h2>
+
+    <p class="section-subtitle">
+      Professional Experience – NOC, Network & Infrastructure Operations
+    </p>
+
+    <div class="experience-company">
+
+      <h3>Tata Consultancy Services (TCS)</h3>
+
+      <p>
+        NOC Engineer | Network & Infrastructure Operations |
+        Distributed Production Support
+      </p>
+
+      <span>
+        Chennai, Tamil Nadu, India | February 2022 – Present
+      </span>
+
+    </div>
+
+    <div class="operations-list">
+
+      <div class="operation-card">
+        <h3>Network Monitoring & Operations</h3>
+        <ul>
+          <li>Monitor enterprise network devices and infrastructure availability.</li>
+          <li>Perform monitoring and initial troubleshooting across network environments.</li>
+          <li>Monitor Cisco SD-WAN environments using vManage.</li>
+          <li>Analyze packet loss, latency, connectivity and network alerts.</li>
+          <li>Monitor LAN, WAN, MPLS and broadband connectivity.</li>
+        </ul>
+      </div>
+
+      <div class="operation-card">
+        <h3>Server & Infrastructure Support</h3>
+        <ul>
+          <li>Monitor Windows, Linux and Unix servers and application availability.</li>
+          <li>Perform server reboot and restart activities as per approved procedures.</li>
+          <li>Perform basic filesystem checks, disk-space cleanup and troubleshooting.</li>
+          <li>Support SSH key updates and Windows account lock/unlock activities.</li>
+          <li>Coordinate monthly Windows and SQL patching activities.</li>
+          <li>Support VMware infrastructure monitoring activities.</li>
+        </ul>
+      </div>
+
+      <div class="operation-card">
+        <h3>Incident & Production Management</h3>
+        <ul>
+          <li>Monitor and manage infrastructure alerts through ServiceNow ITOM.</li>
+          <li>Handle P1/P2 incidents and participate in incident bridge calls.</li>
+          <li>Perform initial impact assessment and coordinate with incident managers.</li>
+          <li>Engage respective support teams for incident investigation and resolution.</li>
+          <li>Maintain incident work notes and provide regular status updates.</li>
+          <li>Perform alert validation, escalation and follow-up until resolution.</li>
+        </ul>
+      </div>
+
+      <div class="operation-card">
+        <h3>DNS, DHCP & Network Troubleshooting</h3>
+        <ul>
+          <li>Handle DNS and DHCP operational requests and troubleshooting.</li>
+          <li>Perform hostname and IP verification using NSLookup.</li>
+          <li>Support DNS record updates and related change activities.</li>
+          <li>Perform basic network connectivity checks.</li>
+          <li>Coordinate with network and application teams for resolution.</li>
+        </ul>
+      </div>
+
+      <div class="operation-card">
+        <h3>Monitoring Tools & Technologies</h3>
+        <ul>
+          <li>Work with ServiceNow ITOM for infrastructure alert monitoring.</li>
+          <li>Use Dynatrace for application and infrastructure monitoring.</li>
+          <li>Work with Moogsoft and ScienceLogic for event monitoring.</li>
+          <li>Use ELK dashboards for basic log and monitoring analysis.</li>
+          <li>Work with Cisco SD-WAN vManage and Vynamic View.</li>
+          <li>Exposure to VMware, Jenkins and Active Directory tools.</li>
+        </ul>
+      </div>
+
+      <div class="operation-card">
+        <h3>Vendor Coordination & Escalation</h3>
+        <ul>
+          <li>Coordinate with ISP and third-party vendors for connectivity issues.</li>
+          <li>Raise and track vendor tickets for network outages and circuit issues.</li>
+          <li>Follow up with AT&T, GTT, Lumen and Comcast service providers.</li>
+          <li>Coordinate troubleshooting, dispatch requests and restoration updates.</li>
+          <li>Communicate incident updates with relevant stakeholders.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== EDUCATION ===== -->
+
+<section id="education">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      <span class="accent">Education</span>
+    </h2>
+
+    <p class="section-subtitle">
+      Academic Background
+    </p>
+
+    <div class="card education-card">
+
+      <h3>Bachelor of Technology – Electronics & Communication Engineering</h3>
+
+      <p>
+        JNN Institution of Engineering
+      </p>
+
+      <p>
+        Anna University | 2017 – 2021
+      </p>
+
+      <p>
+        CGPA: 7.43 / 10
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== CERTIFICATIONS & LEARNING ===== -->
+
+<section id="certifications">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Certifications & <span class="accent">Learning</span>
+    </h2>
+
+    <p class="section-subtitle">
+      Continuous learning and technical development
+    </p>
+
+    <div class="card learning-card">
+
+      <h3>Cisco CCNA – Currently Learning</h3>
+
+      <p>
+        Building networking fundamentals and practical knowledge
+        covering network concepts, IP addressing, subnetting,
+        switching, routing, VLANs and network troubleshooting
+        through structured CCNA training.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== CONTACT ===== -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-content">
+
+      <h2 class="section-title">
+        Let's <span class="accent">Connect</span>
+      </h2>
+
+      <p>
+        Open to opportunities in Network Engineering,
+        NOC Operations, IT Operations and Infrastructure Support.
+        Let's connect and discuss professional opportunities.
+      </p>
+
+      <div class="contact-actions">
+
+        <a
+          href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn primary">
+          Connect on LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/VAMSIDHARKAKARLA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn">
+          GitHub Profile
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== PROFESSIONAL FOOTER ===== -->
 
 <footer class="main-footer">
 
   <div class="footer-container">
 
     <div class="footer-brand">
-      <h2>Vamsidharreddy <span>Kakarla.</span></h2>
+
+      <h2>
+        Vamsidharreddy <span>Kakarla.</span>
+      </h2>
 
       <p>
-        Network Operations Center Engineer | Network Monitoring |
-        IT Infrastructure | Incident Management
+        Network Operations Center Engineer |
+        Network Monitoring |
+        IT Infrastructure |
+        Incident Management
       </p>
+
     </div>
 
     <div class="footer-links">
 
       <a href="#home">Home</a>
-
       <a href="#about">About</a>
-
-      <a href="#experience">Experience</a>
-
       <a href="#skills">Skills</a>
-
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
 
       <a
@@ -1319,15 +1793,18 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
   </div>
 
   <div class="footer-bottom">
+
     <p>
       © 2026 Vamsidharreddy Kakarla. All Rights Reserved.
     </p>
+
   </div>
 
 </footer>
 
-
+</div>
 
 </body>
+        
   </html>
   
