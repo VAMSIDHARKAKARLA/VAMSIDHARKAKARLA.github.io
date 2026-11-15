@@ -1279,6 +1279,286 @@ section {
   }
 
     }
+    
+/* ===== PREMIUM EXPERIENCE DESIGN ===== */
+
+.experience-section {
+  padding: 90px 0;
+  background:
+    radial-gradient(ellipse at 10% 15%, rgba(0,200,255,.045), transparent 35%),
+    #071426;
+}
+
+.noc-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 38px;
+}
+
+.noc-label {
+  display: inline-block;
+  color: #00c8ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  color: #f4f7fb;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(27px, 4vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.section-title span {
+  color: #00c8ff;
+}
+
+.noc-heading p {
+  color: #aabbd0;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px 28px;
+  background: linear-gradient(120deg,#102943,#0c1d31);
+  border: 1px solid rgba(0,200,255,.22);
+  border-radius: 13px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.career-company {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.company-mark {
+  width: 57px;
+  height: 57px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: rgba(0,200,255,.10);
+  border: 1px solid rgba(0,200,255,.3);
+  color: #00c8ff;
+  font-family: 'Manrope',sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.career-company h3 {
+  color: #fff;
+  font-family: 'Manrope',sans-serif;
+  font-size: 19px;
+}
+
+.career-employer {
+  color: #00c8ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.career-client {
+  color: #aabbd0;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.career-period {
+  text-align: right;
+}
+
+.career-period span {
+  display: block;
+  color: #00c8ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.career-period small {
+  color: #aabbd0;
+  font-size: 12px;
+}
+
+.career-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,.10);
+  margin: 48px 0;
+}
+
+.scenario-heading {
+  margin-bottom: 35px;
+}
+
+.noc-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 21px;
+}
+
+.noc-card {
+  position: relative;
+  overflow: hidden;
+  padding: 25px 23px;
+  background: linear-gradient(145deg,#10243a,#0b1b2e);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 12px;
+  transition: .3s ease;
+}
+
+.noc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00c8ff;
+  transition: .3s ease;
+}
+
+.noc-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,200,255,.4);
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.noc-card:hover::before {
+  width: 100%;
+}
+
+.noc-number {
+  color: rgba(0,200,255,.55);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.noc-icon {
+  font-size: 25px;
+  margin: 17px 0 12px;
+}
+
+.noc-category {
+  color: #00c8ff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.noc-card h3 {
+  color: #fff;
+  font-family: 'Manrope',sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 9px 0;
+}
+
+.noc-card > p {
+  color: #aabbd0;
+  font-size: 12px;
+  line-height: 1.8;
+  min-height: 66px;
+}
+
+.noc-details {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+.noc-details h4 {
+  color: #e9f2fa;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.noc-details ul {
+  padding-left: 17px;
+  color: #aabbd0;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.noc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.noc-tools span {
+  color: #bceefa;
+  background: rgba(0,200,255,.07);
+  border: 1px solid rgba(0,200,255,.17);
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.technology-strip {
+  margin-top: 35px;
+  padding: 23px;
+  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(255,255,255,.025);
+  border-radius: 10px;
+}
+
+.technology-strip .noc-tools {
+  margin-top: 12px;
+}
+
+@media(max-width:950px) {
+  .noc-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+  .experience-section {
+    padding: 65px 0;
+  }
+
+  .noc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-header {
+    padding: 20px;
+  }
+
+  .career-period {
+    text-align: left;
+    padding-left: 74px;
+  }
+
+  .career-divider {
+    margin: 35px 0;
+  }
+
+  .noc-card {
+    padding: 23px 20px;
+  }
+
+  .noc-card > p {
+    min-height: auto;
+  }
+}
+    
   </style>
 </head>
 
