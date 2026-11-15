@@ -1559,6 +1559,73 @@ section {
   }
 }
     
+/* ===== MOBILE HERO OVERFLOW FIX ===== */
+
+@media (max-width: 700px) {
+
+  .hero,
+  .hero-grid,
+  .hero-grid > *,
+  .hero-actions {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(25px, 7vw, 34px);
+    line-height: 1.2;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .hero h1 span {
+    white-space: normal;
+  }
+
+  .eyebrow,
+  .hero h2,
+  .hero-description {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    max-width: 100%;
+    white-space: normal;
+    box-sizing: border-box;
+  }
+}
+
+/* EXTRA SMALL MOBILE SCREENS */
+
+@media (max-width: 380px) {
+
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+    }
+    
   </style>
 </head>
 
