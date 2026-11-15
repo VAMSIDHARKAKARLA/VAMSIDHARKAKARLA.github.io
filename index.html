@@ -943,345 +943,345 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     </div>
 
     <div class="experience-company">
-      <h3>Tata Consultancy Services (TCS)</h3>
-      <p>NOC | Network & Infrastructure Operations |
-        Distributed Production Support</p>
-      <span>Chennai, Tamilnadu, India | February 2022 – Present</span>
-    </div>
-
-    <div class="operations-list">
-    </div>
-</section>
       
-<!-- NETWORK & INFRASTRUCTURE OPERATIONS -->
-<section class="operations-section" id="noc-projects">
-  <div class="container">
-
-    <div class="operations-heading">
-      <span class="server-label">TCS | DISTRIBUTED PRODUCTION SUPPORT</span>
-
-      <h2 class="section-title">
-        Network & <span>Infrastructure Operations</span>
-      </h2>
-
-      <p>
-        Enterprise monitoring, service request management,
-        infrastructure support and production incident coordination.
-      </p>
-    </div>
-
-    <div class="operations-list">
-
-      <!-- 01 -->
-      <div class="operation-item">
-        <span class="operation-number">01</span>
-        <div>
-          <h3>Enterprise Network & Infrastructure Monitoring</h3>
-          <p>Monitor 2,000+ network devices and infrastructure components, tracking availability, performance and operational alerts.</p>
-        </div>
-        <span class="operation-tag">MONITORING</span>
-      </div>
-
-      <!-- 02 -->
-      <div class="operation-item">
-        <span class="operation-number">02</span>
-        <div>
-          <h3>ITOM Alert Monitoring & Event Management</h3>
-          <p>Monitor ServiceNow ITOM events, review infrastructure alerts, validate event status and identify potential service impacts.</p>
-        </div>
-        <span class="operation-tag">ITOM</span>
-      </div>
-
-      <!-- 03 -->
-      <div class="operation-item">
-        <span class="operation-number">03</span>
-        <div>
-          <h3>Alert Analysis & Initial Troubleshooting</h3>
-          <p>Analyse monitoring alerts, verify device and service status, check auto-cleared events and coordinate further investigation when required.</p>
-        </div>
-        <span class="operation-tag">ALERT TRIAGE</span>
-      </div>
-
       
-<!-- 04 -->
-<div class="operation-item">
-  <span class="operation-number">04</span>
-  <div>
-    <h3>ServiceNow Change Management</h3>
-    <p>Manage assigned change-related tasks (CTASKs), review implementation activities, update work notes, coordinate with relevant teams and track task completion.</p>
-  </div>
-  <span class="operation-tag">CHANGE MGMT</span>
+<style>
+/* ===== PROFESSIONAL EXPERIENCE ===== */
+
+.experience-company {
+  margin: 30px 0 25px;
+  padding: 25px 28px;
+  background: var(--card, #111827);
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-left: 4px solid #2693ff;
+  border-radius: 12px;
+}
+
+.experience-company h3 {
+  font-size: 23px;
+  margin: 0 0 9px;
+  font-weight: 700;
+}
+
+.experience-company p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.experience-company span {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.operations-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 25px 0 35px;
+}
+
+.operation-card {
+  padding: 22px;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-radius: 12px;
+  background: var(--card, #111827);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.operation-card:hover {
+  transform: translateY(-4px);
+  border-color: #2693ff;
+}
+
+.operation-card h3 {
+  font-size: 16px;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.operation-card ul {
+  padding-left: 19px;
+  margin: 0;
+}
+
+.operation-card li {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 7px;
+}
+
+.tech-stack {
+  margin: 30px 0 40px;
+}
+
+.tech-stack h3 {
+  font-size: 19px;
+  margin-bottom: 17px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tags span {
+  padding: 8px 14px;
+  font-size: 13px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+/* ===== PROFESSIONAL FOOTER ===== */
+
+.main-footer {
+  margin-top: 60px;
+  padding: 45px 20px 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  background: var(--card, #111827);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  max-width: 500px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.footer-brand h2 span {
+  color: #2693ff;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #2693ff;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  opacity: 0.65;
+  margin: 0;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 700px) {
+  .operations-list {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-company {
+    padding: 20px;
+  }
+
+  .experience-company h3 {
+    font-size: 20px;
+  }
+
+  .operation-card {
+    padding: 19px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+
+  .footer-brand h2 {
+    font-size: 21px;
+  }
+}
+</style>
+
+<!-- PROFESSIONAL EXPERIENCE CONTENT -->
+<style>
+<div class="experience-company">
+  <h3>Tata Consultancy Services (TCS)</h3>
+
+  <p>
+    NOC Engineer | Network & Infrastructure Operations |
+    Distributed Production Support
+  </p>
+
+  <span>
+    Chennai, Tamil Nadu, India | February 2022 – Present
+  </span>
 </div>
-      
-      <!-- 05 -->
-      <div class="operation-item">
-        <span class="operation-number">05</span>
-        <div>
-          <h3>ServiceNow Incident & Request Management</h3>
-          <p>Work on assigned incidents and service requests, maintain ticket updates, coordinate with resolver groups and follow the incident lifecycle.</p>
-        </div>
-        <span class="operation-tag">SERVICENOW</span>
-      </div>
 
-      <!-- 06 -->
-      <div class="operation-item">
-        <span class="operation-number">06</span>
-        <div>
-          <h3>ServiceNow Chats & Operational Call Support</h3>
-          <p>Attend ServiceNow support chats and operational calls, understand reported issues, provide status updates and coordinate with relevant teams.</p>
-        </div>
-        <span class="operation-tag">COMMUNICATION</span>
-      </div>
+<div class="operations-list">
 
-      <!-- 07 -->
-      <div class="operation-item">
-        <span class="operation-number">07</span>
-        <div>
-          <h3>Network Connectivity Troubleshooting</h3>
-          <p>Investigate network-down alerts, connectivity failures, packet loss and latency issues, supporting service restoration activities.</p>
-        </div>
-        <span class="operation-tag">NETWORK</span>
-      </div>
+  <!-- NETWORK MONITORING -->
 
-      <!-- 08 -->
-      <div class="operation-item">
-        <span class="operation-number">08</span>
-        <div>
-          <h3>Cisco SD-WAN & WAN Link Operations</h3>
-          <p>Monitor Cisco SD-WAN through vManage, investigate WAN link flapping and connectivity issues, and coordinate ISP troubleshooting.</p>
-        </div>
-        <span class="operation-tag">SD-WAN</span>
-      </div>
-
-      <!-- 09 -->
-      <div class="operation-item">
-        <span class="operation-number">09</span>
-        <div>
-          <h3>DNS & DHCP Support</h3>
-          <p>Perform hostname and IP verification, nslookup checks, DNS resolution validation and coordination of DNS record updates.</p>
-        </div>
-        <span class="operation-tag">DNS / DHCP</span>
-      </div>
-
-      <!-- 10 -->
-      <div class="operation-item">
-        <span class="operation-number">10</span>
-        <div>
-          <h3>Windows, Linux & Unix Server Monitoring</h3>
-          <p>Monitor server availability, system health and infrastructure alerts across Windows, Linux and Unix environments.</p>
-        </div>
-        <span class="operation-tag">SERVERS</span>
-      </div>
-
-      <!-- 11 -->
-      <div class="operation-item">
-        <span class="operation-number">11</span>
-        <div>
-          <h3>Server Operations & Maintenance</h3>
-          <p>Support server reboots and restarts, basic filesystem cleanup, disk space checks, SSH key updates and Windows account lock/unlock activities.</p>
-        </div>
-        <span class="operation-tag">MAINTENANCE</span>
-      </div>
-
-      
-<!-- 12 -->
-<div class="operation-item">
-  <span class="operation-number">12</span>
-  <div>
-    <h3>Monthly Windows, SQL & QV Patching</h3>
-    <p>Support monthly Windows and SQL patching across Production and Non-Production environments, along with QV patching for Dev/Test environments.</p>
+  <div class="operation-card">
+    <h3>Network Monitoring & Operations</h3>
+    <ul>
+      <li>Monitor 1,000+ network devices, connectivity and infrastructure components.</li>
+      <li>Monitor Cisco SD-WAN environments using vManage.</li>
+      <li>Analyze network alerts, packet loss, latency and connectivity issues.</li>
+      <li>Perform initial troubleshooting for LAN, WAN, MPLS and broadband connectivity.</li>
+      <li>Monitor VLANs, network availability and infrastructure health.</li>
+    </ul>
   </div>
-  <span class="operation-tag">PATCHING</span>
+
+  <!-- SERVER SUPPORT -->
+
+  <div class="operation-card">
+    <h3>Server & Infrastructure Support</h3>
+    <ul>
+      <li>Monitor Windows, Linux and Unix servers and application availability.</li>
+      <li>Perform server reboot and restart activities as per approved procedures.</li>
+      <li>Perform basic filesystem checks, disk-space cleanup and troubleshooting.</li>
+      <li>Support SSH key updates and Windows account lock/unlock activities.</li>
+      <li>Coordinate monthly Windows and SQL patching activities.</li>
+      <li>Monitor VMware infrastructure and support operational activities.</li>
+    </ul>
+  </div>
+
+  <!-- INCIDENT MANAGEMENT -->
+
+  <div class="operation-card">
+    <h3>Incident & Production Management</h3>
+    <ul>
+      <li>Monitor and manage infrastructure alerts through ITOM and ServiceNow.</li>
+      <li>Handle P1/P2 incidents and participate in incident bridge calls.</li>
+      <li>Perform initial impact assessment and coordinate with incident managers.</li>
+      <li>Engage respective support teams for incident investigation and resolution.</li>
+      <li>Track incidents, update work notes and provide status communications.</li>
+      <li>Perform alert validation, escalation and follow-up until resolution.</li>
+    </ul>
+  </div>
+
+  <!-- DNS DHCP -->
+
+  <div class="operation-card">
+    <h3>DNS, DHCP & Network Troubleshooting</h3>
+    <ul>
+      <li>Handle DNS and DHCP operational requests and troubleshooting activities.</li>
+      <li>Perform hostname and IP address verification using NSLookup.</li>
+      <li>Support DNS record updates, IP verification and related change activities.</li>
+      <li>Perform basic network connectivity checks and troubleshooting.</li>
+      <li>Coordinate with network and application teams for issue resolution.</li>
+    </ul>
+  </div>
+
+  <!-- TOOLS -->
+
+  <div class="operation-card">
+    <h3>Monitoring Tools & Technologies</h3>
+    <ul>
+      <li>Work with ServiceNow ITOM for infrastructure alert monitoring.</li>
+      <li>Use Dynatrace for application and infrastructure monitoring.</li>
+      <li>Work with Moogsoft and ScienceLogic for event and alert monitoring.</li>
+      <li>Use ELK dashboards for basic log and monitoring analysis.</li>
+      <li>Work with Cisco SD-WAN vManage and Vynamic View.</li>
+      <li>Exposure to VMware, Jenkins and Active Directory tools.</li>
+    </ul>
+  </div>
+
+  <!-- VENDOR COORDINATION -->
+
+  <div class="operation-card">
+    <h3>Vendor Coordination & Escalation</h3>
+    <ul>
+      <li>Coordinate with ISP and third-party vendors for connectivity issues.</li>
+      <li>Raise and track vendor tickets for network outages and circuit issues.</li>
+      <li>Follow up with AT&T, GTT, Lumen, Comcast and other service providers.</li>
+      <li>Coordinate troubleshooting, dispatch requests and restoration updates.</li>
+      <li>Maintain incident updates and communicate with relevant stakeholders.</li>
+    </ul>
+  </div>
+
 </div>
-      
 
-      <!-- 13 -->
-      <div class="operation-item">
-        <span class="operation-number">13</span>
-        <div>
-          <h3>Password & Access Support</h3>
-          <p>Handle password reset requests, Windows account lock and unlock activities and related access support tasks.</p>
-        </div>
-        <span class="operation-tag">ACCESS</span>
-      </div>
+<!-- TECHNICAL SKILLS -->
 
-      <!-- 14 -->
-      <div class="operation-item">
-        <span class="operation-number">14</span>
-        <div>
-          <h3>Application Performance Monitoring</h3>
-          <p>Monitor application response times, failure rates and critical alerts, coordinating investigation with application support teams.</p>
-        </div>
-        <span class="operation-tag">APPLICATIONS</span>
-      </div>
+<div class="tech-stack">
+  <h3>Technical Skills & Technologies</h3>
 
-      <!-- 15 -->
-      <div class="operation-item">
-        <span class="operation-number">15</span>
-        <div>
-          <h3>Major Incident & P1/P2 Bridge Support</h3>
-          <p>Participate in major incident bridge calls, coordinate support teams, communicate incident updates and track restoration progress.</p>
-        </div>
-        <span class="operation-tag">P1 / P2</span>
-      </div>
-
-      <!-- 16 -->
-      <div class="operation-item">
-        <span class="operation-number">16</span>
-        <div>
-          <h3>ISP, Vendor & Cross-Team Coordination</h3>
-          <p>Coordinate with ISP providers and internal resolver teams, manage vendor follow-ups and track infrastructure issue resolution.</p>
-        </div>
-        <span class="operation-tag">COORDINATION</span>
-      </div>
-
-    </div>
+  <div class="tech-tags">
+    <span>Network Monitoring</span>
+    <span>NOC Operations</span>
+    <span>LAN / WAN</span>
+    <span>TCP/IP</span>
+    <span>DNS</span>
+    <span>DHCP</span>
+    <span>VLAN</span>
+    <span>OSPF (Basic)</span>
+    <span>BGP (Basic)</span>
+    <span>Cisco SD-WAN</span>
+    <span>Windows Server</span>
+    <span>Linux</span>
+    <span>Unix</span>
+    <span>ServiceNow</span>
+    <span>Dynatrace</span>
+    <span>ELK</span>
+    <span>Moogsoft</span>
+    <span>ScienceLogic</span>
+    <span>VMware</span>
+    <span>Active Directory</span>
+    <span>Incident Management</span>
+    <span>IT Infrastructure</span>
   </div>
-</section>
-  
+</div>
 
-<section id="skills">
-  <div class="container">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="line"></div>
-    <p class="section-sub">Technologies and operational knowledge used in IT infrastructure support.</p>
-    <div class="skill-grid">
-      <div class="card">
-        <h3>Networking</h3>
-        <div class="tags">
-          <span class="tag">TCP/IP</span>
-          <span class="tag">LAN / WAN</span>
-          <span class="tag">VLAN</span>
-          <span class="tag">DNS</span>
-          <span class="tag">DHCP</span>
-          <span class="tag">Subnetting</span>
-          <span class="tag">OSPF – Basic</span>
-          <span class="tag">BGP – Basic</span>
-          <span class="tag">SNMP – Basic</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Monitoring & ITSM</h3>
-        <div class="tags">
-          <span class="tag">ServiceNow</span>
-          <span class="tag">ITOM</span>
-          <span class="tag">Dynatrace</span>
-          <span class="tag">ScienceLogic</span>
-          <span class="tag">Moogsoft</span>
-          <span class="tag">ELK – Basic</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Infrastructure</h3>
-        <div class="tags">
-          <span class="tag">Windows</span>
-          <span class="tag">Linux – Basic</span>
-          <span class="tag">Unix</span>
-          <span class="tag">VMware</span>
-          <span class="tag">Active Directory</span>
-          <span class="tag">SSH</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Network Technologies</h3>
-        <div class="tags">
-          <span class="tag">Cisco SD-WAN</span>
-          <span class="tag">vManage</span>
-          <span class="tag">Cisco CLI – Basic</span>
-          <span class="tag">MPLS</span>
-          <span class="tag">DIA</span>
-          <span class="tag">ISP Coordination</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Incident Management</h3>
-        <div class="tags">
-          <span class="tag">P1 / P2 Incidents</span>
-          <span class="tag">Troubleshooting</span>
-          <span class="tag">Escalations</span>
-          <span class="tag">Vendor Management</span>
-          <span class="tag">Production Support</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Additional Tools</h3>
-        <div class="tags">
-          <span class="tag">Jenkins</span>
-          <span class="tag">Oracle – Operations</span>
-          <span class="tag">SQL – Basics</span>
-          <span class="tag">Mainframe – Exposure</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section id="education">
-  <div class="container">
-    <h2 class="section-title">Education & Learning</h2>
-    <div class="line"></div>
-    <div class="about-grid">
-      <div class="card">
-        <h3>Bachelor of Technology – ECE</h3>
-        <p>JNN Institution of Engineering</p>
-        <p>Anna University</p>
-        <p>2017 – 2021</p>
-        <p>CGPA: 7.83 / 10</p>
-      </div>
-      <div class="card">
-        <h3>Professional Development</h3>
-        <ul>
-          <li>CCNA networking course – currently learning</li>
-          <li>Network troubleshooting and fundamentals</li>
-          <li>Linux and infrastructure operations</li>
-          <li>Continuous improvement in enterprise networking</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="container">
-    <h2 class="section-title">Let's Connect</h2>
-
-    <p>
-      I am open to opportunities in Network Engineering,
-      NOC Operations, IT Operations and Infrastructure Support.
-      Feel free to connect with me professionally.
-    </p>
-
-    <div class="actions" style="justify-content:center">
-
-      <a class="btn primary"
-         href="mailto: vamsireddy3699@gmail.com">
-        Email Me
-      </a>
-
-      <a class="btn secondary"
-         href="https://www.linkedin.com/in/vamsidharreddy-kakarla-625036199/"
-         target="_blank"
-         rel="noopener noreferrer">
-        LinkedIn Profile
-      </a>
-
-      <a class="btn secondary"
-         href="https://github.com/VAMSIDHARKAKARLA"
-         target="_blank"
-         rel="noopener noreferrer">
-        GitHub Profile
-      </a>
-
-    </div>
-  </div>
-</section>
-  
 <!-- PROFESSIONAL FOOTER -->
+
 <footer class="main-footer">
+
   <div class="footer-container">
 
     <div class="footer-brand">
       <h2>Vamsidharreddy <span>Kakarla.</span></h2>
+
       <p>
         Network Operations Center Engineer | Network Monitoring |
         IT Infrastructure | Incident Management
@@ -1289,39 +1289,44 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     </div>
 
     <div class="footer-links">
+
       <a href="#home">Home</a>
+
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+
+      <a href="#skills">Skills</a>
+
       <a href="#contact">Contact</a>
+
+      <a
+        href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/VAMSIDHARKAKARLA"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
+
     </div>
-
-    <div class="footer-social">
-      <a href="https://www.linkedin.com/in/vamsidharreddy-kakarla-625036199/"
-         target="_blank">LinkedIn ↗</a>
-
-      <a href="https://github.com/VAMSIDHARKAKARLA"
-         target="_blank">GitHub ↗</a>
-    </div>
-
-    <div class="footer-line"></div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Vamsidharreddy Kakarla. All Rights Reserved.</p>
-      <p>Designed with passion for Technology & Networking.</p>
-    </div>
-
-    <a href="#home" class="back-to-top">↑ Back to Top</a>
 
   </div>
-</footer>
-  
 
-<footer>
-  © 2026 Vamsidharreddy Kakarla. All rights reserved.
-  <br>Designed for professional portfolio presentation.
+  <div class="footer-bottom">
+    <p>
+      © 2026 Vamsidharreddy Kakarla. All Rights Reserved.
+    </p>
+  </div>
+
 </footer>
+
+
 
 </body>
   </html>
