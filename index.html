@@ -441,9 +441,156 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     font-size: 11px;
   }
   }
+
+  
+/* REAL-TIME NOC PROJECTS */
+
+.noc-projects {
+  padding: 85px 0;
+  background: #080f20;
+}
+
+.noc-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.noc-label {
+  color: #00c8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.noc-heading p {
+  color: #aabbd1;
+  max-width: 650px;
+  margin: 15px auto;
+  line-height: 1.8;
+}
+
+.noc-heading .section-title span {
+  color: #00c8ff;
+}
+
+.noc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.noc-card {
+  position: relative;
+  padding: 28px;
+  background: linear-gradient(145deg, #14233b, #0d182c);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 18px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.noc-card:hover {
+  transform: translateY(-7px);
+  border-color: #00c8ff;
+  box-shadow: 0 15px 35px rgba(0, 200, 255, 0.1);
+}
+
+.noc-number {
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(0, 200, 255, 0.25);
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.noc-icon {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.noc-category {
+  color: #00c8ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.noc-card h3 {
+  color: #fff;
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.noc-card > p {
+  color: #aebed2;
+  font-size: 13px;
+  line-height: 1.8;
+  min-height: 70px;
+}
+
+.noc-details {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.noc-details h4 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.noc-details ul {
+  padding-left: 19px;
+  margin: 0;
+}
+
+.noc-details li {
+  color: #b8c8dc;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 5px;
+}
+
+.noc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.noc-tools span {
+  color: #bfeaff;
+  background: rgba(0, 200, 255, 0.08);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 20px;
+  padding: 7px 11px;
+  font-size: 11px;
+}
+
+@media(max-width: 700px) {
+  .noc-projects {
+    padding: 65px 15px;
+  }
+
+  .noc-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .noc-card {
+    padding: 23px 19px;
+  }
+
+  .noc-card > p {
+    min-height: auto;
+  }
+}
   
 </style>
-
   
 </head>
 
@@ -776,6 +923,138 @@ footer {padding:25px;text-align:center;color:var(--muted);font-size:12px;border-
     </div>
   </div>
 </section>
+  
+<!-- REAL-TIME NOC PROJECTS -->
+<section class="noc-projects" id="noc-projects">
+  <div class="container">
+
+    <div class="noc-heading">
+      <span class="noc-label">PRACTICAL EXPERIENCE</span>
+      <h2 class="section-title">
+        Real-Time NOC <span>Projects</span>
+      </h2>
+      <p>
+        Practical infrastructure monitoring and troubleshooting
+        scenarios based on enterprise NOC operations.
+      </p>
+    </div>
+
+    <div class="noc-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="noc-card">
+        <div class="noc-number">01</div>
+        <div class="noc-icon">🌐</div>
+        <span class="noc-category">NETWORK TROUBLESHOOTING</span>
+        <h3>Branch Network Down</h3>
+        <p>
+          Troubleshooting branch connectivity issues by analyzing
+          device availability, WAN links, monitoring alerts and
+          coordinating with ISP support teams.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Verify device reachability and monitoring alerts.</li>
+            <li>Check primary and secondary WAN connectivity.</li>
+            <li>Analyze interface status and packet loss.</li>
+            <li>Coordinate with ISP vendors for restoration.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>ServiceNow</span>
+          <span>vManage</span>
+          <span>Ping</span>
+          <span>Traceroute</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="noc-card">
+        <div class="noc-number">02</div>
+        <div class="noc-icon">📡</div>
+        <span class="noc-category">WAN MONITORING</span>
+        <h3>WAN Link Flapping</h3>
+        <p>
+          Investigating intermittent WAN connectivity and repeated
+          link-up/link-down events affecting remote locations.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Review interface status and alert history.</li>
+            <li>Identify primary or backup link instability.</li>
+            <li>Analyze packet loss and latency trends.</li>
+            <li>Raise vendor tickets and track resolution.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>Cisco SD-WAN</span>
+          <span>vManage</span>
+          <span>Dynatrace</span>
+          <span>ISP Support</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="noc-card">
+        <div class="noc-number">03</div>
+        <div class="noc-icon">📊</div>
+        <span class="noc-category">PERFORMANCE MONITORING</span>
+        <h3>High Packet Loss</h3>
+        <p>
+          Analyzing network performance degradation, packet loss
+          and latency affecting communication between locations.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Perform ping and traceroute checks.</li>
+            <li>Compare packet loss and response times.</li>
+            <li>Review WAN utilization and interface errors.</li>
+            <li>Escalate findings to network and ISP teams.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>Ping</span>
+          <span>Traceroute</span>
+          <span>ScienceLogic</span>
+          <span>vManage</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="noc-card">
+        <div class="noc-number">04</div>
+        <div class="noc-icon">🔎</div>
+        <span class="noc-category">DNS & DHCP SUPPORT</span>
+        <h3>DNS Resolution Issues</h3>
+        <p>
+          Supporting DNS and DHCP troubleshooting through hostname
+          resolution checks, IP verification and coordination
+          for infrastructure changes.
+        </p>
+        <div class="noc-details">
+          <h4>Key Activities</h4>
+          <ul>
+            <li>Verify hostname and IP address mapping.</li>
+            <li>Use nslookup to validate DNS resolution.</li>
+            <li>Check DNS records and DHCP-related information.</li>
+            <li>Coordinate record updates with responsible teams.</li>
+          </ul>
+        </div>
+        <div class="noc-tools">
+          <span>DNS</span>
+          <span>DHCP</span>
+          <span>nslookup</span>
+          <span>ServiceNow</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
 
 <section id="education">
   <div class="container">
