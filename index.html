@@ -3,799 +3,262 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071321">
-<meta name="description" content="Professional portfolio of Vamsidharreddy Kakarla - NOC Engineer, Network Operations and IT Infrastructure Support.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B1120">
+
 <title>Vamsidharreddy Kakarla | NOC Engineer</title>
 
+<meta name="description" content="Professional portfolio of Vamsidharreddy Kakarla, NOC Engineer at TCS, working on the KeyBank project. Network and Infrastructure Operations professional.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+
+/* ===== GLOBAL DESIGN SYSTEM ===== */
+
 :root {
-  --bg: #071321;
-  --panel: #102238;
-  --panel2: #142b45;
-  --text: #eef5ff;
-  --muted: #a9bbcf;
-  --blue: #55a6ff;
-  --cyan: #5ce1e6;
-  --line: rgba(255,255,255,.11);
-  --max: 1120px;
+  --bg: #0B1120;
+  --bg-soft: #0F192B;
+  --card: #111C2E;
+  --card-hover: #17253A;
+  --accent: #00C8FF;
+  --accent-soft: rgba(0,200,255,0.12);
+  --white: #FFFFFF;
+  --text: #D6DFEB;
+  --muted: #94A3B8;
+  --border: rgba(148,163,184,0.15);
+  --success: #36D399;
+  --shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
+/* ===== RESET ===== */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
 }
 
 body {
-  background:
-    radial-gradient(circle at 80% 8%, #12365a 0, transparent 30%),
-    var(--bg);
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
   color: var(--text);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== BACKGROUND EFFECTS ===== */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -220px;
+  right: -180px;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(
+    circle,
+    rgba(0,200,255,0.09),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -250px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(29,78,216,0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+h1, h2, h3, h4 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--white);
+  line-height: 1.25;
+}
+
+p {
+  color: var(--text);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
-.wrap {
-  width: 92%;
-  max-width: var(--max);
-  margin: auto;
-}
-
-section {
-  padding: 75px 0;
-  scroll-margin-top: 80px;
-}
-
-.eyebrow {
-  color: var(--cyan);
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.section-head {
-  margin-bottom: 30px;
-}
-
-.section-head h2 {
-  font-size: clamp(27px, 4vw, 38px);
-  line-height: 1.3;
-  margin: 10px 0;
-}
-
-.section-head h2 span {
-  color: var(--cyan);
-}
-
-.section-head p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.panel,
-.card {
-  background: linear-gradient(145deg, var(--panel2), var(--panel));
-  border: 1px solid var(--line);
-  border-radius: 15px;
-  padding: 25px;
-}
-
-/* NAVIGATION */
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(7,19,33,.96);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
-}
-
-nav {
-  min-height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-size: 25px;
-  font-weight: 850;
-  color: var(--cyan);
-  letter-spacing: 1px;
-}
-
-.brand span {
-  color: white;
-}
-
-.navlinks {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.navlinks a {
-  color: var(--muted);
-  font-size: 13px;
-  transition: .2s;
-}
-
-.navlinks a:hover {
-  color: var(--cyan);
-}
-
-.menu {
-  display: none;
-  background: transparent;
-  color: white;
-  border: 1px solid var(--line);
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-size: 23px;
+button {
+  font-family: inherit;
   cursor: pointer;
 }
 
-/* HOME */
-
-.hero {
-  min-height: 590px;
-  display: grid;
-  grid-template-columns: 1.4fr .8fr;
-  align-items: center;
-  gap: 45px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
 }
 
-.hero h1 {
-  font-size: clamp(35px, 6vw, 62px);
-  line-height: 1.15;
-  letter-spacing: -1.5px;
-  margin: 18px 0;
+/* ===== COMMON SECTION STYLING ===== */
+
+.section {
+  width: 100%;
+  animation: sectionFade 0.35s ease;
 }
 
-.hero h1 span {
-  color: var(--cyan);
+.section-title {
+  font-size: clamp(27px, 4vw, 36px);
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
-.role {
-  font-size: clamp(17px, 2.5vw, 23px);
-  color: #d1e3f7;
-  margin-bottom: 17px;
-}
-
-.lead {
-  max-width: 680px;
+.section-subtitle {
   color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 27px;
+  font-size: 14px;
+  margin-bottom: 32px;
 }
 
-.actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+.accent {
+  color: var(--accent);
 }
+
+.section-label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ===== PROFESSIONAL CARDS ===== */
+
+.card {
+  background: linear-gradient(
+    145deg,
+    rgba(17,28,46,0.98),
+    rgba(15,25,43,0.98)
+  );
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(0,200,255,0.35);
+  transform: translateY(-3px);
+}
+
+/* ===== BUTTONS ===== */
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 18px;
+  gap: 9px;
+  padding: 12px 22px;
   border-radius: 8px;
-  background: linear-gradient(120deg, #3188e8, #2368bd);
-  border: 1px solid transparent;
   font-size: 13px;
-  font-weight: 750;
-  transition: .25s;
-  cursor: pointer;
-}
-
-.btn.secondary {
-  background: transparent;
-  border-color: #4c9ce9;
-  color: #b9ddff;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(38,147,255,.18);
-}
-
-/* PROFILE PHOTO */
-
-.portrait-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portrait {
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  border: 2px solid var(--cyan);
-  padding: 8px;
-  background: linear-gradient(145deg, #1a456c, #0d2035);
-  box-shadow: 0 20px 70px rgba(0,0,0,.4);
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-}
-
-.portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 50%;
-  display: block;
-  background: #102238;
-}
-
-.photo-note {
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 12px;
-}
-
-/* ABOUT */
-
-.about p {
-  color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 25px;
-}
-
-.stat {
-  padding: 17px;
-  border: 1px solid var(--line);
-  background: rgba(5,17,31,.45);
-  border-radius: 11px;
-}
-
-.stat strong {
-  display: block;
-  color: var(--cyan);
-  font-size: 25px;
-}
-
-.stat span {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-/* SKILLS */
-
-.skill-group {
-  margin-bottom: 24px;
-}
-
-.skill-group h3 {
-  font-size: 17px;
-  color: #d9edff;
-  margin-bottom: 13px;
-}
-
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.chip {
-  padding: 7px 13px;
-  border-radius: 7px;
-  background: #102b47;
-  border: 1px solid #285078;
-  color: #d9eaff;
-  font-size: 13px;
-}
-
-/* EXPERIENCE */
-
-.company-card {
-  padding: 25px;
-  background: linear-gradient(145deg, var(--panel2), var(--panel));
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--blue);
-  border-radius: 13px;
-  margin-bottom: 22px;
-}
-
-.company-card h3 {
-  font-size: 23px;
-  margin-bottom: 5px;
-}
-
-.company-card p {
-  color: #d1e3f7;
-  font-size: 14px;
-  font-weight: 650;
-}
-
-.company-card .meta {
-  color: var(--muted);
-  font-size: 13px;
-  margin-top: 8px;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 17px;
-}
-
-.experience-card {
-  background: linear-gradient(145deg, var(--panel2), var(--panel));
-  border: 1px solid var(--line);
-  border-radius: 13px;
-  padding: 23px;
-  transition: .25s;
-}
-
-.experience-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--blue);
-}
-
-.experience-card h3 {
-  font-size: 17px;
-  color: #d9edff;
-  margin-bottom: 13px;
-}
-
-.experience-card ul {
-  padding-left: 19px;
-  color: var(--muted);
-}
-
-.experience-card li {
-  font-size: 13px;
-  line-height: 1.8;
-  margin-bottom: 8px;
-}
-
-/* EDUCATION */
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 17px;
-}
-
-.education-card h3 {
-  font-size: 17px;
-  margin-bottom: 12px;
-}
-
-.education-card p {
-  color: var(--muted);
-  font-size: 14px;
-  margin: 6px 0;
-}
-
-/* RESUME */
-
-.resume-panel {
-  text-align: center;
-  padding: 35px 25px;
-  background: linear-gradient(135deg, #12385b, #102238);
-  border: 1px solid var(--line);
-  border-radius: 15px;
-}
-
-.resume-panel h3 {
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-
-.resume-panel p {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 22px;
-}
-
-.resume-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-/* CONTACT */
-
-.contact {
-  text-align: center;
-  padding: 40px 25px;
-  border-radius: 17px;
-  background: linear-gradient(135deg, #12385b, #102238);
-  border: 1px solid var(--line);
-}
-
-.contact h2 {
-  font-size: clamp(27px, 4vw, 38px);
-  margin: 10px 0;
-}
-
-.contact h2 span {
-  color: var(--cyan);
-}
-
-.contact p {
-  color: var(--muted);
-  max-width: 680px;
-  margin: 12px auto 23px;
-  font-size: 14px;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-/* FOOTER */
-
-footer {
-  border-top: 1px solid var(--line);
-  padding: 35px 0 20px;
-  background: rgba(5,15,27,.6);
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.footer-brand h3 {
-  font-size: 21px;
-  margin-bottom: 7px;
-}
-
-.footer-brand h3 span {
-  color: var(--cyan);
-}
-
-.footer-brand p {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 17px;
-}
-
-.footer-links a {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.footer-links a:hover {
-  color: var(--cyan);
-}
-
-.footer-bottom {
-  border-top: 1px solid var(--line);
-  margin-top: 25px;
-  padding-top: 18px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-/* MOBILE */
-
-@media(max-width:760px) {
-
-  .menu {
-    display: block;
-  }
-
-  .navlinks {
-    display: none;
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: #0c1d30;
-    padding: 20px 5%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .navlinks.open {
-    display: flex;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding-top: 45px;
-    gap: 28px;
-  }
-
-  .hero-content {
-    order: 2;
-  }
-
-  .hero-photo {
-    order: 1;
-  }
-
-  .hero .lead {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .actions {
-    justify-content: center;
-  }
-
-  .portrait {
-    width: 210px;
-    height: 210px;
-  }
-
-  .experience-grid,
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 55px 0;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .company-card {
-    padding: 20px;
-  }
-}
-
-@media(prefers-reduced-motion:no-preference) {
-  .card,
-  .experience-card {
-    transition: .2s ease;
-  }
-}
-  
-/* ===== PREMIUM EDUCATION SECTION ===== */
-
-#education {
-  background: #071426;
-  padding: 90px 0;
-}
-
-.education-layout {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 35px;
-}
-
-.education-card {
-  background: #0c1d34;
-  border: 1px solid rgba(100, 160, 230, 0.18);
-  border-radius: 16px;
-  padding: 30px;
-  transition: 0.3s ease;
-}
-
-.education-card:hover {
-  border-color: #3988e8;
-  transform: translateY(-4px);
-}
-
-.education-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-
-.education-label {
-  color: #65a9f5;
-  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
 }
 
-.education-year {
-  color: #a8bad0;
-  font-size: 12px;
+.btn-primary {
+  background: var(--accent);
+  color: #07111F;
 }
 
-.education-card h3 {
-  color: #f2f6fc;
-  font-size: 23px;
-  margin: 0 0 10px;
+.btn-primary:hover {
+  background: #55D9FF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,200,255,0.2);
 }
 
-.education-field {
-  color: #b3c3d8;
-  font-size: 14px;
-  line-height: 1.7;
+.btn-outline {
+  border-color: var(--border);
+  color: var(--white);
+  background: transparent;
 }
 
-.education-divider {
-  height: 1px;
-  background: rgba(150, 180, 220, 0.15);
-  margin: 24px 0;
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
-.education-institute {
-  color: #edf4ff;
+/* ===== TAGS ===== */
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(0,200,255,0.15);
+  color: var(--accent);
+  font-size: 11px;
   font-weight: 600;
 }
 
-.education-university {
-  color: #a8bad0;
-  font-size: 14px;
+/* ===== ANIMATIONS ===== */
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.education-score {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-top: 28px;
-  padding: 16px;
-  border-radius: 10px;
-  background: rgba(50, 120, 210, 0.12);
-  color: #c4d5e9;
-  font-size: 13px;
-}
+/* ===== RESPONSIVE FOUNDATION ===== */
 
-.education-score strong {
-  color: #75b5ff;
-  font-size: 20px;
-}
+@media (max-width: 768px) {
 
-.education-score small {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.learning-list {
-  padding-left: 18px;
-  color: #c0cee0;
-  line-height: 2.2;
-  font-size: 14px;
-}
-
-.learning-list li::marker {
-  color: #65a9f5;
-}
-
-/* ===== PREMIUM CONTACT SECTION ===== */
-
-.contact {
-  background: #091a30;
-  padding: 90px 0;
-}
-
-.contact-panel {
-  max-width: 760px;
-  margin: 35px auto 0;
-  padding: 35px;
-  text-align: center;
-  background: #0d2039;
-  border: 1px solid rgba(100, 160, 230, 0.2);
-  border-radius: 16px;
-}
-
-.contact-panel > p {
-  color: #bdcce0;
-  line-height: 1.8;
-}
-
-.contact-actions {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-/* ===== PREMIUM FOOTER ===== */
-
-.footer {
-  background: #050f1e;
-  border-top: 1px solid rgba(120, 160, 210, 0.15);
-  padding: 25px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.footer strong {
-  color: #e8f1fc;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.footer p {
-  color: #91a5bd;
-  font-size: 12px;
-  margin: 7px 0 0;
-}
-
-.copyright {
-  text-align: right;
-}
-
-/* ===== MOBILE RESPONSIVENESS ===== */
-
-@media (max-width: 700px) {
-  #education,
-  .contact {
-    padding: 65px 0;
+  .container {
+    width: 92%;
   }
 
-  .education-layout {
-    grid-template-columns: 1fr;
+  .card {
+    padding: 19px;
+    border-radius: 13px;
   }
 
-  .education-card {
-    padding: 23px;
+  .section-subtitle {
+    margin-bottom: 23px;
   }
 
-  .contact-panel {
-    padding: 25px 18px;
+  .btn {
+    padding: 11px 17px;
   }
 
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+}
 
-  .copyright {
-    text-align: left;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
@@ -803,176 +266,708 @@ footer {
 </head>
 
 <body>
+  
+<!-- ===== NAVIGATION BAR ===== -->
 
-<!-- ===== NAVIGATION ===== -->
+<div class="main-layout">
 
-<header>
-  <div class="wrap">
-    <nav>
+<header class="navbar">
 
-      <a class="brand" href="#home">VK<span>.</span></a>
+  <div class="nav-container">
 
-      <button class="menu" id="menu"
-        aria-label="Toggle navigation"
-        aria-expanded="false">☰</button>
+    <a href="#" class="logo" onclick="showSection('home'); return false;">
+      VK<span>.</span>
+    </a>
 
-      <div class="navlinks" id="navlinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav class="nav-links">
+
+      <button class="nav-link active" onclick="showSection('home', this)">
+        Home
+      </button>
+
+      <button class="nav-link" onclick="showSection('about', this)">
+        About
+      </button>
+
+      <button class="nav-link" onclick="showSection('experience', this)">
+        Experience
+      </button>
+
+      <button class="nav-link" onclick="showSection('skills', this)">
+        Skills
+      </button>
+
+      <button class="nav-link" onclick="showSection('education', this)">
+        Education
+      </button>
+
+      <button class="nav-link" onclick="showSection('contact', this)">
+        Contact
+      </button>
 
     </nav>
+
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      Available
+    </div>
+
   </div>
+
 </header>
 
 
-<main>
+<!-- ===== HOME SECTION ===== -->
 
-<!-- ===== HOME ===== -->
+<main class="container main-content">
 
-<section class="wrap hero" id="home">
+<section id="home" class="section active-section">
 
-  <div class="hero-content">
+  <div class="hero-grid">
 
-    <div class="eyebrow">
-      IT OPERATIONS • NETWORK MONITORING • PRODUCTION SUPPORT
-    </div>
+    <div class="hero-content">
 
-    <h1>
-      Vamsidharreddy <span>Kakarla</span>
-    </h1>
-
-    <div class="role">
-      NOC Engineer | Network Operations | IT Infrastructure
-    </div>
-
-    <p class="lead">
-      IT Operations professional with 4+ years of experience
-      in Network Operations Center and Distributed Production
-      Support at Tata Consultancy Services. Experienced in
-      enterprise monitoring, incident coordination, network
-      operations and infrastructure support.
-    </p>
-
-    <div class="actions">
-
-      <a class="btn" href="#experience">
-        Explore My Experience
-      </a>
-
-      <a class="btn secondary" href="#contact">
-        Contact Me
-      </a>
-
-      <a class="btn secondary"
-        href="Vamsidhar_Kakarla_Resume.pdf.pdf"
-        target="_blank">
-        View Resume
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="hero-photo">
-
-    <div class="portrait-wrap">
-      <div class="portrait">
-
-        <img
-          src="IMG-20260925-WA0004.jpg"
-          alt="Vamsidharreddy Kakarla"
-          onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
-
-        <div id="photoFallback"
-          style="display:none;width:100%;height:100%;place-items:center;font-size:65px;color:#5ce1e6;font-weight:800;">
-          VK
-        </div>
-
+      <div class="hero-label">
+        <span class="status-dot"></span>
+        PROFESSIONAL PORTFOLIO
       </div>
-    </div>
 
-    <div class="photo-note">
-      Network & IT Infrastructure Professional
-    </div>
+      <p class="hero-greeting">Hello, I'm</p>
 
-  </div>
+      <h1>
+        Vamsidharreddy
+        <span class="accent">Kakarla</span>
+      </h1>
 
-</section>
-
-
-<!-- ===== PROFESSIONAL SUMMARY ===== -->
-
-<section id="about">
-
-  <div class="wrap">
-
-    <div class="section-head">
-
-      <div class="eyebrow">ABOUT ME</div>
-
-      <h2>
-        Professional <span>Summary</span>
+      <h2 class="hero-role">
+        NOC Engineer
+        <span class="role-divider">|</span>
+        Network & Infrastructure Operations
       </h2>
 
+      <p class="hero-description">
+        Experienced in enterprise Network and Infrastructure
+        Operations, 24/7 production monitoring, incident
+        management, server support and network troubleshooting
+        for the KeyBank project at Tata Consultancy Services.
+      </p>
+
+      <div class="hero-tags">
+
+        <span class="tag">Network Operations</span>
+
+        <span class="tag">Infrastructure Support</span>
+
+        <span class="tag">Production Monitoring</span>
+
+      </div>
+
+      <div class="hero-buttons">
+
+        <button class="btn btn-primary"
+          onclick="showSection('experience')">
+          Explore My Experience →
+        </button>
+
+        <button class="btn btn-outline"
+          onclick="showSection('contact')">
+          Contact Me
+        </button>
+
+      </div>
+
     </div>
 
-    <div class="panel about">
 
-      <p>
-        I am an IT Operations and NOC Engineer with 4+ years
-        of experience at Tata Consultancy Services, working
-        in Distributed Production Support.
-      </p>
+    <!-- PROFILE PHOTO -->
 
-      <p>
-        My experience includes monitoring enterprise network
-        devices, Windows, Linux and Unix servers, application
-        availability and infrastructure health through
-        monitoring and observability platforms.
-      </p>
+    <div class="hero-profile">
 
-      <p>
-        I handle infrastructure alerts, P1/P2 incident
-        coordination, network connectivity troubleshooting,
-        DNS and DHCP operational requests, server support
-        activities and vendor escalations.
-      </p>
+      <div class="profile-glow">
 
-      <p>
-        I have hands-on exposure to ServiceNow ITOM,
-        Dynatrace, Cisco SD-WAN vManage, ScienceLogic,
-        Moogsoft, ELK, VMware and other enterprise tools.
-      </p>
+        <div class="profile-frame">
 
-      <p>
-        I am continuously developing my networking knowledge,
-        including TCP/IP, VLAN, routing fundamentals,
-        OSPF and BGP, through ongoing CCNA learning.
-      </p>
+          <img
+            src="profile.jpg"
+            alt="Vamsidharreddy Kakarla"
+            class="profile-image"
+          >
 
-      <div class="stats">
-
-        <div class="stat">
-          <strong>4+</strong>
-          <span>Years of Experience</span>
         </div>
 
-        <div class="stat">
-          <strong>1000+</strong>
-          <span>Network Devices Monitored</span>
-        </div>
+      </div>
 
-        <div class="stat">
-          <strong>TCS</strong>
-          <span>Current Organization</span>
-        </div>
+      <div class="profile-caption">
 
+        <h3>Vamsidharreddy Kakarla</h3>
+
+        <p>NOC Engineer | TCS</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CAREER HIGHLIGHTS -->
+
+  <div class="hero-highlights">
+
+    <div class="highlight-card">
+
+      <span class="highlight-number">TCS</span>
+
+      <span class="highlight-text">
+        Current Organization
+      </span>
+
+    </div>
+
+    <div class="highlight-card">
+
+      <span class="highlight-number">KeyBank</span>
+
+      <span class="highlight-text">
+        Project
+      </span>
+
+    </div>
+
+    <div class="highlight-card">
+
+      <span class="highlight-number">2022</span>
+
+      <span class="highlight-text">
+        Career Started
+      </span>
+
+    </div>
+
+    <div class="highlight-card">
+
+      <span class="highlight-number">16+</span>
+
+      <span class="highlight-text">
+        Operational Experience Areas
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+</div>
+
+
+<!-- ===== NAVIGATION & HOME STYLING ===== -->
+
+<style>
+
+.main-layout {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  background: rgba(11,17,32,0.92);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(18px);
+}
+
+.nav-container {
+  width: min(1200px, 92%);
+  min-height: 76px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 10px 13px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.nav-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--success);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 10px rgba(54,211,153,0.5);
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+  min-height: calc(100vh - 76px);
+  padding-top: 75px;
+  padding-bottom: 55px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active-section {
+  display: block;
+}
+
+
+/* HERO */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 65px;
+  min-height: 430px;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 13px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.hero-greeting {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.hero-content h1 {
+  font-size: clamp(36px, 5vw, 57px);
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  margin-bottom: 14px;
+}
+
+.hero-role {
+  font-size: clamp(15px, 2vw, 19px);
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.role-divider {
+  color: var(--accent);
+  margin: 0 5px;
+}
+
+.hero-description {
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+/* PROFILE IMAGE */
+
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-glow {
+  width: 270px;
+  height: 270px;
+  padding: 9px;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    var(--accent),
+    #164E86,
+    transparent
+  );
+  box-shadow: 0 0 55px rgba(0,200,255,0.12);
+}
+
+.profile-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 5px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  display: block;
+}
+
+.profile-caption {
+  text-align: center;
+  margin-top: 19px;
+}
+
+.profile-caption h3 {
+  font-size: 18px;
+}
+
+.profile-caption p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+/* HIGHLIGHTS */
+
+.hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 65px;
+}
+
+.highlight-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 21px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.highlight-card:hover {
+  border-color: rgba(0,200,255,0.4);
+  transform: translateY(-3px);
+}
+
+.highlight-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.highlight-text {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px 0;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-grid {
+    gap: 35px;
+  }
+
+}
+
+@media(max-width: 650px) {
+
+  .main-content {
+    padding-top: 45px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 38px;
+  }
+
+  .hero-label {
+    margin-bottom: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .hero-tags,
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .profile-glow {
+    width: 225px;
+    height: 225px;
+  }
+
+  .hero-highlights {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 45px;
+    gap: 11px;
+  }
+
+  .highlight-card {
+    padding: 17px 12px;
+  }
+
+  .nav-container {
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+
+}
+
+</style>
+
+<!-- ===== ABOUT SECTION ===== -->
+
+<section id="about" class="section">
+
+  <div class="section-label">GET TO KNOW ME</div>
+
+  <h2 class="section-title">
+    About <span class="accent">Me</span>
+  </h2>
+
+  <p class="section-subtitle">
+    Professional background and career overview
+  </p>
+
+
+  <!-- PROFESSIONAL SUMMARY -->
+
+  <div class="about-layout">
+
+    <div class="card about-main">
+
+      <div class="about-icon">01</div>
+
+      <h3>Professional Summary</h3>
+
+      <p>
+        I am a NOC Engineer working at Tata Consultancy
+        Services (TCS), supporting the KeyBank project.
+        I have hands-on experience in Network and
+        Infrastructure Operations, production monitoring,
+        incident management and technical support.
+      </p>
+
+      <p>
+        My responsibilities include monitoring enterprise
+        network devices, Windows and Linux servers,
+        application infrastructure and critical alerts.
+        I perform initial troubleshooting, investigate
+        incidents and coordinate with respective support
+        teams and external vendors to maintain service
+        availability.
+      </p>
+
+      <p>
+        I work with enterprise monitoring and ITSM
+        platforms to support production environments,
+        handle operational activities and ensure timely
+        incident updates and escalations.
+      </p>
+
+    </div>
+
+
+    <!-- PROJECT DETAILS -->
+
+    <div class="card about-project">
+
+      <div class="about-icon">02</div>
+
+      <h3>Current Assignment</h3>
+
+      <div class="project-detail">
+
+        <span>Organization</span>
+
+        <strong>Tata Consultancy Services</strong>
+
+      </div>
+
+      <div class="project-detail">
+
+        <span>Client Project</span>
+
+        <strong class="accent">KeyBank</strong>
+
+      </div>
+
+      <div class="project-detail">
+
+        <span>Designation</span>
+
+        <strong>NOC Engineer</strong>
+
+      </div>
+
+      <div class="project-detail">
+
+        <span>Domain</span>
+
+        <strong>Network & Infrastructure Operations</strong>
+
+      </div>
+
+      <div class="project-detail">
+
+        <span>Employment Period</span>
+
+        <strong>February 2022 – Present</strong>
+
+      </div>
+
+      <div class="project-detail">
+
+        <span>Work Environment</span>
+
+        <strong>24/7 Production Support</strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CORE RESPONSIBILITIES -->
+
+  <div class="about-responsibilities">
+
+    <h3 class="subsection-title">
+      Areas of <span class="accent">Responsibility</span>
+    </h3>
+
+    <div class="responsibility-grid">
+
+      <div class="responsibility-card">
+        <span class="responsibility-number">01</span>
+        <div>
+          <h4>Network Operations</h4>
+          <p>Network availability, connectivity monitoring and troubleshooting.</p>
+        </div>
+      </div>
+
+      <div class="responsibility-card">
+        <span class="responsibility-number">02</span>
+        <div>
+          <h4>Infrastructure Support</h4>
+          <p>Windows, Linux and Unix server monitoring and operational support.</p>
+        </div>
+      </div>
+
+      <div class="responsibility-card">
+        <span class="responsibility-number">03</span>
+        <div>
+          <h4>Monitoring & Alerts</h4>
+          <p>Infrastructure alert investigation and service health monitoring.</p>
+        </div>
+      </div>
+
+      <div class="responsibility-card">
+        <span class="responsibility-number">04</span>
+        <div>
+          <h4>Incident Management</h4>
+          <p>Incident coordination, escalations and production support activities.</p>
+        </div>
       </div>
 
     </div>
@@ -982,95 +977,825 @@ footer {
 </section>
 
 
+<!-- ===== ABOUT SECTION STYLING ===== -->
+
+<style>
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 22px;
+}
+
+.about-main,
+.about-project {
+  position: relative;
+}
+
+.about-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 19px;
+}
+
+.about-main h3,
+.about-project h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.about-main p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.about-main p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* PROJECT DETAILS */
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-detail:last-child {
+  border-bottom: none;
+}
+
+.project-detail span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.project-detail strong {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* RESPONSIBILITIES */
+
+.about-responsibilities {
+  margin-top: 40px;
+}
+
+.subsection-title {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.responsibility-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 19px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.responsibility-card:hover {
+  border-color: rgba(0,200,255,0.35);
+  transform: translateY(-3px);
+}
+
+.responsibility-number {
+  color: var(--accent);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.responsibility-card h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.responsibility-card p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .responsibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-responsibilities {
+    margin-top: 30px;
+  }
+
+}
+
+</style>
+
+<!-- ===== PROFESSIONAL EXPERIENCE ===== -->
+
+<section id="experience" class="section">
+
+  <div class="section-label">CAREER JOURNEY</div>
+
+  <h2 class="section-title">
+    Professional <span class="accent">Experience</span>
+  </h2>
+
+  <p class="section-subtitle">
+    Hands-on experience in enterprise network, infrastructure
+    and production operations.
+  </p>
+
+
+  <!-- EMPLOYMENT OVERVIEW -->
+
+  <div class="card experience-overview">
+
+    <div class="experience-company">
+
+      <div class="company-symbol">TCS</div>
+
+      <div>
+        <h3>Tata Consultancy Services</h3>
+        <p>NOC Engineer | KeyBank Project</p>
+        <span>February 2022 – Present</span>
+      </div>
+
+    </div>
+
+    <div class="experience-badge">
+      Network & Infrastructure Operations
+    </div>
+
+  </div>
+
+
+  <!-- EXPERIENCE CATEGORY 1 -->
+
+  <div class="experience-group">
+
+    <button class="experience-group-header"
+      onclick="toggleExperience('network-work', this)">
+
+      <span class="group-number">01</span>
+
+      <span class="group-heading">
+        <strong>Network Operations</strong>
+        <small>Network monitoring, connectivity and troubleshooting</small>
+      </span>
+
+      <span class="group-count">01–05</span>
+
+      <span class="group-arrow">+</span>
+
+    </button>
+
+    <div class="experience-details" id="network-work">
+
+      <div class="experience-item">
+        <h4>01. Infrastructure Monitoring</h4>
+        <p>
+          Monitor 1,000+ network devices, Windows/Linux/Unix
+          servers and application infrastructure through
+          enterprise monitoring platforms. Investigate
+          availability alerts and track infrastructure health.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>02. Network Troubleshooting</h4>
+        <p>
+          Perform initial troubleshooting for network
+          connectivity, device reachability, latency,
+          packet loss and service interruptions.
+          Coordinate with respective network teams for
+          further investigation and resolution.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>03. WAN & SD-WAN Operations</h4>
+        <p>
+          Monitor Cisco SD-WAN environments using vManage.
+          Investigate branch connectivity issues, WAN link
+          status, MPLS connectivity, cEdge devices and
+          primary/secondary broadband link conditions.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>04. Broadband & DIA Support</h4>
+        <p>
+          Monitor broadband and Dedicated Internet Access
+          links, investigate link flapping, high packet loss
+          and connectivity degradation. Track ISP-related
+          issues and coordinate with service providers.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>05. DNS & DHCP Operations</h4>
+        <p>
+          Handle DNS and DHCP-related operational requests,
+          perform nslookup and IP verification, investigate
+          hostname resolution issues and coordinate DNS
+          record updates and related troubleshooting.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- EXPERIENCE CATEGORY 2 -->
+
+  <div class="experience-group">
+
+    <button class="experience-group-header"
+      onclick="toggleExperience('server-work', this)">
+
+      <span class="group-number">02</span>
+
+      <span class="group-heading">
+        <strong>Server & Infrastructure Support</strong>
+        <small>Windows, Linux, Unix and maintenance operations</small>
+      </span>
+
+      <span class="group-count">06–09</span>
+
+      <span class="group-arrow">+</span>
+
+    </button>
+
+    <div class="experience-details" id="server-work">
+
+      <div class="experience-item">
+        <h4>06. Windows Server Support</h4>
+        <p>
+          Monitor Windows server availability, perform
+          authorized server reboots and restarts, investigate
+          basic operating system issues and coordinate
+          server-related incidents with support teams.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>07. Linux & Unix Support</h4>
+        <p>
+          Perform basic Linux and Unix operational checks,
+          investigate filesystem utilization, check available
+          disk space, assist with file cleanup activities
+          and support SSH key update requests.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>08. Active Directory Support</h4>
+        <p>
+          Handle user account-related operational requests,
+          including password unlocks, account lock/unlock
+          activities and basic access-related support
+          through authorized procedures.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>09. Server Maintenance & Patching</h4>
+        <p>
+          Support scheduled monthly Windows and SQL patching
+          activities across Production, Non-Production and
+          QV environments. Monitor maintenance activities
+          and coordinate with relevant teams.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- EXPERIENCE CATEGORY 3 -->
+
+  <div class="experience-group">
+
+    <button class="experience-group-header"
+      onclick="toggleExperience('monitoring-work', this)">
+
+      <span class="group-number">03</span>
+
+      <span class="group-heading">
+        <strong>Monitoring & Incident Management</strong>
+        <small>Monitoring tools, alerts and incident coordination</small>
+      </span>
+
+      <span class="group-count">10–13</span>
+
+      <span class="group-arrow">+</span>
+
+    </button>
+
+    <div class="experience-details" id="monitoring-work">
+
+      <div class="experience-item">
+        <h4>10. Application Monitoring</h4>
+        <p>
+          Monitor application availability and performance,
+          investigate application-related alerts and
+          coordinate with application support teams
+          to identify potential service impacts.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>11. Enterprise Monitoring Tools</h4>
+        <p>
+          Work with ServiceNow ITOM, Dynatrace, ScienceLogic,
+          Moogsoft, ELK basics and Vynamic View for
+          infrastructure monitoring, alert investigation
+          and operational visibility.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>12. Incident Management</h4>
+        <p>
+          Support P1/P2 incident management activities,
+          participate in bridge calls, coordinate with
+          incident managers and technical support groups,
+          provide status updates and track incident progress.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>13. Alert Management</h4>
+        <p>
+          Investigate ITOM-generated alerts, verify
+          Dynatrace auto-clear conditions, assess potential
+          service impact, create or update incidents and
+          route issues to the appropriate support groups.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- EXPERIENCE CATEGORY 4 -->
+
+  <div class="experience-group">
+
+    <button class="experience-group-header"
+      onclick="toggleExperience('production-work', this)">
+
+      <span class="group-number">04</span>
+
+      <span class="group-heading">
+        <strong>Vendor & Production Operations</strong>
+        <small>ISP coordination, escalation and operational support</small>
+      </span>
+
+      <span class="group-count">14–16</span>
+
+      <span class="group-arrow">+</span>
+
+    </button>
+
+    <div class="experience-details" id="production-work">
+
+      <div class="experience-item">
+        <h4>14. ISP & Vendor Coordination</h4>
+        <p>
+          Coordinate with external service providers
+          including AT&T, GTT, Lumen, Ventus, Comcast
+          and CompuCom for network connectivity issues,
+          service disruptions, vendor tickets and follow-ups.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>15. Escalation & SLA Management</h4>
+        <p>
+          Track incident progress, follow up with respective
+          support teams and vendors, communicate current
+          status, support timely escalations and maintain
+          operational updates according to support processes.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>16. Production Operations</h4>
+        <p>
+          Support production operations through operational
+          request handling, change coordination, VMware-related
+          support, Jenkins-related operational exposure,
+          documentation and coordination across technical
+          teams to maintain service continuity.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+<!-- ===== EXPERIENCE STYLING ===== -->
+
+<style>
+
+.experience-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.company-symbol {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.experience-company h3 {
+  font-size: 19px;
+}
+
+.experience-company p {
+  color: var(--text);
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.experience-company span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.experience-badge {
+  padding: 9px 13px;
+  background: var(--accent-soft);
+  border-radius: 7px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* EXPERIENCE GROUPS */
+
+.experience-group {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  margin-bottom: 13px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.experience-group:hover {
+  border-color: rgba(0,200,255,0.3);
+}
+
+.experience-group-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  text-align: left;
+}
+
+.group-number {
+  color: var(--accent);
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.group-heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.group-heading strong {
+  font-size: 14px;
+}
+
+.group-heading small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.group-count {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.group-arrow {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 7px;
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+
+/* EXPANDABLE CONTENT */
+
+.experience-details {
+  display: none;
+  padding: 0 23px 20px;
+}
+
+.experience-details.open {
+  display: block;
+  animation: sectionFade 0.3s ease;
+}
+
+.experience-group-header.expanded .group-arrow {
+  transform: rotate(45deg);
+}
+
+.experience-item {
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+}
+
+.experience-item h4 {
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.experience-item p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+
+  .experience-overview {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .experience-company h3 {
+    font-size: 16px;
+  }
+
+  .experience-group-header {
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .group-number {
+    font-size: 18px;
+  }
+
+  .group-heading strong {
+    font-size: 12px;
+  }
+
+  .group-heading small {
+    font-size: 10px;
+  }
+
+  .group-count {
+    font-size: 9px;
+  }
+
+  .experience-details {
+    padding: 0 15px 16px;
+  }
+
+}
+
+      </style>
+      
 <!-- ===== TECHNICAL SKILLS ===== -->
 
-<section id="skills">
+<section id="skills" class="section">
 
-  <div class="wrap">
+  <div class="section-label">TECHNICAL EXPERTISE</div>
 
-    <div class="section-head">
+  <h2 class="section-title">
+    Technical <span class="accent">Skills</span>
+  </h2>
 
-      <div class="eyebrow">TECHNICAL TOOLKIT</div>
+  <p class="section-subtitle">
+    Technologies, tools and platforms used across
+    network and infrastructure operations.
+  </p>
 
-      <h2>
-        Skills & <span>Technologies</span>
-      </h2>
+
+  <div class="skills-grid">
+
+    <!-- NETWORKING -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">01</div>
+
+      <h3>Networking</h3>
 
       <p>
-        Technical knowledge and tools used in enterprise
-        network and infrastructure operations.
+        TCP/IP · LAN · WAN · VLAN · MPLS ·
+        Cisco SD-WAN · DNS · DHCP · NAT
       </p>
 
-    </div>
-
-    <div class="skill-group">
-
-      <h3>Network Operations</h3>
-
-      <div class="chips">
-        <span class="chip">TCP/IP</span>
-        <span class="chip">LAN / WAN</span>
-        <span class="chip">VLAN</span>
-        <span class="chip">DNS</span>
-        <span class="chip">DHCP</span>
-        <span class="chip">IPv4</span>
-        <span class="chip">NSLookup</span>
-        <span class="chip">Cisco SD-WAN</span>
-        <span class="chip">Cisco vManage</span>
-        <span class="chip">OSPF - Basic</span>
-        <span class="chip">BGP - Basic</span>
-        <span class="chip">SNMP - Basic</span>
-      </div>
+      <span class="skill-level">Operational Experience</span>
 
     </div>
 
-    <div class="skill-group">
 
-      <h3>Monitoring & Observability Tools</h3>
+    <!-- PROTOCOLS -->
 
-      <div class="chips">
-        <span class="chip">ServiceNow ITOM</span>
-        <span class="chip">Dynatrace</span>
-        <span class="chip">Moogsoft</span>
-        <span class="chip">ScienceLogic</span>
-        <span class="chip">ELK / Kibana</span>
-        <span class="chip">Vynamic View</span>
-        <span class="chip">VMware</span>
-        <span class="chip">Jenkins</span>
-      </div>
+    <div class="card skill-card">
 
-    </div>
+      <div class="skill-icon">02</div>
 
-    <div class="skill-group">
+      <h3>Network Protocols</h3>
 
-      <h3>Operating Systems & Infrastructure</h3>
+      <p>
+        OSPF · BGP · SNMP · ARP ·
+        TCP · UDP · ICMP
+      </p>
 
-      <div class="chips">
-        <span class="chip">Windows Server</span>
-        <span class="chip">Linux</span>
-        <span class="chip">Unix</span>
-        <span class="chip">Active Directory</span>
-        <span class="chip">SSH</span>
-        <span class="chip">Server Monitoring</span>
-        <span class="chip">Filesystem Checks</span>
-      </div>
+      <span class="skill-level">Basic Knowledge</span>
 
     </div>
 
-    <div class="skill-group">
 
-      <h3>IT Operations & Service Management</h3>
+    <!-- OPERATING SYSTEMS -->
 
-      <div class="chips">
-        <span class="chip">NOC Operations</span>
-        <span class="chip">Incident Management</span>
-        <span class="chip">P1 / P2 Coordination</span>
-        <span class="chip">Change Management</span>
-        <span class="chip">Production Support</span>
-        <span class="chip">Vendor Coordination</span>
-        <span class="chip">SLA Monitoring</span>
-        <span class="chip">Troubleshooting</span>
-      </div>
+    <div class="card skill-card">
+
+      <div class="skill-icon">03</div>
+
+      <h3>Operating Systems</h3>
+
+      <p>
+        Windows Server · Linux · Unix ·
+        Server Monitoring · Basic Troubleshooting
+      </p>
+
+      <span class="skill-level">Operational Support</span>
+
+    </div>
+
+
+    <!-- MONITORING -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">04</div>
+
+      <h3>Monitoring Platforms</h3>
+
+      <p>
+        ServiceNow ITOM · Dynatrace ·
+        ScienceLogic · Moogsoft · ELK ·
+        Vynamic View
+      </p>
+
+      <span class="skill-level">Hands-on Experience</span>
+
+    </div>
+
+
+    <!-- ITSM -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">05</div>
+
+      <h3>IT Service Management</h3>
+
+      <p>
+        ServiceNow · Incident Management ·
+        Change Coordination · Alert Management
+      </p>
+
+      <span class="skill-level">Operational Experience</span>
+
+    </div>
+
+
+    <!-- INFRASTRUCTURE -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">06</div>
+
+      <h3>Infrastructure Support</h3>
+
+      <p>
+        VMware · Active Directory ·
+        Server Maintenance · Windows & SQL Patching
+      </p>
+
+      <span class="skill-level">Operational Support</span>
+
+    </div>
+
+
+    <!-- AUTOMATION -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">07</div>
+
+      <h3>Tools & Automation</h3>
+
+      <p>
+        Jenkins · Basic SQL ·
+        Cisco vManage · Basic ELK Dashboards
+      </p>
+
+      <span class="skill-level">Working Knowledge</span>
+
+    </div>
+
+
+    <!-- OPERATIONS -->
+
+    <div class="card skill-card">
+
+      <div class="skill-icon">08</div>
+
+      <h3>Production Operations</h3>
+
+      <p>
+        P1/P2 Support · ISP Coordination ·
+        Vendor Escalation · SLA Tracking
+      </p>
+
+      <span class="skill-level">Hands-on Experience</span>
 
     </div>
 
@@ -1079,339 +1804,519 @@ footer {
 </section>
 
 
-<!-- ===== CAREER JOURNEY ===== -->
+<!-- ===== EDUCATION SECTION ===== -->
 
-<section id="experience">
+<section id="education" class="section">
 
-  <div class="wrap">
+  <div class="section-label">ACADEMIC BACKGROUND</div>
 
-    <div class="section-head">
+  <h2 class="section-title">
+    My <span class="accent">Education</span>
+  </h2>
 
-      <div class="eyebrow">CAREER HISTORY</div>
+  <p class="section-subtitle">
+    Academic qualifications and educational background.
+  </p>
 
-      <h2>
-        Career <span>Journey</span>
-      </h2>
 
-      <p>
-        Professional Experience – NOC, Network & Infrastructure Operations
+  <div class="education-layout">
+
+    <div class="card education-card">
+
+      <div class="education-top">
+
+        <div class="education-icon">B.Tech</div>
+
+        <span class="education-year">2017 – 2021</span>
+
+      </div>
+
+      <h3>Bachelor of Technology</h3>
+
+      <h4>Electronics and Communication Engineering</h4>
+
+      <p class="education-college">
+        JNN Institution of Engineering
       </p>
 
-    </div>
-
-    <div class="company-card">
-
-      <h3>Tata Consultancy Services (TCS)</h3>
-
-      <p>
-        NOC Engineer | Network & Infrastructure Operations |
-        Distributed Production Support
+      <p class="education-university">
+        Anna University
       </p>
 
-      <div class="meta">
-        Chennai, Tamil Nadu, India | April 2022 – Present
-      </div>
+      <div class="education-divider"></div>
 
-    </div>
+      <div class="education-score">
 
-    <div class="experience-grid">
-
-      <div class="experience-card">
-
-        <h3>01. Network Monitoring & Operations</h3>
-
-        <ul>
-          <li>Monitor 1,000+ network devices and enterprise infrastructure components.</li>
-          <li>Monitor Cisco SD-WAN environments using vManage.</li>
-          <li>Analyze network alerts, packet loss, latency and connectivity issues.</li>
-          <li>Perform initial troubleshooting for LAN, WAN, MPLS and broadband connectivity.</li>
-          <li>Monitor network availability and infrastructure health.</li>
-        </ul>
-
-      </div>
-
-      <div class="experience-card">
-
-        <h3>02. Server & Infrastructure Support</h3>
-
-        <ul>
-          <li>Monitor Windows, Linux and Unix servers and application availability.</li>
-          <li>Perform server reboot and restart activities as per approved procedures.</li>
-          <li>Perform basic filesystem checks and disk-space cleanup.</li>
-          <li>Support SSH key updates and Windows account lock/unlock activities.</li>
-          <li>Coordinate monthly Windows and SQL patching activities.</li>
-          <li>Support VMware infrastructure monitoring.</li>
-        </ul>
-
-      </div>
-
-      <div class="experience-card">
-
-        <h3>03. Incident & Production Management</h3>
-
-        <ul>
-          <li>Monitor infrastructure alerts through ServiceNow ITOM.</li>
-          <li>Handle P1/P2 incidents and participate in bridge calls.</li>
-          <li>Perform initial impact assessment and coordinate with incident managers.</li>
-          <li>Engage support teams for incident investigation and resolution.</li>
-          <li>Maintain incident work notes and status communications.</li>
-          <li>Perform alert validation, escalation and follow-up.</li>
-        </ul>
-
-      </div>
-
-      <div class="experience-card">
-
-        <h3>04. DNS, DHCP & Network Troubleshooting</h3>
-
-        <ul>
-          <li>Handle DNS and DHCP operational requests.</li>
-          <li>Perform hostname and IP verification using NSLookup.</li>
-          <li>Support DNS record updates and related change activities.</li>
-          <li>Perform basic network connectivity checks.</li>
-          <li>Coordinate with network and application teams.</li>
-        </ul>
-
-      </div>
-
-      <div class="experience-card">
-
-        <h3>05. Monitoring Tools & Technologies</h3>
-
-        <ul>
-          <li>Work with ServiceNow ITOM for infrastructure alert monitoring.</li>
-          <li>Use Dynatrace for application and infrastructure monitoring.</li>
-          <li>Work with Moogsoft and ScienceLogic for event monitoring.</li>
-          <li>Use ELK dashboards for basic log analysis.</li>
-          <li>Work with Cisco SD-WAN vManage and Vynamic View.</li>
-          <li>Exposure to VMware, Jenkins and Active Directory tools.</li>
-        </ul>
-
-      </div>
-
-      <div class="experience-card">
-
-        <h3>06. Vendor Coordination & Escalation</h3>
-
-        <ul>
-          <li>Coordinate with ISP and third-party vendors for connectivity issues.</li>
-          <li>Raise and track vendor tickets for network outages and circuit issues.</li>
-          <li>Follow up with AT&T, GTT, Lumen, Comcast and other providers.</li>
-          <li>Coordinate troubleshooting, dispatch requests and restoration updates.</li>
-          <li>Communicate incident updates with relevant stakeholders.</li>
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ===== EDUCATION ===== -->
-
-<section id="education">
-
-  <div class="wrap">
-
-    <div class="section-head">
-
-      <div class="eyebrow">ACADEMIC BACKGROUND</div>
-
-      <h2>
-        <span>Education</span> & Development 
-      </h2>
-      
-      <p class="section-subtitle">
-        My academic foundation and commitment to continuous professional growth.
-      </p>
-    </div>
-
-    <div class="education-layout">
-
-      <div class="education-card">
-        <div class="education-top">
-          <span class="education-label">ACADEMIC QUALIFICATION</span>
-          <span class="education-year">2017 — 2021</span>
+        <div>
+          <span>Academic Performance</span>
+          <strong>CGPA</strong>
         </div>
 
-        <h3>Bachelor of Technology</h3>
-        <p class="education-field">
+        <div class="cgpa-value">
+          7.83
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="education-side">
+
+      <div class="card education-highlight">
+
+        <span class="education-small-label">
+          QUALIFICATION
+        </span>
+
+        <h3>Engineering Graduate</h3>
+
+        <p>
           Electronics and Communication Engineering
         </p>
 
-        <div class="education-divider"></div>
-
-        <p class="education-institute">
-          JNN Institution of Engineering
-        </p>
-        <p class="education-university">Anna University</p>
-
-        <div class="education-score">
-          <span>Academic Performance</span>
-          <strong>7.43 <small>/ 10 CGPA</small></strong>
-        </div>
       </div>
 
-      <div class="education-card development-card">
-        <div class="education-top">
-          <span class="education-label">CONTINUOUS LEARNING</span>
-          <span class="education-year">ONGOING</span>
-        </div>
 
-        <h3>Professional Development</h3>
-        <p class="education-field">
-          Building knowledge in networking and infrastructure technologies.
+      <div class="card education-highlight">
+
+        <span class="education-small-label">
+          UNIVERSITY
+        </span>
+
+        <h3>Anna University</h3>
+
+        <p>
+          Undergraduate Engineering Education
         </p>
 
-        <div class="education-divider"></div>
-
-        <ul class="learning-list">
-          <li>CCNA – Currently Learning</li>
-          <li>Routing, Switching and VLAN Fundamentals</li>
-          <li>Windows and Linux Server Operations</li>
-          <li>Network Monitoring and Troubleshooting</li>
-          <li>IT Infrastructure and Incident Management</li>
-        </ul>
       </div>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- ===== CONTACT ===== -->
 
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">LET'S CONNECT</div>
-      <h2>Building Connections. <span>Creating Impact.</span></h2>
-      <p class="section-subtitle">
-        Open to opportunities in Network Engineering, NOC,
-        IT Operations and Infrastructure Support.
-      </p>
-    </div>
+<!-- ===== SKILLS & EDUCATION STYLING ===== -->
 
-    <div class="contact-panel">
-      <p>
-        Interested in discussing professional opportunities
-        or connecting about networking and infrastructure?
-      </p>
+<style>
 
-      <div class="contact-actions">
-        <a class="btn primary"
-           href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
-           target="_blank" rel="noopener noreferrer">
-          Connect on LinkedIn
-        </a>
+/* SKILLS */
 
-        <a class="btn"
-           href="https://github.com/VAMSIDHARKAKARLA"
-           target="_blank" rel="noopener noreferrer">
-          GitHub Profile
-        </a>
-      </div>
-    </div>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.skill-card {
+  transition: 0.3s ease;
+}
+
+.skill-icon {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.skill-card h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+  min-height: 48px;
+  margin-bottom: 15px;
+}
+
+.skill-level {
+  display: inline-block;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* EDUCATION */
+
+.education-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 20px;
+}
+
+.education-card {
+  padding: 30px;
+}
+
+.education-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.education-icon {
+  width: 65px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.education-year {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.education-card h3 {
+  font-size: 23px;
+  margin-bottom: 9px;
+}
+
+.education-card h4 {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.education-college {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.education-university {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.education-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 25px 0;
+}
+
+.education-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education-score div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.education-score span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.education-score strong {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.cgpa-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.education-side {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.education-highlight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-small-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.education-highlight h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.education-highlight p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 700px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    padding: 22px;
+  }
+
+  .education-card h3 {
+    font-size: 20px;
+  }
+
+}
+
+</style>
+
+<!-- ===== CONTACT SECTION ===== -->
+
+<section id="contact" class="section">
+
+  <div class="section-head">
+    <span class="eyebrow">GET IN TOUCH</span>
+    <h2>Let's Connect</h2>
+    <p>Open to opportunities in Network Engineering, NOC, IT Operations and Infrastructure Support.</p>
   </div>
-</section>
 
-<!-- ===== FOOTER ===== -->
-
-<footer class="footer">
-  <div class="wrap footer-content">
-    <div>
-      <strong>VAMSIDHARREDDY KAKARLA</strong>
-      <p>Network | Infrastructure | IT Operations</p>
-    </div>
-
-    <p class="copyright">
-      © 2026 All Rights Reserved.
+  <div class="contact-card">
+    <div class="contact-icon">✉</div>
+    <h3>Let's discuss opportunities</h3>
+    <p>
+      I'm interested in connecting with professionals and exploring
+      opportunities where I can contribute my experience and continue growing.
     </p>
-  </div>
-</footer>
-  
-      
-      <p class="section-subtitle">
-        My academic foundation and continuous learning journey in Network Engineering and IT Infrastructure.
-      </p>
-    </div>
 
-    <div class="education-grid">
-
-      <div class="education-card">
-        <div class="education-icon">🎓</div>
-        <h3>Bachelor of Technology – Electronics and Communication Engineering</h3>
-        <p class="institution">JNN Institution of Engineering</p>
-        <p>Anna University</p>
-        <div class="education-meta">
-          <span>2017 – 2021</span>
-          <span>CGPA: 7.43 / 10</span>
-        </div>
-      </div>
-
-      <div class="education-card">
-        <div class="education-icon">📘</div>
-        <h3>Professional Development</h3>
-        <p class="institution">Continuous Technical Learning</p>
-        <ul>
-          <li>CCNA – Currently Learning</li>
-          <li>Networking Fundamentals and Troubleshooting</li>
-          <li>VLAN, Routing, Switching and TCP/IP Concepts</li>
-          <li>Windows and Linux Server Operations</li>
-          <li>IT Infrastructure Monitoring and Incident Management</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">GET IN TOUCH</div>
-      <h2>Let's <span>Connect</span></h2>
-      <p>
-        Open to opportunities in Network Engineering, NOC,
-        IT Operations and Infrastructure Support.
-      </p>
-    </div>
-
-    <div class="contact-actions">
-      <a class="btn primary" href="mailto:YOUR_EMAIL_ID">
-        Email Me
-      </a>
-
-      <a class="btn" href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199" target="_blank">
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/vamsidharreddy-kakarla-625036199"
+         target="_blank" rel="noopener noreferrer">
         LinkedIn
       </a>
 
-      <a class="btn" href="YOUR_GITHUB_URL" target="_blank">
+      <a href="https://github.com/VAMSIDHARKAKARLA"
+         target="_blank" rel="noopener noreferrer">
         GitHub
       </a>
     </div>
+
+    <div class="contact-location">
+      Chennai, Tamil Nadu, India
+    </div>
   </div>
+
 </section>
 
 <!-- ===== FOOTER ===== -->
 
-<footer class="footer">
-  <div class="wrap">
-    <p>
-      © 2026 Vamsidharreddy Kakarla. All Rights Reserved.
-    </p>
-    <p>
-      Network | Infrastructure | IT Operations
-    </p>
-  </div>
+<footer class="site-footer">
+  <p>© 2026 Vamsidharreddy Kakarla. All Rights Reserved.</p>
+  <span>Designed with professionalism and passion.</span>
 </footer>
+
+<!-- ===== FINAL STYLES ===== -->
+
+<style>
+.section:not(#home) {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+
+.contact-card {
+  max-width: 720px;
+  margin: 35px auto;
+  padding: 42px 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #111C2E, #0F192B);
+  border: 1px solid rgba(0,200,255,0.18);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.contact-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(0,200,255,0.12);
+  color: #00C8FF;
+  font-size: 27px;
+}
+
+.contact-card h3 {
+  color: #FFFFFF;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: #94A3B8;
+  line-height: 1.8;
+  max-width: 570px;
+  margin: 0 auto 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.contact-links a {
+  color: #00C8FF;
+  text-decoration: none;
+  border: 1px solid rgba(0,200,255,0.35);
+  padding: 11px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #00C8FF;
+  color: #0B1120;
+}
+
+.contact-location {
+  margin-top: 25px;
+  color: #94A3B8;
+  font-size: 14px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 25px 15px;
+  border-top: 1px solid rgba(148,163,184,0.15);
+  color: #94A3B8;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer span {
+  color: #64748B;
+}
+
+@media (max-width: 600px) {
+  .section:not(#home) {
+    width: 92%;
+    padding-top: 45px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .contact-card h3 {
+    font-size: 20px;
+  }
+}
+</style>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+function showSection(sectionId, clickedButton) {
+
+  document.querySelectorAll('.section').forEach(section => {
+    section.classList.remove('active-section');
+  });
+
+  const selectedSection = document.getElementById(sectionId);
+
+  if (selectedSection) {
+    selectedSection.classList.add('active-section');
+  }
+
+  document.querySelectorAll('.nav-link').forEach(button => {
+    button.classList.remove('active');
+
+    if (button.getAttribute('onclick') &&
+        button.getAttribute('onclick').includes("'" + sectionId + "'")) {
+      button.classList.add('active');
+    }
+  });
+
+  if (clickedButton) {
+    clickedButton.classList.add('active');
+  }
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+function toggleExperience(id, button) {
+
+  const selectedPanel = document.getElementById(id);
+
+  if (!selectedPanel) return;
+
+  const shouldOpen = !selectedPanel.classList.contains('open');
+
+  document.querySelectorAll('.experience-details').forEach(panel => {
+    panel.classList.remove('open');
+  });
+
+  document.querySelectorAll('.experience-toggle').forEach(toggle => {
+    toggle.classList.remove('expanded');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+
+  if (shouldOpen) {
+    selectedPanel.classList.add('open');
+    button.classList.add('expanded');
+    button.setAttribute('aria-expanded', 'true');
+  }
+}
+
+</script>
 
 </body>
 </html>
-
