@@ -1725,6 +1725,105 @@ button {
   transition: all .25s ease;
     }
     
+/* =====================================
+   PREMIUM PORTFOLIO COLOUR ENHANCEMENT
+===================================== */
+
+:root {
+  --accent: #22d3ee;
+  --accent-blue: #3b82f6;
+  --accent-purple: #a78bfa;
+  --accent-glow: rgba(34, 211, 238, 0.18);
+}
+
+/* SECTION BACKGROUNDS */
+
+section {
+  position: relative;
+}
+
+section:nth-of-type(even) {
+  background:
+    radial-gradient(ellipse at 10% 20%, rgba(59,130,246,.09), transparent 45%),
+    #08172a;
+}
+
+section:nth-of-type(odd) {
+  background:
+    radial-gradient(ellipse at 90% 15%, rgba(34,211,238,.07), transparent 40%),
+    #071426;
+}
+
+/* SECTION HEADINGS */
+
+.section-title,
+.section-head h2 {
+  color: #f1f8ff;
+}
+
+.section-title span,
+.section-head h2 span {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARDS */
+
+.card,
+.experience-card,
+.skill-card,
+.project-card {
+  border: 1px solid rgba(65, 180, 255, .17);
+  background: linear-gradient(
+    145deg,
+    rgba(18, 48, 78, .88),
+    rgba(8, 25, 46, .96)
+  );
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .18);
+  transition: all .3s ease;
+}
+
+.card:hover,
+.experience-card:hover,
+.skill-card:hover,
+.project-card:hover {
+  border-color: rgba(34, 211, 238, .65);
+  box-shadow: 0 10px 30px rgba(34, 211, 238, .12);
+  transform: translateY(-4px);
+}
+
+/* BUTTONS */
+
+.btn.primary {
+  background: linear-gradient(110deg, #22d3ee, #3b82f6);
+  color: #061426;
+  border: none;
+  box-shadow: 0 5px 20px rgba(34, 211, 238, .2);
+}
+
+/* SMALL LABELS */
+
+.eyebrow,
+.noc-label,
+.section-label {
+  color: #22d3ee;
+  letter-spacing: 3px;
+}
+
+/* HIGHLIGHT TEXT */
+
+strong {
+  color: #67e8f9;
+}
+
+/* SMOOTH TRANSITIONS */
+
+a,
+button {
+  transition: all .25s ease;
+    }
+    
   </style>
 </head>
 
@@ -1757,7 +1856,10 @@ button {
       <div class="hero-content">
         <div class="eyebrow">IT Operations & Network Support</div>
 
-        <h1>VAMSIDHARREDDY <span> KAKARLA </span></h1>
+        <h1 class="hero-name">
+  Vamsidharreddy
+  <span>Kakarla</span>
+        </h1>
 
         <h2>NOC Engineer | Network & Infrastructure Operations</h2>
 
@@ -1775,6 +1877,12 @@ button {
 
           <a href="#contact" class="btn btn-outline">
             Let's Connect
+            <a href="Vamsidharreddy-Resume.pdf"
+   class="btn resume-btn"
+   target="_blank">
+   <i class="fas fa-file-pdf"></i>
+   View Resume
+            </a>
           </a>
         </div>
       </div>
