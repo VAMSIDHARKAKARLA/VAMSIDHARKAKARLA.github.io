@@ -1979,6 +1979,43 @@ section p {
   }
                         }
     
+/* ===== HERO MOBILE PHOTO POSITION FIX ===== */
+
+@media (max-width: 700px) {
+
+  .hero-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas:
+      "photo"
+      "content";
+    gap: 22px;
+    width: 100%;
+  }
+
+  .hero-photo {
+    grid-area: photo;
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-grid > div:not(.hero-photo) {
+    grid-area: content;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+}
+    
   </style>
 </head>
 
