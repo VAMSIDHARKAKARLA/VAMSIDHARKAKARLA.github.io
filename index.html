@@ -2160,50 +2160,51 @@ footer .social-links a:hover {
   }
 }
 
-/* =====================================
-   PREMIUM EDUCATION CARD INTERACTION
-===================================== */
+
+/* EDUCATION CARD - PREMIUM HOVER EFFECT */
 
 .education-card {
+  cursor: pointer;
   position: relative;
-  transition:
-    transform 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease !important;
+  transition: all 0.35s ease !important;
+  border: 1px solid rgba(130, 170, 210, 0.18) !important;
 }
 
-/* Subtle floating effect on desktop */
+/* Desktop mouse hover */
 
 @media (hover: hover) and (pointer: fine) {
-  .education-card:hover {
-    transform: translateY(-7px);
-    border-color: rgba(0, 200, 255, 0.65) !important;
+  #education .education-card:hover {
+    transform: translateY(-8px) !important;
+
+    border: 1px solid #00c8ff !important;
 
     box-shadow:
-      0 15px 35px rgba(0, 0, 0, 0.28),
-      0 0 18px rgba(0, 200, 255, 0.10);
+      0 18px 40px rgba(0, 0, 0, 0.35),
+      0 0 22px rgba(0, 200, 255, 0.18) !important;
+
+    background: #10243a !important;
   }
 }
 
-/* Keyboard accessibility */
+/* Keyboard focus */
 
-.education-card:focus-visible {
+#education .education-card:focus-visible {
   outline: 2px solid #00c8ff;
   outline-offset: 4px;
 }
 
-/* Reduced motion */
+/* Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
   .education-card {
     transition: none !important;
   }
 
-  .education-card:hover {
-    transform: none;
+  #education .education-card:hover {
+    transform: none !important;
   }
 }
+
 
 
 /* ==================================================
