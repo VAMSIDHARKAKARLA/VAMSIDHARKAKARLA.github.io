@@ -1644,6 +1644,455 @@ footer .social-links a:hover {
   }
 
 }
+  
+/* ==========================================
+   PREMIUM PROFESSIONAL EXPERIENCE DESIGN
+   TCS | KEYBANK | NOC OPERATIONS
+========================================== */
+
+.experience-section {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 8% 10%, rgba(0, 195, 255, 0.07), transparent 38%),
+    radial-gradient(ellipse at 92% 75%, rgba(0, 120, 255, 0.045), transparent 35%),
+    #071426;
+}
+
+.experience-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* SECTION HEADING */
+
+.experience-section .noc-heading {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.experience-section .noc-label {
+  display: inline-block;
+  color: #00c8ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 15px;
+}
+
+.experience-section .section-title {
+  color: #f4f8ff;
+  font-size: clamp(30px, 4vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  margin: 0 0 17px;
+}
+
+.experience-section .section-title span {
+  color: #00c8ff;
+}
+
+.experience-section .noc-heading p {
+  color: #9aadc3;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* CAREER HEADER */
+
+.experience-section .career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 43, 68, 0.95),
+    rgba(10, 27, 46, 0.95)
+  );
+  border: 1px solid rgba(0, 200, 255, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-section .career-header:hover {
+  border-color: rgba(0, 200, 255, 0.55);
+  transform: translateY(-3px);
+}
+
+.experience-section .career-company {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+}
+
+.experience-section .company-mark {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #00c8ff, #0878d1);
+  color: #061426;
+  font-size: 21px;
+  font-weight: 900;
+  box-shadow: 0 8px 24px rgba(0, 200, 255, 0.2);
+}
+
+.experience-section .career-company h3 {
+  color: #f5f9ff;
+  font-size: 23px;
+  font-weight: 800;
+  margin: 0 0 7px;
+}
+
+.experience-section .career-employer {
+  color: #d4e4f5;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.experience-section .career-client {
+  color: #00c8ff;
+  font-size: 13px;
+  margin: 0;
+}
+
+.experience-section .career-period {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.experience-section .career-period span {
+  display: inline-block;
+  color: #00d7a0;
+  background: rgba(0, 215, 160, 0.09);
+  border: 1px solid rgba(0, 215, 160, 0.25);
+  border-radius: 30px;
+  padding: 9px 15px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.experience-section .career-period small {
+  display: block;
+  color: #9aadc3;
+  margin-top: 11px;
+  font-size: 12px;
+}
+
+/* CAREER DIVIDER */
+
+.experience-section .career-divider {
+  height: 1px;
+  margin: 42px 0 35px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 200, 255, 0.4),
+    transparent
+  );
+}
+
+/* RESPONSIBILITIES INTRO */
+
+.experience-section .responsibilities-intro {
+  margin-bottom: 25px;
+  padding-left: 17px;
+  border-left: 3px solid #00c8ff;
+}
+
+.experience-section .responsibilities-intro .noc-label {
+  margin-bottom: 8px;
+}
+
+.experience-section .responsibilities-intro p {
+  color: #a8b9cc;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 750px;
+}
+
+/* SIX RESPONSIBILITY CARDS */
+
+.experience-section .noc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.experience-section .noc-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 27px;
+  overflow: hidden;
+  background: linear-gradient(
+    145deg,
+    #10243a,
+    #0b1b2e
+  );
+  border: 1px solid rgba(130, 170, 210, 0.13);
+  border-radius: 17px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.experience-section .noc-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00c8ff, #008cff);
+  transition: width 0.35s ease;
+}
+
+.experience-section .noc-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 200, 255, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.experience-section .noc-card:hover::before {
+  width: 100%;
+}
+
+.experience-section .noc-number {
+  position: absolute;
+  top: 21px;
+  right: 23px;
+  color: rgba(0, 200, 255, 0.65);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.experience-section .noc-icon {
+  width: 49px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  background: rgba(0, 200, 255, 0.09);
+  border: 1px solid rgba(0, 200, 255, 0.18);
+  font-size: 23px;
+  margin-bottom: 19px;
+}
+
+.experience-section .noc-category {
+  color: #00c8ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  margin-bottom: 10px;
+}
+
+.experience-section .noc-card h3 {
+  color: #f2f7ff;
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.experience-section .noc-card > p {
+  color: #a6b7ca;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 21px;
+}
+
+/* KEY ACTIVITIES */
+
+.experience-section .noc-details {
+  padding-top: 17px;
+  border-top: 1px solid rgba(160, 190, 220, 0.12);
+}
+
+.experience-section .noc-details h4 {
+  color: #e4efff;
+  font-size: 13px;
+  font-weight: 750;
+  margin: 0 0 12px;
+}
+
+.experience-section .noc-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-section .noc-details li {
+  position: relative;
+  padding-left: 17px;
+  margin-bottom: 10px;
+  color: #9eb0c5;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.experience-section .noc-details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00c8ff;
+}
+
+/* TECHNOLOGY TAGS */
+
+.experience-section .noc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 19px;
+}
+
+.experience-section .noc-tools span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  color: #9edfff;
+  background: rgba(0, 170, 230, 0.09);
+  border: 1px solid rgba(0, 200, 255, 0.16);
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+/* TECHNOLOGY ENVIRONMENT */
+
+.experience-section .technology-strip {
+  margin-top: 35px;
+  padding: 25px;
+  background: rgba(13, 34, 55, 0.75);
+  border: 1px solid rgba(0, 200, 255, 0.16);
+  border-radius: 15px;
+}
+
+.experience-section .technology-strip .noc-label {
+  margin-bottom: 5px;
+}
+
+.experience-section .technology-strip .noc-tools {
+  margin-top: 13px;
+  padding-top: 0;
+}
+
+.experience-section .technology-strip .noc-tools span {
+  font-size: 11px;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+  .experience-section .noc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+  }
+
+  .experience-section .noc-card {
+    padding: 22px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 70px 0;
+  }
+
+  .experience-section .noc-heading {
+    margin-bottom: 32px;
+  }
+
+  .experience-section .career-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    gap: 20px;
+  }
+
+  .experience-section .career-company {
+    gap: 14px;
+  }
+
+  .experience-section .company-mark {
+    width: 53px;
+    height: 53px;
+    min-width: 53px;
+    font-size: 18px;
+  }
+
+  .experience-section .career-company h3 {
+    font-size: 20px;
+  }
+
+  .experience-section .career-period {
+    text-align: left;
+  }
+
+  .experience-section .career-divider {
+    margin: 30px 0;
+  }
+
+  .experience-section .responsibilities-intro {
+    margin-bottom: 22px;
+  }
+
+  .experience-section .noc-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .experience-section .noc-card {
+    padding: 23px;
+  }
+
+  .experience-section .technology-strip {
+    padding: 20px;
+  }
+
+  .experience-section .section-title {
+    font-size: 30px;
+  }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-section .noc-card,
+  .experience-section .career-header,
+  .experience-section .noc-card::before {
+    transition: none;
+  }
+}
+
 
 /* ==================================================
    END OF KKR PREMIUM PORTFOLIO STYLESHEET
@@ -1818,8 +2267,10 @@ footer .social-links a:hover {
         <div class="company-mark">TCS</div>
         <div>
           <h3>NOC Engineer</h3>
-          <p class="career-employer">Tata Consultancy Services</p>
-          <p class="career-client">Client Environment: KeyBank</p>
+<p class="career-employer">Tata Consultancy Services (TCS)</p>
+<p class="career-client">
+  Infrastructure & Operations | KeyBank Project
+</p>
         </div>
       </div>
 
@@ -1832,16 +2283,14 @@ footer .social-links a:hover {
 
     <div class="career-divider"></div>
 
-    <div class="noc-heading scenario-heading">
-      <span class="noc-label">PRACTICAL OPERATIONS</span>
-      <h2 class="section-title">
-        NOC Engineer<span>Infrastructure & Operations</span>
-      </h2>
-      <p>
-        Key areas of responsibility across enterprise NOC and
-        distributed infrastructure operations.
-      </p>
-    </div>
+    <div class="responsibilities-intro">
+  <span class="noc-label">CORE RESPONSIBILITIES</span>
+  <p>
+    Key responsibilities and operational activities across
+    enterprise network monitoring, infrastructure support
+    and distributed production operations.
+  </p>
+</div>
 
     <div class="noc-grid">
 
