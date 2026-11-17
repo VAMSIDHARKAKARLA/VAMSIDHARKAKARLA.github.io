@@ -2160,40 +2160,33 @@ footer .social-links a:hover {
   }
 }
 
-
-/* EDUCATION CARD - PREMIUM HOVER EFFECT */
+/* EDUCATION - MINIMAL PREMIUM HOVER */
 
 .education-card {
-  cursor: pointer;
   position: relative;
-  transition: all 0.35s ease !important;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease !important;
   border: 1px solid rgba(130, 170, 210, 0.18) !important;
 }
 
-/* Desktop mouse hover */
+/* Subtle floating + clean border */
 
 @media (hover: hover) and (pointer: fine) {
   #education .education-card:hover {
-    transform: translateY(-8px) !important;
-
-    border: 1px solid #00c8ff !important;
-
-    box-shadow:
-      0 18px 40px rgba(0, 0, 0, 0.35),
-      0 0 22px rgba(0, 200, 255, 0.18) !important;
-
-    background: #10243a !important;
+    transform: translateY(-7px) !important;
+    border-color: #00c8ff !important;
   }
 }
 
-/* Keyboard focus */
+/* Keyboard accessibility */
 
 #education .education-card:focus-visible {
   outline: 2px solid #00c8ff;
-  outline-offset: 4px;
+  outline-offset: 3px;
 }
 
-/* Accessibility */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .education-card {
@@ -2204,7 +2197,6 @@ footer .social-links a:hover {
     transform: none !important;
   }
 }
-
 
 
 /* ==================================================
