@@ -1558,6 +1558,93 @@ footer .social-links a:hover {
 
 }
 
+/* ==========================================
+   FINAL HERO LAYOUT FIX - MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .hero {
+    padding: 35px 0 45px;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+  }
+
+  /* PHOTO AT THE TOP */
+
+  .hero-grid > .hero-photo {
+    order: -1 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5px;
+  }
+
+  .photo-frame {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* TEXT AND CONTENT */
+
+  .hero-grid > :not(.hero-photo) {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-name,
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .hero-name span,
+  .hero h1 span {
+    display: block;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BUTTONS */
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 11px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 45px;
+  }
+
+  /* STATISTICS */
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+    width: 100%;
+  }
+
+  .stat {
+    padding: 17px 9px;
+  }
+
+}
+
 /* ==================================================
    END OF KKR PREMIUM PORTFOLIO STYLESHEET
 ================================================== */
